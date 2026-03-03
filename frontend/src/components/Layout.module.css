@@ -1,0 +1,41 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  position: relative;
+}
+
+.layout::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: var(--gradient-bg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem 2.5rem;
+  background: transparent;
+  animation: contentFadeIn 0.5s var(--transition) both;
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}

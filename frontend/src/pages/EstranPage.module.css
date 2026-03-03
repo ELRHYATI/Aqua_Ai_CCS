@@ -1,0 +1,383 @@
+.page {
+  max-width: 1400px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.header h1 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.methodSelect {
+  padding: 0.5rem 0.85rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-size: 0.85rem;
+}
+
+.btn {
+  padding: 0.6rem 1.25rem;
+  background: var(--gradient-accent);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.08);
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+}
+
+/* Severity summary cards */
+.summaryRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.severityCard {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  overflow: hidden;
+  transition: all var(--transition);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.severityCard::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.severitycritical::before {
+  background: linear-gradient(180deg, #ef4444, #dc2626);
+}
+
+.severitymajor::before {
+  background: linear-gradient(180deg, #f97316, #ea580c);
+}
+
+.severityminor::before {
+  background: linear-gradient(180deg, #eab308, #ca8a04);
+}
+
+.severityCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.severityIcon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.severitycritical .severityIcon {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.severitymajor .severityIcon {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+}
+
+.severityminor .severityIcon {
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+}
+
+.severityContent {
+  flex: 1;
+}
+
+.severityCount {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.severityCard h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.25rem;
+}
+
+.severityDesc {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  opacity: 0.9;
+}
+
+/* Loading state */
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: var(--color-text-muted);
+}
+
+.loadingIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Main grid: chart + table */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chartPanel,
+.tablePanel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+}
+
+.chartPanel h2,
+.tablePanel h2 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 1rem;
+}
+
+.chartWrap {
+  height: 240px;
+}
+
+.emptyChart,
+.emptyTable {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Table */
+.tableWrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.table th {
+  background: var(--color-bg-elevated);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table tbody tr {
+  transition: background var(--transition);
+}
+
+.table tbody tr:hover {
+  background: var(--color-surface-hover);
+}
+
+.rowcritical {
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.rowcritical:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.rowmajor {
+  background: rgba(249, 115, 22, 0.05);
+}
+
+.rowmajor:hover {
+  background: rgba(249, 115, 22, 0.09);
+}
+
+.rowminor {
+  background: rgba(234, 179, 8, 0.04);
+}
+
+.rowminor:hover {
+  background: rgba(234, 179, 8, 0.08);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.descCell {
+  max-width: 280px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.numCell {
+  font-weight: 500;
+}
+
+.severityBadge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.badgecritical,
+.badgehigh {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.badgemajor,
+.badgemedium {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+}
+
+.badgeminor,
+.badgelow {
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+}
+
+.anomalyRow {
+  background: var(--color-danger-dim) !important;
+}
+
+.anomalyRow:hover {
+  background: rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Records section */
+.recordsSection {
+  margin-bottom: 2rem;
+}
+
+.recordsSection h2 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.muted {
+  margin-top: 0.75rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.error {
+  color: var(--color-danger);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .chartPanel {
+    order: 2;
+  }
+
+  .tablePanel {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .summaryRow {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .descCell {
+    max-width: 180px;
+  }
+}
