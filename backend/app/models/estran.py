@@ -45,6 +45,10 @@ class EstranRecord(Base, TimestampMixin):
     pct_recolte = Column(Numeric(8, 4))
     year = Column(Integer, index=True)
     month = Column(Integer, index=True)
+    sheet_name = Column(String(50), index=True)
+    type_recolte = Column(String(80), index=True)
+    taux_recapture = Column(Numeric(10, 4))
+    objectif_recolte = Column(String(100))
 
     __table_args__ = (
         Index("ix_estran_parc_year_month", "parc_semi", "year", "month"),

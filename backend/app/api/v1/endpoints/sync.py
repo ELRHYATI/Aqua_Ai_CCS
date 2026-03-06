@@ -55,4 +55,7 @@ async def upload_excel(file: UploadFile = File(..., description="Excel file (REF
     except Exception as e:
         raise HTTPException(status_code=422, detail=f"Erreur lors de l'import: {str(e)}")
     finally:
-        path.unlink(missing_ok=True)
+        try:
+            path.unlink(missing_ok=True)
+        except (PermissionError, OSError):
+            pass

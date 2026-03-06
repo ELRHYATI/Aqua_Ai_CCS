@@ -10,17 +10,25 @@ async function fetchApi<T>(path: string, options?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  getEstranRecords: (params?: { limit?: number; offset?: number; year?: number }) => {
+  getEstranSheets: () => fetchApi<EstranSheetInfo[]>(`/estran/sheets`),
+  getEstranStats: (params?: { sheet?: string }) => {
+    const sp = new URLSearchParams()
+    if (params?.sheet) sp.set('sheet', params.sheet)
+    return fetchApi<EstranStatsResponse>(`/estran/stats?${sp}`)
+  },
+  getEstranRecords: (params?: { limit?: number; offset?: number; year?: number; sheet?: string }) => {
     const sp = new URLSearchParams()
     if (params?.limit) sp.set('limit', String(params.limit))
     if (params?.offset) sp.set('skip', String(params.offset))
     if (params?.year) sp.set('year', String(params.year))
+    if (params?.sheet) sp.set('sheet', params.sheet)
     return fetchApi<EstranRecord[]>(`/estran/records?${sp}`)
   },
-  getEstranAnomalies: (params?: { limit?: number; year?: number; method?: string }) => {
+  getEstranAnomalies: (params?: { limit?: number; year?: number; sheet?: string; method?: string }) => {
     const sp = new URLSearchParams()
     if (params?.limit) sp.set('limit', String(params.limit))
     if (params?.year) sp.set('year', String(params.year))
+    if (params?.sheet) sp.set('sheet', params.sheet)
     if (params?.method) sp.set('method', params.method)
     return fetchApi<EstranAnomalyRecord[]>(`/estran/anomalies?${sp}`)
   },
@@ -80,6 +88,17 @@ export const api = {
   },
 }
 
+export interface EstranSheetInfo {
+  name: string
+  count: number
+}
+
+export interface EstranStatsResponse {
+  moyenne_taux_recapture_echantillonnage?: number | null
+  moyenne_taux_recapture_transfert?: number | null
+  objectifs_recolte: string[]
+}
+
 export interface EstranRecord {
   id: number
   parc_semi?: string
@@ -94,6 +113,10 @@ export interface EstranRecord {
   statut?: string
   year?: number
   month?: number
+  sheet_name?: string
+  type_recolte?: string
+  taux_recapture?: number
+  objectif_recolte?: string
 }
 
 export interface EstranAnomalyRecord extends EstranRecord {

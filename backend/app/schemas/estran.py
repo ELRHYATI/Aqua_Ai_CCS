@@ -2,8 +2,19 @@
 
 from datetime import date, datetime
 from decimal import Decimal
-from typing import Optional
+from typing import Optional, List
 from pydantic import BaseModel, ConfigDict
+
+
+class EstranSheetInfo(BaseModel):
+    name: str
+    count: int
+
+
+class EstranStatsResponse(BaseModel):
+    moyenne_taux_recapture_echantillonnage: Optional[float] = None
+    moyenne_taux_recapture_transfert: Optional[float] = None
+    objectifs_recolte: List[str] = []
 
 
 class EstranRecordBase(BaseModel):
@@ -19,6 +30,10 @@ class EstranRecordBase(BaseModel):
     statut: Optional[str] = None
     year: Optional[int] = None
     month: Optional[int] = None
+    sheet_name: Optional[str] = None
+    type_recolte: Optional[str] = None
+    taux_recapture: Optional[Decimal] = None
+    objectif_recolte: Optional[str] = None
 
 
 class EstranRecordCreate(EstranRecordBase):

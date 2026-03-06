@@ -81,15 +81,32 @@ function formatDate(dateStr: string | undefined, year?: number, month?: number) 
 
 export default function EstranPage() {
   const [anomalyMethod, setAnomalyMethod] = useState('isolation_forest')
+  const [selectedSheet, setSelectedSheet] = useState<string>('Tous')
+
+  const sheets = useQuery({
+    queryKey: ['estran', 'sheets'],
+    queryFn: () => api.getEstranSheets(),
+  })
+
+  const stats = useQuery({
+    queryKey: ['estran', 'stats', selectedSheet],
+    queryFn: () => api.getEstranStats({ sheet: selectedSheet === 'Tous' ? undefined : selectedSheet }),
+  })
 
   const records = useQuery({
-    queryKey: ['estran', 'records'],
-    queryFn: () => api.getEstranRecords({ limit: 500 }),
+    queryKey: ['estran', 'records', selectedSheet],
+    queryFn: () =>
+      api.getEstranRecords({ limit: 500, sheet: selectedSheet === 'Tous' ? undefined : selectedSheet }),
   })
 
   const anomalies = useQuery({
-    queryKey: ['estran', 'anomalies', anomalyMethod],
-    queryFn: () => api.getEstranAnomalies({ limit: 500, method: anomalyMethod }),
+    queryKey: ['estran', 'anomalies', anomalyMethod, selectedSheet],
+    queryFn: () =>
+      api.getEstranAnomalies({
+        limit: 500,
+        method: anomalyMethod,
+        sheet: selectedSheet === 'Tous' ? undefined : selectedSheet,
+      }),
   })
 
   const anomalyList = anomalies.data ?? []
@@ -117,6 +134,23 @@ export default function EstranPage() {
         </div>
         <div className={styles.headerActions}>
           <select
+            className={styles.sheetSelect}
+            value={selectedSheet}
+            onChange={(e) => setSelectedSheet(e.target.value)}
+            aria-label="Choisir la feuille à visualiser"
+          >
+            {sheets.data?.map((s) => (
+              <option key={s.name} value={s.name}>
+                {s.name} ({s.count})
+              </option>
+            ))}
+            {(!sheets.data?.length || sheets.data.length === 0) && (
+              <option value="Tous">
+                {sheets.isLoading ? 'Chargement…' : 'Tous'}
+              </option>
+            )}
+          </select>
+          <select
             className={styles.methodSelect}
             value={anomalyMethod}
             onChange={(e) => setAnomalyMethod(e.target.value)}
@@ -136,6 +170,37 @@ export default function EstranPage() {
           </button>
         </div>
       </header>
+
+      {(stats.data?.moyenne_taux_recapture_echantillonnage != null ||
+        stats.data?.moyenne_taux_recapture_transfert != null) && (
+        <section className={styles.statsRow}>
+          <div className={styles.statCard}>
+            <h3>Moy. taux recapture – Échantillonnage (Primaire)</h3>
+            <p className={styles.statValue}>
+              {stats.data?.moyenne_taux_recapture_echantillonnage != null
+                ? `${stats.data.moyenne_taux_recapture_echantillonnage.toFixed(1)}%`
+                : '-'}
+            </p>
+          </div>
+          <div className={styles.statCard}>
+            <h3>Moy. taux recapture – Transfert (Primaire)</h3>
+            <p className={styles.statValue}>
+              {stats.data?.moyenne_taux_recapture_transfert != null
+                ? `${stats.data.moyenne_taux_recapture_transfert.toFixed(1)}%`
+                : '-'}
+            </p>
+          </div>
+          {stats.data?.objectifs_recolte?.length ? (
+            <div className={styles.statCard}>
+              <h3>Objectifs récolte</h3>
+              <p className={styles.statValue}>
+                {stats.data.objectifs_recolte.slice(0, 3).join(', ')}
+                {stats.data.objectifs_recolte.length > 3 ? '…' : ''}
+              </p>
+            </div>
+          ) : null}
+        </section>
+      )}
 
       <section className={styles.summaryRow}>
         <SeverityCard severity="critical" count={criticalCount} />
@@ -253,6 +318,9 @@ export default function EstranPage() {
                   <th>Parc</th>
                   <th>Ligne</th>
                   <th>Phase</th>
+                  <th>Type récolte</th>
+                  <th>Taux recapture %</th>
+                  <th>Objectif récolte</th>
                   <th>Qté récoltée (kg)</th>
                   <th>Biomasse GR</th>
                   <th>Statut</th>
@@ -262,12 +330,12 @@ export default function EstranPage() {
               <tbody>
                 {records.isLoading && (
                   <tr>
-                    <td colSpan={8}>Chargement…</td>
+                    <td colSpan={11}>Chargement…</td>
                   </tr>
                 )}
                 {records.error && (
                   <tr>
-                    <td colSpan={8} className={styles.error}>
+                    <td colSpan={11} className={styles.error}>
                       {String(records.error)}
                     </td>
                   </tr>
@@ -285,6 +353,13 @@ export default function EstranPage() {
                       <td>{r.parc_semi ?? '-'}</td>
                       <td>{r.ligne_num ?? '-'}</td>
                       <td>{r.phase ?? '-'}</td>
+                      <td>{r.type_recolte ?? '-'}</td>
+                      <td>
+                        {r.taux_recapture != null
+                          ? (r.taux_recapture * 100).toFixed(1) + '%'
+                          : '-'}
+                      </td>
+                      <td className={styles.descCell}>{r.objectif_recolte ?? '-'}</td>
                       <td>{r.quantite_brute_recoltee_kg ?? '-'}</td>
                       <td>{r.biomasse_gr ?? '-'}</td>
                       <td>{r.statut ?? '-'}</td>

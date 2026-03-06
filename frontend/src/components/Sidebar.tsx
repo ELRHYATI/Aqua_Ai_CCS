@@ -2,12 +2,12 @@ import { NavLink } from 'react-router-dom'
 import styles from './Sidebar.module.css'
 
 const navItems = [
-  { to: '/welcome', label: 'Accueil', icon: '⌂' },
-  { to: '/', label: 'Dashboard', icon: '◉' },
-  { to: '/estran', label: 'Estran', icon: '◇' },
-  { to: '/finance', label: 'Finance', icon: '◈' },
-  { to: '/achat', label: 'Achats', icon: '◆' },
-  { to: '/copilot', label: 'Copilot', icon: '✦' },
+  { to: '/', label: 'Accueil', icon: '⌂' },
+  { to: '/app', label: 'Dashboard', icon: '◉' },
+  { to: '/app/estran', label: 'Estran', icon: '◇' },
+  { to: '/app/finance', label: 'Finance', icon: '◈' },
+  { to: '/app/achat', label: 'Achats', icon: '◆' },
+  { to: '/app/copilot', label: 'Copilot', icon: '✦' },
 ]
 
 interface SidebarProps {
@@ -25,7 +25,7 @@ export default function Sidebar({ open, onNavigate }: SidebarProps) {
             <NavLink
               key={to}
               to={to}
-              end={to === '/'}
+              end={to === '/' || to === '/app'}
               onClick={onNavigate}
               className={({ isActive }) =>
                 `${styles.navLink} ${isActive ? styles.active : ''}`

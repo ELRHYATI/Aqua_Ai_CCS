@@ -10,8 +10,8 @@ import CopilotPage from './pages/CopilotPage'
 function App() {
   return (
     <Routes>
-      <Route path="/welcome" element={<Welcome />} />
-      <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/app" element={<Layout />}>
         <Route index element={<Dashboard />} />
         <Route path="estran" element={<EstranPage />} />
         <Route path="finance" element={<FinancePage />} />

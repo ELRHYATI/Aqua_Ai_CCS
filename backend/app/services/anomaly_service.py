@@ -5,6 +5,7 @@ Algorithms: IsolationForest, Local Outlier Factor (LOF), One-Class SVM, Z-Score.
 
 from typing import List, Optional, Tuple
 
+import math
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
@@ -13,7 +14,7 @@ from sklearn.svm import OneClassSVM
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
-# Domain-specific numeric columns for anomaly detection
+# Domain-specific numeric columns for anomaly detection (includes taux_recapture for Exemple BDD estran)
 ESTRAN_FEATURES = [
     "effectif_seme",
     "quantite_semee_kg",
@@ -22,6 +23,7 @@ ESTRAN_FEATURES = [
     "biomasse_gr",
     "biomasse_vendable_kg",
     "pct_recolte",
+    "taux_recapture",
     "longueur_ligne",
     "nb_ligne_semee_200m",
 ]
@@ -174,6 +176,12 @@ def _build_estran_explanation(row: dict, severity: str) -> str:
         parts.append(f"quantité récoltée: {row['quantite_brute_recoltee_kg']} kg")
     if row.get("biomasse_gr") is not None:
         parts.append(f"biomasse GR: {row['biomasse_gr']}")
+    tr = row.get("taux_recapture")
+    if tr is not None and not (isinstance(tr, float) and math.isnan(tr)):
+        try:
+            parts.append(f"taux recapture: {float(tr):.1%}")
+        except (TypeError, ValueError):
+            pass
     if row.get("parc_semi"):
         parts.append(f"parc {row['parc_semi']}")
     if row.get("ligne_num") is not None:

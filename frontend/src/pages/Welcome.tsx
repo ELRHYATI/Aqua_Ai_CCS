@@ -1,234 +1,368 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { Waves, BarChart3, ShoppingCart, ChevronDown } from 'lucide-react'
-import AnimatedOyster from '../components/AnimatedOyster'
-import FeatureCard from '../components/FeatureCard'
-import TypewriterHero from '../components/TypewriterHero'
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
+import { Waves, BarChart3, ShoppingCart, Bot, ArrowRight, ChevronDown, Sparkles } from 'lucide-react'
+import styles from './Welcome.module.css'
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.2, delayChildren: 0.3 },
-  },
+const PARTICLES_COUNT = 60
+
+function useParticles() {
+  return useRef(
+    Array.from({ length: PARTICLES_COUNT }, () => ({
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: 1 + Math.random() * 3,
+      duration: 3 + Math.random() * 6,
+      delay: Math.random() * 4,
+      opacity: 0.15 + Math.random() * 0.35,
+    })),
+  ).current
 }
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
-}
-
-const oysters = [
-  { x: '10%', y: '20%', delay: 0, size: 36 },
-  { x: '85%', y: '15%', delay: 0.8, size: 28 },
-  { x: '25%', y: '70%', delay: 0.3, size: 32 },
-  { x: '75%', y: '65%', delay: 1.2, size: 24 },
-  { x: '50%', y: '45%', delay: 0.5, size: 20 },
-]
-
-const features = [
-  {
-    icon: Waves,
-    title: 'Estran',
-    description:
-      'Analyse des données de production par parc, biomasse et récolte. Vue consolidée BD Estran.',
-  },
-  {
-    icon: BarChart3,
-    title: 'Finance',
-    description:
-      'Résultat YTD, Budget vs Réalisé, variances. Commentaires IA et KPIs financiers.',
-  },
-  {
-    icon: ShoppingCart,
-    title: 'Achats',
-    description:
-      'DA en cours, BC non livrés. Priorités et risk score pour un suivi Achats optimisé.',
-  },
-]
-
-function WaveBackground() {
+function ParticleField() {
+  const particles = useParticles()
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      <svg
-        className="absolute bottom-0 w-full h-32 text-ocean-mid/20 animate-wave"
-        viewBox="0 0 1440 120"
-        preserveAspectRatio="none"
-        aria-hidden
-      >
-        <path
-          fill="currentColor"
-          d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,96 1440,64 L1440,120 L0,120 Z"
+    <div className={styles.particleField}>
+      {particles.map((p, i) => (
+        <motion.div
+          key={i}
+          className={styles.particle}
+          style={{ left: `${p.x}%`, top: `${p.y}%`, width: p.size, height: p.size }}
+          animate={{
+            y: [0, -30 - Math.random() * 40, 0],
+            opacity: [0, p.opacity, 0],
+          }}
+          transition={{
+            duration: p.duration,
+            repeat: Infinity,
+            delay: p.delay,
+            ease: 'easeInOut',
+          }}
         />
-      </svg>
-      <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark via-[#0a2540] to-[#0f172a]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_0%,rgba(30,64,175,0.3),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_80%_80%,rgba(6,182,212,0.15),transparent_50%)]" />
+      ))}
     </div>
   )
 }
 
-export default function Welcome() {
-  const [email, setEmail] = useState('')
+function WaveLayer({ index }: { index: number }) {
+  const offsets = [0, 80, 160]
+  const opacities = [0.06, 0.04, 0.025]
+  return (
+    <motion.svg
+      className={styles.waveSvg}
+      style={{ bottom: offsets[index], opacity: opacities[index] }}
+      viewBox="0 0 1440 200"
+      preserveAspectRatio="none"
+      animate={{ x: [0, index % 2 === 0 ? -80 : 80, 0] }}
+      transition={{ duration: 8 + index * 3, repeat: Infinity, ease: 'easeInOut' }}
+    >
+      <path
+        fill="currentColor"
+        d={
+          index === 0
+            ? 'M0,80 C320,150 480,20 720,80 C960,140 1120,30 1440,80 L1440,200 L0,200 Z'
+            : index === 1
+              ? 'M0,100 C240,40 480,140 720,90 C960,40 1200,130 1440,100 L1440,200 L0,200 Z'
+              : 'M0,120 C360,60 720,160 1080,90 C1260,60 1380,120 1440,120 L1440,200 L0,200 Z'
+        }
+      />
+    </motion.svg>
+  )
+}
+
+function TypewriterText({ text, speed = 55 }: { text: string; speed?: number }) {
+  const [displayed, setDisplayed] = useState('')
+  const [done, setDone] = useState(false)
 
   useEffect(() => {
-    document.title = 'AZURA AQUA - IA pour l\'aquaculture du futur'
-  }, [])
-
-  const prefersReducedMotion =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    setDisplayed('')
+    setDone(false)
+    let i = 0
+    const id = setInterval(() => {
+      if (i <= text.length) {
+        setDisplayed(text.slice(0, i))
+        i++
+      } else {
+        setDone(true)
+        clearInterval(id)
+      }
+    }, speed)
+    return () => clearInterval(id)
+  }, [text, speed])
 
   return (
-    <div className="min-h-screen bg-[#0a2540] text-white overflow-x-hidden">
-      {/* Hero */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20">
-        <WaveBackground />
+    <span>
+      {displayed}
+      {!done && <span className={styles.cursor} />}
+    </span>
+  )
+}
 
-        {/* Floating oysters */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {oysters.map((o, i) => (
-            <AnimatedOyster
-              key={i}
-              delay={o.delay}
-              size={o.size}
-              className="text-cyan-400/80"
-              style={{ left: o.x, top: o.y }}
-            />
+function CountUp({ target, duration = 2000, suffix = '' }: { target: number; duration?: number; suffix?: string }) {
+  const [value, setValue] = useState(0)
+  const ref = useRef<HTMLSpanElement>(null)
+  const started = useRef(false)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true
+          const start = performance.now()
+          const animate = (now: number) => {
+            const elapsed = now - start
+            const progress = Math.min(elapsed / duration, 1)
+            const eased = 1 - Math.pow(1 - progress, 3)
+            setValue(Math.round(target * eased))
+            if (progress < 1) requestAnimationFrame(animate)
+          }
+          requestAnimationFrame(animate)
+        }
+      },
+      { threshold: 0.3 },
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [target, duration])
+
+  return (
+    <span ref={ref}>
+      {value}
+      {suffix}
+    </span>
+  )
+}
+
+const STATS = [
+  { value: 108, suffix: '+', label: 'Colonnes analysées' },
+  { value: 4, suffix: '', label: 'Algorithmes ML' },
+  { value: 2, suffix: '', label: 'Pages de données' },
+  { value: 99, suffix: '%', label: 'Couverture anomalies' },
+]
+
+const FEATURES = [
+  {
+    icon: Waves,
+    title: 'BD Estran',
+    desc: 'Primaire & Hors Calibre, taux de recapture, biomasses, anomalies ML temps réel',
+    color: '#00b4d8',
+  },
+  {
+    icon: BarChart3,
+    title: 'Finance',
+    desc: 'YTD vs Budget vs N-1, variances automatiques, commentaires IA intelligents',
+    color: '#22d3a8',
+  },
+  {
+    icon: ShoppingCart,
+    title: 'Achats',
+    desc: 'DA & BC, délais, priorités par score de risque, alertes critiques',
+    color: '#fbbf24',
+  },
+  {
+    icon: Bot,
+    title: 'Copilot IA',
+    desc: 'Chat intelligent avec RAG sur vos données, citations et recommandations',
+    color: '#a78bfa',
+  },
+]
+
+export default function Welcome() {
+  const [heroReady, setHeroReady] = useState(false)
+  const { scrollYProgress } = useScroll()
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0])
+  const heroScale = useTransform(scrollYProgress, [0, 0.25], [1, 0.95])
+
+  useEffect(() => {
+    document.title = 'AZURA AQUA - IA pour l\'aquaculture'
+    const t = setTimeout(() => setHeroReady(true), 300)
+    return () => clearTimeout(t)
+  }, [])
+
+  return (
+    <div className={styles.page}>
+      {/* ---- HERO ---- */}
+      <motion.section className={styles.hero} style={{ opacity: heroOpacity, scale: heroScale }}>
+        <div className={styles.heroBg}>
+          <ParticleField />
+          <div className={styles.gradientOrb1} />
+          <div className={styles.gradientOrb2} />
+          <div className={styles.gridOverlay} />
+          {[0, 1, 2].map((i) => (
+            <WaveLayer key={i} index={i} />
           ))}
         </div>
 
-        <motion.div
-          className="relative z-10 max-w-4xl mx-auto text-center"
-          variants={prefersReducedMotion ? undefined : containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.h1
-            variants={prefersReducedMotion ? undefined : itemVariants}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold font-display mb-6"
-          >
-            <span className="text-white">AZURA </span>
-            <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
-              AQUA
-            </span>
-          </motion.h1>
-
-          <motion.div
-            variants={prefersReducedMotion ? undefined : itemVariants}
-            className="text-xl sm:text-2xl md:text-3xl font-light text-cyan-100 mb-4 min-h-[1.5em]"
-          >
-            {prefersReducedMotion ? (
-              "IA pour l'aquaculture du futur"
-            ) : (
-              <TypewriterHero
-                text="IA pour l'aquaculture du futur"
-                speed={70}
-                className="drop-shadow-[0_0_20px_rgba(6,182,212,0.4)]"
-              />
-            )}
-          </motion.div>
-
-          <motion.p
-            variants={prefersReducedMotion ? undefined : itemVariants}
-            className="text-slate-400 text-base sm:text-lg mb-12 max-w-2xl mx-auto"
-          >
-            Analyse Estran · Finance YTD · TB Achats DA/BC
-          </motion.p>
-
-          <motion.div variants={prefersReducedMotion ? undefined : itemVariants}>
-            <Link to="/">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold text-lg shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-shadow"
-                aria-label="Accéder à la démonstration de la plateforme"
+        <AnimatePresence>
+          {heroReady && (
+            <motion.div
+              className={styles.heroContent}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.div
+                className={styles.badge}
+                initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
               >
-                Découvrir la démo
-              </motion.button>
-            </Link>
-          </motion.div>
-        </motion.div>
+                <Sparkles size={14} />
+                Plateforme IA Aquaculture
+              </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.a
-          href="#features"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          aria-label="Défiler vers les fonctionnalités"
+              <motion.h1
+                className={styles.title}
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              >
+                <span className={styles.titleWhite}>AZURA</span>{' '}
+                <span className={styles.titleAccent}>AQUA</span>
+              </motion.h1>
+
+              <motion.div
+                className={styles.subtitle}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7, duration: 0.6 }}
+              >
+                <TypewriterText text="Intelligence artificielle pour l'aquaculture du futur" speed={40} />
+              </motion.div>
+
+              <motion.p
+                className={styles.subtitleMuted}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.2, duration: 0.5 }}
+              >
+                Analyse Estran · Finance YTD · TB Achats DA/BC · Détection d'anomalies ML
+              </motion.p>
+
+              <motion.div
+                className={styles.heroCta}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
+              >
+                <Link to="/app" className={styles.ctaPrimary}>
+                  <span>Accéder à la plateforme</span>
+                  <ArrowRight size={18} />
+                </Link>
+                <a href="#features" className={styles.ctaSecondary}>
+                  Découvrir
+                  <ChevronDown size={16} />
+                </a>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <motion.div
+          className={styles.scrollIndicator}
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <ChevronDown className="w-8 h-8 text-cyan-400/70" aria-hidden />
-        </motion.a>
-      </section>
+          <ChevronDown size={22} />
+        </motion.div>
+      </motion.section>
 
-      {/* Features */}
-      <section id="features" className="relative py-24 px-6 bg-gradient-to-b from-[#0f172a] to-[#0a2540]">
-        <div className="max-w-6xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-bold text-center mb-4 font-display"
-          >
-            Plateforme IA
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-slate-400 text-center mb-16 max-w-xl mx-auto"
-          >
-            Une solution intégrée pour piloter aquaculture et finances
-          </motion.p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((f, i) => (
-              <FeatureCard
-                key={f.title}
-                icon={f.icon}
-                title={f.title}
-                description={f.description}
-                index={i}
-              />
-            ))}
-          </div>
+      {/* ---- STATS ---- */}
+      <section className={styles.statsSection}>
+        <div className={styles.statsGrid}>
+          {STATS.map((s, i) => (
+            <motion.div
+              key={s.label}
+              className={styles.statCard}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+            >
+              <p className={styles.statValue}>
+                <CountUp target={s.value} suffix={s.suffix} />
+              </p>
+              <p className={styles.statLabel}>{s.label}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative py-24 px-6 bg-[#0a2540]">
+      {/* ---- FEATURES ---- */}
+      <section id="features" className={styles.featuresSection}>
         <motion.div
+          className={styles.sectionHeader}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className={styles.sectionTitle}>
+            Quatre piliers,{' '}
+            <span className={styles.sectionTitleAccent}>une vision</span>
+          </h2>
+          <p className={styles.sectionSubtitle}>
+            Chaque module est alimenté par des algorithmes de machine learning et des modèles IA avancés
+          </p>
+        </motion.div>
+
+        <div className={styles.featuresGrid}>
+          {FEATURES.map((f, i) => {
+            const Icon = f.icon
+            return (
+              <motion.div
+                key={f.title}
+                className={styles.featureCard}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-80px' }}
+                transition={{ delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              >
+                <div
+                  className={styles.featureIconWrap}
+                  style={{ '--feat-color': f.color } as React.CSSProperties}
+                >
+                  <Icon size={28} strokeWidth={1.5} />
+                </div>
+                <div className={styles.featureAccentLine} style={{ background: f.color }} />
+                <h3 className={styles.featureTitle}>{f.title}</h3>
+                <p className={styles.featureDesc}>{f.desc}</p>
+              </motion.div>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* ---- CTA ---- */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaGlow} />
+        <motion.div
+          className={styles.ctaContent}
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-2xl mx-auto text-center"
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 font-display">
-            <span className="bg-gradient-to-r from-cyan-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
-              Prêt à transformer vos données ?
-            </span>
+          <h2 className={styles.ctaTitle}>
+            Prêt à transformer vos données ?
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <input
-              type="email"
-              placeholder="votre@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="px-6 py-3 rounded-xl bg-slate-800/80 border border-cyan-500/30 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
-              aria-label="Adresse email"
-            />
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="px-8 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold"
-            >
-              Commencer
-            </motion.button>
-          </div>
+          <p className={styles.ctaDesc}>
+            Importez vos fichiers Excel, laissez l'IA détecter les anomalies et générer des insights
+          </p>
+          <Link to="/app" className={styles.ctaPrimaryLg}>
+            <span>Commencer maintenant</span>
+            <ArrowRight size={20} />
+          </Link>
         </motion.div>
       </section>
+
+      {/* ---- FOOTER ---- */}
+      <footer className={styles.footer}>
+        <p>AZURA AQUA &copy; {new Date().getFullYear()} &mdash; Plateforme IA pour l'aquaculture</p>
+      </footer>
     </div>
   )
 }

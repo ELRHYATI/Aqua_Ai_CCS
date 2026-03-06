@@ -17,9 +17,12 @@ from app.services.excel_sync_service import seed_from_excel
 
 async def main():
     project_root = Path(__file__).resolve().parent.parent.parent
-    excel_path = project_root / "REFLEXION.xlsx"
+    # Prefer data/Exemple BDD estran.xlsx (Primaire + Hors calibre), fallback to REFLEXION.xlsx
+    excel_path = project_root / "data" / "Exemple BDD estran.xlsx"
     if not excel_path.exists():
-        print(f"REFLEXION.xlsx not found at {excel_path}")
+        excel_path = project_root / "REFLEXION.xlsx"
+    if not excel_path.exists():
+        print(f"No Excel found. Try: data/Exemple BDD estran.xlsx or REFLEXION.xlsx in project root")
         return
 
     async with engine.begin() as conn:

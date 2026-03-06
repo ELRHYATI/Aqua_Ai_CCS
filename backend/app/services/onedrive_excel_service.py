@@ -21,11 +21,14 @@ def _get_local_excel_path() -> Path | None:
             return p if p.exists() else None
         # Relative to backend/cwd
         return p.resolve() if p.resolve().exists() else None
-    # Default: REFLEXION.xlsx in project root (parent of backend)
+    # Default: data/Exemple BDD estran.xlsx or REFLEXION.xlsx
+    project_root = Path(__file__).resolve().parent.parent.parent
     candidates = [
-        Path(__file__).resolve().parent.parent.parent / "REFLEXION.xlsx",
+        project_root / "data" / "Exemple BDD estran.xlsx",
+        project_root / "REFLEXION.xlsx",
+        Path.cwd() / "data" / "Exemple BDD estran.xlsx",
         Path.cwd() / "REFLEXION.xlsx",
-        Path(__file__).resolve().parent.parent.parent.parent / "REFLEXION.xlsx",
+        project_root.parent / "REFLEXION.xlsx",
     ]
     for p in candidates:
         if p.exists():
