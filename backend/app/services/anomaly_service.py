@@ -170,8 +170,58 @@ def get_severity(score: float, method: str = "isolation_forest") -> str:
         return "low"
 
 
-def _build_estran_explanation(row: dict, severity: str) -> str:
+def _compute_reason(row: dict, df: pd.DataFrame, domain: str) -> str:
+    """Add human-readable reason for anomaly (e.g. 'Value is 3.2x above median')."""
+    if df.empty or len(df) < 2:
+        return ""
+    reasons = []
+    cols = ["biomasse_gr", "taux_recapture", "quantite_brute_recoltee_kg"] if domain == "estran" else \
+           ["var_b_r", "var_pct", "ytd"] if domain == "finance" else ["amount", "delay_days"]
+    for col in cols:
+        if col not in df.columns or col not in row:
+            continue
+        val = row.get(col)
+        if val is None or (isinstance(val, float) and math.isnan(val)):
+            continue
+        try:
+            v = float(val)
+        except (TypeError, ValueError):
+            continue
+        col_vals = df[col].dropna()
+        if len(col_vals) < 2:
+            continue
+        median = float(col_vals.median())
+        mean = float(col_vals.mean())
+        std = float(col_vals.std())
+        if std == 0:
+            continue
+        z = (v - mean) / std
+        if abs(z) < 1.5:
+            continue
+        if domain == "estran":
+            if col == "biomasse_gr" and median > 0:
+                ratio = v / median
+                if ratio > 1.5:
+                    reasons.append(f"Biomasse {ratio:.1f}x au-dessus de la médiane")
+                elif ratio < 0.5:
+                    reasons.append(f"Biomasse {1/ratio:.1f}x en-dessous de la médiane")
+            elif col == "taux_recapture":
+                reasons.append(f"Taux recapture {abs(z):.1f}σ de la moyenne")
+        elif domain == "finance":
+            if abs(z) >= 2:
+                reasons.append(f"{col} à {abs(z):.1f}σ de la moyenne")
+        else:
+            if col == "delay_days" and v > 0:
+                med_d = float(col_vals.median())
+                if med_d > 0 and v / med_d > 1.5:
+                    reasons.append(f"Retard {v/med_d:.1f}x la médiane")
+    return " ; ".join(reasons[:2]) if reasons else "Écart statistique significatif détecté"
+
+
+def _build_estran_explanation(row: dict, severity: str, reason: str = "") -> str:
     parts = [f"Sévérité: {severity}"]
+    if reason:
+        parts.append(reason)
     if row.get("quantite_brute_recoltee_kg") is not None:
         parts.append(f"quantité récoltée: {row['quantite_brute_recoltee_kg']} kg")
     if row.get("biomasse_gr") is not None:
@@ -189,8 +239,10 @@ def _build_estran_explanation(row: dict, severity: str) -> str:
     return " | ".join(parts)
 
 
-def _build_finance_explanation(row: dict, severity: str) -> str:
+def _build_finance_explanation(row: dict, severity: str, reason: str = "") -> str:
     parts = [f"Sévérité: {severity}"]
+    if reason:
+        parts.append(reason)
     if row.get("code"):
         parts.append(f"code: {row['code']}")
     if row.get("label"):
@@ -202,8 +254,10 @@ def _build_finance_explanation(row: dict, severity: str) -> str:
     return " | ".join(parts)
 
 
-def _build_achat_explanation(row: dict, severity: str) -> str:
+def _build_achat_explanation(row: dict, severity: str, reason: str = "") -> str:
     parts = [f"Sévérité: {severity}"]
+    if reason:
+        parts.append(reason)
     if row.get("reference"):
         parts.append(f"ref: {row['reference']}")
     if row.get("amount") is not None:
@@ -251,8 +305,16 @@ def run_anomaly_detection(
     df_out["severity"] = df_out["anomaly_score"].apply(
         lambda s: get_severity(float(s), used_method)
     )
-    df_out["explanation"] = df_out.apply(
-        lambda r: build_explanation(r.to_dict(), r["severity"]),
+
+    def _make_explanation(r):
+        d = r.to_dict()
+        sev = r["severity"]
+        reason = _compute_reason(d, df_out, domain) if r["is_anomaly"] else ""
+        return build_explanation(d, sev, reason)
+
+    df_out["explanation"] = df_out.apply(_make_explanation, axis=1)
+    df_out["reason"] = df_out.apply(
+        lambda r: _compute_reason(r.to_dict(), df_out, domain) if r["is_anomaly"] else "",
         axis=1,
     )
     return df_out

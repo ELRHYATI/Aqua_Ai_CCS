@@ -1,11 +1,13 @@
 """
 Azure OpenAI "On Your Data" - Copilot-like experience.
 Connects to Azure AI Search indexed with Excel / Power BI data.
-Full citations and RAG. Stubbed when Azure Search not configured.
+When Azure not configured: uses answer_from_data for real DB/Excel answers.
 """
 
 from dataclasses import dataclass
 from typing import Optional
+
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import get_settings
 
@@ -160,19 +162,55 @@ async def _stub_response(user_message: str) -> CopilotResponse:
     )
 
 
-async def chat_with_data(user_message: str) -> CopilotResponse:
+async def chat_with_data(user_message: str, db: Optional[AsyncSession] = None) -> CopilotResponse:
     """
-    Chat using Azure OpenAI "On Your Data" when configured,
-    otherwise return stub response with placeholder citations.
+    Chat: first tries answer_from_data (DB/Excel) for analytical questions.
+    If USE_LLM_TOOLS=true and Azure configured: uses LLM with function calling for complex questions.
+    Otherwise: Azure "On Your Data" if configured, else stub.
     """
-    data_sources = _build_data_sources()
+    s = get_settings()
+    use_llm_tools = getattr(s, "use_llm_tools", False)
 
+    # Try real data first (keyword matching - fast, deterministic)
+    if db:
+        from app.services.chat_data_service import answer_from_data
+
+        data_resp = await answer_from_data(db, user_message)
+        if data_resp.matched:
+            return CopilotResponse(reply=data_resp.reply, citations=data_resp.citations)
+
+    # LLM + Tools: when enabled and Azure configured, use function calling for remaining questions
+    if use_llm_tools and db and s.azure_openai_endpoint and s.azure_openai_api_key:
+        try:
+            from app.services.llm_tools_service import chat_with_llm_tools
+
+            llm_resp = await chat_with_llm_tools(user_message, db)
+            return CopilotResponse(reply=llm_resp.reply, citations=llm_resp.citations)
+        except Exception as e:
+            # Fall through to Azure On Your Data or stub
+            pass
+
+    data_sources = _build_data_sources()
     if data_sources:
         try:
             return await _call_azure_openai_on_your_data(user_message, data_sources)
         except Exception as e:
             return CopilotResponse(
-                reply=f"Erreur Azure OpenAI On Your Data: {e}. Mode stub activé.",
+                reply=f"Erreur Azure OpenAI On Your Data: {e}. Mode données locales activé.",
+                citations=[],
+            )
+
+    # Ollama (local LLM) when enabled and Azure not configured
+    ollama_enabled = getattr(s, "ollama_enabled", False)
+    if ollama_enabled:
+        try:
+            from app.services.ollama_service import call_ollama
+
+            reply = await call_ollama(user_message)
+            return CopilotResponse(reply=reply, citations=["Ollama (mistral)"])
+        except Exception as e:
+            return CopilotResponse(
+                reply=f"Erreur Ollama : {e}. Utilisation du mode secours.",
                 citations=[],
             )
 

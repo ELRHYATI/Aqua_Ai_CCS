@@ -2,11 +2,14 @@
 
 from typing import Optional
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, BackgroundTasks, Depends, Query, Request
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.auth import get_current_user, require_can_view_estran
 from app.core.database import get_db
+from app.models.user import User
+from app.services.audit_service import log
 from app.models.estran import EstranRecord
 from app.schemas.estran import (
     EstranRecordResponse,
@@ -14,7 +17,16 @@ from app.schemas.estran import (
     EstranSheetInfo,
     EstranStatsResponse,
 )
+from app.schemas.estran_kpi import (
+    EstranKpiResponse,
+    EstranDashboardKpiResponse,
+    ChartDataPoint,
+    StockAgeDataPoint,
+    EstranFiltersResponse,
+)
 from app.services.anomaly_service import run_anomaly_detection
+from app.services import estran_kpi_service
+from app.services import estran_service
 
 import pandas as pd
 
@@ -22,8 +34,16 @@ router = APIRouter(prefix="/estran", tags=["estran"])
 
 
 @router.get("/sheets", response_model=list[EstranSheetInfo])
-async def get_estran_sheets(db: AsyncSession = Depends(get_db)):
+async def get_estran_sheets(
+    db: AsyncSession = Depends(get_db),
+    request: Request = None,
+    background_tasks: BackgroundTasks = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
     """List available sheets (Primaire, Hors calibre) with record counts."""
+    require_can_view_estran(current_user)
+    if background_tasks and request:
+        background_tasks.add_task(log, str(current_user.id) if current_user else None, "page_view", "estran", {"page_url": str(request.url)}, request, "success")
     q = (
         select(EstranRecord.sheet_name, func.count(EstranRecord.id).label("count"))
         .where(EstranRecord.sheet_name.isnot(None))
@@ -47,11 +67,17 @@ async def get_estran_sheets(db: AsyncSession = Depends(get_db)):
 async def get_estran_stats(
     db: AsyncSession = Depends(get_db),
     sheet: Optional[str] = Query(None, description="Filter by sheet: Primaire, Hors calibre, or Tous"),
+    request: Request = None,
+    background_tasks: BackgroundTasks = None,
+    current_user: Optional[User] = Depends(get_current_user),
 ):
     """
     Moyenne taux recapture by Type récolte (Echantillonnage, Transfert) - Primaire only.
     Hors calibre does not have these stats.
     """
+    require_can_view_estran(current_user)
+    if background_tasks and request:
+        background_tasks.add_task(log, str(current_user.id) if current_user else None, "page_view", "estran", {"page_url": str(request.url)}, request, "success")
     # Avg taux recapture for Transfert/Echantillonnage: ONLY from Primaire page
     q_prim = select(EstranRecord).where(
         EstranRecord.sheet_name == "Primaire",
@@ -91,8 +117,14 @@ async def get_estran_records(
     year: Optional[int] = None,
     parc_semi: Optional[str] = None,
     sheet: Optional[str] = Query(None, description="Filter by sheet: Primaire or Hors calibre"),
+    request: Request = None,
+    background_tasks: BackgroundTasks = None,
+    current_user: Optional[User] = Depends(get_current_user),
 ):
     """Paginated estran records."""
+    require_can_view_estran(current_user)
+    if background_tasks and request:
+        background_tasks.add_task(log, str(current_user.id) if current_user else None, "page_view", "estran", {"page_url": str(request.url)}, request, "success")
     q = select(EstranRecord)
     if year is not None:
         q = q.where(EstranRecord.year == year)
@@ -112,11 +144,17 @@ async def get_estran_anomalies(
     year: Optional[int] = None,
     sheet: Optional[str] = Query(None, description="Filter by sheet: Primaire or Hors calibre"),
     method: str = Query("isolation_forest", description="isolation_forest | lof | one_class_svm | zscore"),
+    request: Request = None,
+    background_tasks: BackgroundTasks = None,
+    current_user: Optional[User] = Depends(get_current_user),
 ):
     """
     Run ML anomaly detection on estran records and return flagged rows.
     Algorithms: IsolationForest, LOF, One-Class SVM, or Z-Score.
     """
+    require_can_view_estran(current_user)
+    if background_tasks and request:
+        background_tasks.add_task(log, str(current_user.id) if current_user else None, "page_view", "estran", {"page_url": str(request.url)}, request, "success")
     q = (
         select(EstranRecord)
         .order_by(EstranRecord.id.desc())
@@ -168,37 +206,139 @@ async def get_estran_anomalies(
     df_out = run_anomaly_detection(df, method=method, domain="estran")
     flagged = df_out[df_out["is_anomaly"] == True]
 
+    def _safe(val, to_type=str):
+        """Convert pandas nan to None; optionally cast to int/float."""
+        if pd.isna(val) or val is None:
+            return None
+        if to_type == int:
+            try:
+                return int(float(val))
+            except (TypeError, ValueError):
+                return None
+        if to_type == float:
+            try:
+                f = float(val)
+                return f if abs(f) != float("inf") else None
+            except (TypeError, ValueError):
+                return None
+        return str(val) if not isinstance(val, str) else val
+
     result_list = []
     for _, row in flagged.iterrows():
         result_list.append(
             EstranAnomalyRecord(
                 id=int(row["id"]),
-                parc_semi=row.get("parc_semi"),
-                parc_an=row.get("parc_an"),
-                ligne_num=int(row["ligne_num"]) if pd.notna(row.get("ligne_num")) else None,
-                phase=row.get("phase"),
-                date_semis=row.get("date_semis"),
-                date_recolte=row.get("date_recolte"),
-                quantite_brute_recoltee_kg=row.get("quantite_brute_recoltee_kg"),
-                biomasse_gr=row.get("biomasse_gr"),
-                biomasse_vendable_kg=row.get("biomasse_vendable_kg"),
-                statut=row.get("statut"),
-                year=int(row["year"]) if pd.notna(row.get("year")) else None,
-                month=int(row["month"]) if pd.notna(row.get("month")) else None,
-                sheet_name=row.get("sheet_name"),
-                type_recolte=row.get("type_recolte"),
-                taux_recapture=(
-                    float(row["taux_recapture"])
-                    if "taux_recapture" in row and pd.notna(row.get("taux_recapture"))
-                    else None
-                ),
-                objectif_recolte=row.get("objectif_recolte"),
+                parc_semi=_safe(row.get("parc_semi")),
+                parc_an=_safe(row.get("parc_an")),
+                ligne_num=_safe(row.get("ligne_num"), int),
+                phase=_safe(row.get("phase")),
+                date_semis=row.get("date_semis") if pd.notna(row.get("date_semis")) else None,
+                date_recolte=row.get("date_recolte") if pd.notna(row.get("date_recolte")) else None,
+                quantite_brute_recoltee_kg=_safe(row.get("quantite_brute_recoltee_kg"), float),
+                biomasse_gr=_safe(row.get("biomasse_gr"), float),
+                biomasse_vendable_kg=_safe(row.get("biomasse_vendable_kg"), float),
+                statut=_safe(row.get("statut")),
+                year=_safe(row.get("year"), int),
+                month=_safe(row.get("month"), int),
+                sheet_name=_safe(row.get("sheet_name")),
+                type_recolte=_safe(row.get("type_recolte")),
+                taux_recapture=_safe(row.get("taux_recapture"), float),
+                objectif_recolte=_safe(row.get("objectif_recolte")),
                 created_at=row.get("created_at"),
                 updated_at=row.get("updated_at"),
                 anomaly_score=float(row["anomaly_score"]),
                 severity=str(row["severity"]),
                 is_anomaly=True,
                 explanation=str(row["explanation"]) if "explanation" in row and pd.notna(row.get("explanation")) else None,
+                reason=str(row["reason"]) if "reason" in row and pd.notna(row.get("reason")) and row["reason"] else None,
             )
         )
     return result_list
+
+
+@router.get("/kpi", response_model=EstranDashboardKpiResponse)
+async def get_estran_kpis_endpoint(
+    db: AsyncSession = Depends(get_db),
+    parc: Optional[str] = None,
+    annee: Optional[int] = None,
+    base: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    """6 KPI indicators (rendement, age, stock) for Primaire + HC with trend vs previous year."""
+    require_can_view_estran(current_user)
+    return await estran_kpi_service.get_estran_kpis(db, parc, annee, base)
+
+
+@router.get("/kpi/production", response_model=EstranKpiResponse)
+async def get_estran_kpis_production_endpoint(
+    db: AsyncSession = Depends(get_db),
+    base: Optional[str] = Query(None, description="primaire | hc"),
+    year: Optional[int] = Query(None, ge=2000, le=2100),
+    month: Optional[int] = Query(None, ge=1, le=12),
+    parc: Optional[str] = None,
+    residence: Optional[str] = None,
+    origine: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    """Production KPIs from KPI-Prod-par-l-IA.xlsx (9 detailed indicators)."""
+    require_can_view_estran(current_user)
+    return await estran_service.get_estran_kpis(
+        db, base=base, year=year, month=month,
+        parc=parc, residence=residence, origine=origine,
+    )
+
+
+@router.get("/charts/rendement", response_model=list[ChartDataPoint])
+async def get_estran_charts_rendement(
+    db: AsyncSession = Depends(get_db),
+    parc: Optional[str] = None,
+    annee: Optional[int] = None,
+    base: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_kpi_service.get_chart_rendement(db, parc, annee, base)
+
+
+@router.get("/charts/age-recolte", response_model=list[ChartDataPoint])
+async def get_estran_charts_age_recolte(
+    db: AsyncSession = Depends(get_db),
+    parc: Optional[str] = None,
+    annee: Optional[int] = None,
+    base: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_kpi_service.get_chart_age_recolte(db, parc, annee, base)
+
+
+@router.get("/charts/stock-lignes", response_model=list[ChartDataPoint])
+async def get_estran_charts_stock_lignes(
+    db: AsyncSession = Depends(get_db),
+    parc: Optional[str] = None,
+    annee: Optional[int] = None,
+    base: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_kpi_service.get_chart_stock_lignes(db, parc, annee, base)
+
+
+@router.get("/charts/stock-age-sejour", response_model=list[StockAgeDataPoint])
+async def get_estran_charts_stock_age_sejour(
+    db: AsyncSession = Depends(get_db),
+    parc: Optional[str] = None,
+    base: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_kpi_service.get_chart_stock_age_sejour(db, parc, base)
+
+
+@router.get("/filters", response_model=EstranFiltersResponse)
+async def get_estran_filters_endpoint(
+    db: AsyncSession = Depends(get_db),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_service.get_estran_filters(db)

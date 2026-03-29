@@ -55,3 +55,4 @@ class EstranAnomalyRecord(EstranRecordResponse):
     severity: str  # low, medium, high
     is_anomaly: bool
     explanation: Optional[str] = None
+    reason: Optional[str] = None  # Human-readable reason (e.g. "Value is 3.2x above median")

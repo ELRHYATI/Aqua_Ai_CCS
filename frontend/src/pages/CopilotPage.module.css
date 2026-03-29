@@ -1,28 +1,66 @@
+/* ── CopilotPage  ─  Deep Aqua Ocean Theme ── */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtleGlow {
+  0%, 100% {
+    box-shadow: 0 0 24px rgba(0, 180, 216, 0.04);
+  }
+  50% {
+    box-shadow: 0 0 36px rgba(0, 180, 216, 0.1);
+  }
+}
+
+/* ── Page ── */
 .page {
   max-width: 900px;
+  animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .page h1 {
   font-family: var(--font-display);
   font-size: 1.65rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1.75rem;
   letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #00b4d8, #90e0ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+/* ── Hint box (glassmorphism) ── */
 .hint {
   color: var(--color-text-muted);
   font-size: 0.95rem;
   max-width: 520px;
   line-height: 1.7;
   padding: 1.75rem 2rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-lg);
-  border-left: 4px solid var(--color-accent);
-  box-shadow: var(--shadow);
+  background: rgba(17, 25, 32, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 180, 216, 0.08);
+  border-radius: 18px;
+  border-left: 4px solid #00b4d8;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 0 48px rgba(0, 180, 216, 0.04);
+  animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both,
+             subtleGlow 4s ease-in-out infinite 1s;
 }
 
+/* ── Chat full area ── */
 .chatFull {
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

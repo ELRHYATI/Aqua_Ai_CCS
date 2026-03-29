@@ -1,13 +1,19 @@
 """Dashboard analytics - aggregated data for charts."""
 
-from fastapi import APIRouter, Depends
-from sqlalchemy import select, func
+from datetime import datetime
+from typing import Optional
+from uuid import UUID
+
+from fastapi import APIRouter, Depends, Query
+from sqlalchemy import select, func, text
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.auth import get_current_user
 from app.core.database import get_db
 from app.models.estran import EstranRecord
 from app.models.finance import FinanceLine
 from app.models.purchase import PurchaseDA, PurchaseBC
+from app.models.user import User
 
 router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 
@@ -120,4 +126,81 @@ async def get_dashboard_stats(db: AsyncSession = Depends(get_db)):
         {"level": k, "count": v} for k, v in risk_buckets.items()
     ]
 
+    # Enriched fields for dashboard redesign
+    stock_q = await db.execute(
+        select(func.count()).select_from(EstranRecord).where(EstranRecord.date_recolte.is_(None))
+    )
+    estran_stock_total = stock_q.scalar() or 0
+
+    budget_val = stats["finance"]["budget_vs_real"].get("budget", 0)
+    ytd_val = stats["finance"]["budget_vs_real"].get("ytd", 0)
+    finance_variance_pct = round(((ytd_val - budget_val) / budget_val) * 100, 2) if budget_val else 0.0
+
+    da_pending = da_count
+    da_urgent = len([r for r in da_rows if (r.delay_days or 0) > 5 or r.critical_flag])
+
+    last_sync_q = await db.execute(text(
+        "SELECT MAX(timestamp) FROM audit_logs WHERE action = 'file_upload' OR action = 'sync'"
+    ))
+    last_sync_row = last_sync_q.scalar()
+    last_sync_at = last_sync_row.isoformat() if last_sync_row else None
+
+    stats["estran_stock_total"] = estran_stock_total
+    stats["finance_variance_pct"] = finance_variance_pct
+    stats["achat_da_pending"] = da_pending
+    stats["achat_da_urgent"] = da_urgent
+    stats["anomalies_estran"] = stats["estran"].get("anomaly_hint", 0)
+    stats["anomalies_finance"] = len([v for v in (stats["finance"].get("top_variances") or []) if abs(v.get("var_pct", 0)) > 10])
+    stats["last_sync_at"] = last_sync_at
+
     return stats
+
+
+@router.get("/activity/recent")
+async def get_recent_activity(
+    db: AsyncSession = Depends(get_db),
+    limit: int = Query(10, ge=1, le=50),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    """Last N activity log entries for the current user (not admin-only)."""
+    user_id = str(current_user.id) if current_user else None
+    # Only audit_logs columns here — full_name lives on users (avoids UndefinedColumnError).
+    q = text("""
+        SELECT id, timestamp, user_id, action, module, status, details
+        FROM audit_logs
+        WHERE (:uid IS NULL OR user_id = :uid)
+        ORDER BY timestamp DESC
+        LIMIT :lim
+    """)
+    result = await db.execute(q, {"uid": user_id, "lim": limit})
+    rows = result.mappings().all()
+
+    user_uuids: set[UUID] = set()
+    for r in rows:
+        raw = r.get("user_id")
+        if not raw:
+            continue
+        try:
+            user_uuids.add(UUID(str(raw)))
+        except (ValueError, TypeError):
+            pass
+
+    name_by_id: dict[str, Optional[str]] = {}
+    if user_uuids:
+        ru = await db.execute(select(User.id, User.full_name).where(User.id.in_(user_uuids)))
+        for uid, fname in ru.all():
+            name_by_id[str(uid)] = fname
+
+    return [
+        {
+            "id": r["id"],
+            "timestamp": r["timestamp"].isoformat() if r["timestamp"] else None,
+            "user_id": r["user_id"],
+            "full_name": name_by_id.get(str(r["user_id"])) if r.get("user_id") else None,
+            "action": r["action"],
+            "module": r["module"],
+            "status": r["status"],
+            "details": r["details"],
+        }
+        for r in rows
+    ]

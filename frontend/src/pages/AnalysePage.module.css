@@ -1,0 +1,422 @@
+/* ═══════════════════════════════════════════════════════
+   AZURA AQUA — Analyse Page · Deep Ocean Theme
+   ═══════════════════════════════════════════════════════ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: calc(100vh - 120px);
+}
+
+.page h1 {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #00b4d8, #90e0ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 0.4s ease both;
+}
+
+/* ── Left panel ── */
+.label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeInUp 0.4s ease 0.05s both;
+}
+
+.quickActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: #00b4d8;
+}
+
+.textarea {
+  min-height: 140px;
+  padding: 1rem 1.25rem;
+  background: rgba(17, 25, 32, 0.8);
+  border: 1px solid rgba(0, 180, 216, 0.15);
+  border-radius: 12px;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: rgba(0, 180, 216, 0.4);
+  box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.1);
+}
+
+.quickBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.quickBtn {
+  padding: 0.5rem 0.9rem;
+  font-size: 0.8rem;
+  color: rgba(0, 180, 216, 0.95);
+  background: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quickBtn:hover {
+  background: rgba(0, 180, 216, 0.18);
+  border-color: rgba(0, 180, 216, 0.4);
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.checkRow input {
+  width: 18px;
+  height: 18px;
+  accent-color: #00b4d8;
+}
+
+.submitBtn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4d8, #0096c7);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.15s;
+}
+
+.submitBtn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Results section ── */
+.resultsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* ── Right panel ── */
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeInUp 0.4s ease 0.1s both;
+}
+
+.result,
+.resultCard {
+  flex: 1;
+  padding: 1.5rem 1.75rem;
+  background: rgba(17, 25, 32, 0.7);
+  border: 1px solid rgba(0, 180, 216, 0.12);
+  border-radius: 16px;
+  min-height: 280px;
+}
+
+.placeholder,
+.resultPlaceholder {
+  color: rgba(148, 163, 184, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.resultContent {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(220, 235, 250, 0.9);
+  white-space: pre-wrap;
+}
+
+.resultContent :global(h2),
+.resultContent :global(h3) {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: rgba(0, 180, 216, 0.95);
+}
+
+.resultContent :global(h2) { font-size: 1.1rem; }
+.resultContent :global(h3) { font-size: 1rem; }
+
+.resultContent :global(ul) {
+  margin: 0.5rem 0 0 1.25rem;
+}
+
+.resultContent :global(li) {
+  margin-bottom: 0.25rem;
+}
+
+.resultContent :global(strong) {
+  color: rgba(0, 180, 216, 0.9);
+}
+
+.sources,
+.sourcesRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sourcesLabel {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.chip,
+.sourceChip {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.12);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 100px;
+}
+
+.pdfSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pdfBtn {
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4d8, #0096c7);
+  border: 1px solid rgba(0, 180, 216, 0.4);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.pdfBtn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.25);
+}
+
+.pdfBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.history,
+.downloadHistory {
+  margin-top: 24rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(17, 25, 32, 0.6);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 180, 216, 0.12);
+}
+
+.downloadHistory h3,
+.history h3,
+.downloadHistory h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(220, 235, 250, 0.9);
+  margin-bottom: 1rem;
+}
+
+.downloadList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reportRow,
+.downloadItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.65rem 0;
+  font-size: 0.875rem;
+  color: rgba(200, 215, 230, 0.9);
+  border-bottom: 1px solid rgba(0, 180, 216, 0.08);
+}
+
+.reportName {
+  flex: 1;
+  min-width: 140px;
+  font-weight: 500;
+  color: rgba(220, 235, 250, 0.95);
+}
+.reportMeta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.downloadItem:last-child,
+.reportRow:last-child {
+  border-bottom: none;
+}
+
+.redownloadBtn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  color: #00b4d8;
+  background: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.redownloadBtn:hover {
+  background: rgba(0, 180, 216, 0.2);
+}
+
+.downloadLink {
+  color: #00b4d8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.downloadLink:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.loadingDots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.loadingDots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.8);
+  animation: loadingBounce 1.2s ease-in-out infinite both;
+}
+
+.loadingDots span:nth-child(1) { animation-delay: 0s; }
+.loadingDots span:nth-child(2) { animation-delay: 0.15s; }
+.loadingDots span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes loadingBounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1.1); opacity: 1; }
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 180, 216, 0.2);
+  border-top-color: #00b4d8;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 0.9rem;
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 12px;
+  z-index: 1000;
+  animation: fadeInUp 0.3s ease;
+}
+
+.toastError {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}

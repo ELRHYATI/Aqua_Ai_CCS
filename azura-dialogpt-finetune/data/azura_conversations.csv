@@ -1,0 +1,1001 @@
+prompt,response
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1551 kg. Taux de recapture : 53.3%.
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 1602 kg. Taux de recapture : 42.7%.
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 1406 kg. Taux de recapture : 39.5%.
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 42.9% pour les opérations d'Transfert.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 14 lignes. Taux de recapture moyen : 30.4%. Biomasse totale : 1352 kg."
+Achats pour la catégorie PLOMBERIE ?,"Catégorie PLOMBERIE : 42 lignes, valeur 217 055 DH. Fournisseur principal : AGUACONCEPT."
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 19 lignes. Taux de recapture moyen : 87.3%. Biomasse totale : 1912 kg."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Combien de DA sont en cours ?,Il y a 53 DA en cours dont 30 sans commande associée. Valeur totale : 154 777 DH.
+Évolution mensuelle des achats ?,"Dernier mois : 25 DA créées, 38 BC créées. Valeur : 348 493 DH. Tendance : baisse."
+Quelles sont les données du parc P6 ?,Le parc P6 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1283 kg. Taux de recapture : 20.5%.
+Résumé YTD Finance,"YTD : Budget total 351 993 DH, Réalisé 334 340 DH. Variance globale : -5.6%. Principaux drivers : Investissements, Main d'oeuvre directe."
+Fournisseur ACRAPLAST ?,"ACRAPLAST : 13 commandes, valeur totale 103 423 DH. Catégories : CO2 INTRANT, STRUCTURE MÉTALLIQUE."
+Budget vs Réalisé pour Résultat net,Budget : 413 218 DH. Réalisé : 259 823 DH. Écart : -18.8%. Défavorable.
+Évolution mensuelle des achats ?,"Dernier mois : 20 DA créées, 54 BC créées. Valeur : 340 897 DH. Tendance : hausse."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Combien de DA sont en cours ?,Il y a 26 DA en cours dont 28 sans commande associée. Valeur totale : 116 853 DH.
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Compare Primaire et Hors calibre,"Primaire : 24 lignes, taux recapture 87.4%. Hors calibre : 14 lignes, taux recapture 72.8%."
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 67.5% pour les opérations d'Transfert.
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 190 205 DH, Réalisé 162 034 DH. Variance : -19.2%. Tendance vs N-1 : -17.1%."
+Capex vs Opex ?,"Opex : 248 lignes, 71 187 DH. Capex : 146 lignes, 412 028 DH."
+Capex vs Opex ?,"Opex : 244 lignes, 230 299 DH. Capex : 65 lignes, 406 754 DH."
+Accès pour admin et responsable achat,Accès configuré pour admin et responsable achat. Délais ou priorités spécifiques ?
+Quelles sont les anomalies financières ?,2 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -3.0%.
+Compare Primaire et Hors calibre,"Primaire : 11 lignes, taux recapture 40.5%. Hors calibre : 21 lignes, taux recapture 50.1%."
+Capex vs Opex ?,"Opex : 266 lignes, 296 921 DH. Capex : 112 lignes, 413 398 DH."
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Budget vs Réalisé pour Frais généraux,Budget : 280 673 DH. Réalisé : 387 384 DH. Écart : 13.4%. Favorable.
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 219 598 DH, Réalisé 85 065 DH. Variance : 19.0%. Tendance vs N-1 : 18.1%."
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 61.4% pour les opérations d'Échantillonnage.
+Combien de DA sont en cours ?,Il y a 34 DA en cours dont 10 sans commande associée. Valeur totale : 320 416 DH.
+Évolution mensuelle des achats ?,"Dernier mois : 25 DA créées, 56 BC créées. Valeur : 189 071 DH. Tendance : stable."
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 43.5% pour les opérations d'Échantillonnage.
+Budget vs Réalisé pour Résultat net,Budget : 342 403 DH. Réalisé : 490 326 DH. Écart : 22.8%. Défavorable.
+Capex vs Opex ?,"Opex : 419 lignes, 87 122 DH. Capex : 128 lignes, 73 099 DH."
+Quelles sont les anomalies financières ?,6 anomalies détectées via LOF. Poste principal : Cash flow avec variance de -22.6%.
+À bientôt,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Résumé YTD Finance,"YTD : Budget total 277 689 DH, Réalisé 192 487 DH. Variance globale : -6.1%. Principaux drivers : EBITDA, Frais généraux."
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 51.5% pour les opérations d'Échantillonnage.
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Budget vs Réalisé pour Frais généraux,Budget : 106 041 DH. Réalisé : 434 185 DH. Écart : 2.3%. Défavorable.
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : salaires, marge"
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 222 007 DH, Réalisé 58 393 DH. Variance : 16.6%. Tendance vs N-1 : -15.7%."
+Budget vs Réalisé pour Matières premières,Budget : 357 240 DH. Réalisé : 404 203 DH. Écart : -21.8%. Favorable.
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 697 kg. Taux de recapture : 74.9%.
+Fournisseur AGATRAVE ?,"AGATRAVE : 14 commandes, valeur totale 184 641 DH. Catégories : CO2 INTRANT, INFORMATIQUE."
+Budget vs Réalisé pour Frais généraux,Budget : 27 620 DH. Réalisé : 52 632 DH. Écart : -5.2%. Défavorable.
+Statut des bons de commande ?,BC en cours : 31. BC livrées : 187. Statut principal : En cours de préparation.
+Compare Primaire et Hors calibre,"Primaire : 36 lignes, taux recapture 64.7%. Hors calibre : 21 lignes, taux recapture 27.6%."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 436 kg. Taux de recapture : 81.4%.
+Bye,À bientôt ! L'assistant reste disponible.
+Résumé YTD Finance,"YTD : Budget total 402 638 DH, Réalisé 67 750 DH. Variance globale : -4.0%. Principaux drivers : Chiffre d'affaires, Matières premières."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 33 lignes. Taux de recapture moyen : 25.6%. Biomasse totale : 281 kg."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Fournisseur AGA IKHWAN ?,"AGA IKHWAN : 20 commandes, valeur totale 267 909 DH. Catégories : STRUCTURE MÉTALLIQUE, INFORMATIQUE."
+Résumé YTD Finance,"YTD : Budget total 403 363 DH, Réalisé 214 761 DH. Variance globale : 19.4%. Principaux drivers : Matières premières, Main d'oeuvre directe."
+Achats pour la catégorie PRESTATION ?,"Catégorie PRESTATION : 71 lignes, valeur 253 292 DH. Fournisseur principal : ACRAPLAST."
+Capex vs Opex ?,"Opex : 431 lignes, 39 692 DH. Capex : 131 lignes, 416 698 DH."
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+KPI de SOUFIANE ELKAFRAOUI ?,SOUFIANE ELKAFRAOUI a créé 11 DA. BC associées : 36. Taux de transformation DA→BC : 62%.
+Valider la configuration,Configuration validée pour le module Estran. Les paramètres sont enregistrés.
+Y a-t-il des anomalies sur le parc P8 ?,"Oui, 1 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1460 kg. Vérifiez les lignes en zone Sud 1."
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Quelles sont les anomalies financières ?,3 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -2.0%.
+Quelles sont les données du parc P7 ?,Le parc P7 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 927 kg. Taux de recapture : 34.7%.
+Statut des bons de commande ?,BC en cours : 34. BC livrées : 58. Statut principal : En cours de préparation.
+KPI de MAMOUN OUDGHIRI ?,MAMOUN OUDGHIRI a créé 8 DA. BC associées : 3. Taux de transformation DA→BC : 70%.
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 27 DA. BC associées : 6. Taux de transformation DA→BC : 66%.
+Compare Primaire et Hors calibre,"Primaire : 36 lignes, taux recapture 66.1%. Hors calibre : 18 lignes, taux recapture 20.6%."
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1233 kg. Taux de recapture : 49.9%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 1841 kg. Taux de recapture : 52.5%.
+Au revoir,À bientôt ! L'assistant reste disponible.
+Quel est le statut du poste Résultat net ?,"Poste RN (Résultat net) : Budget 36 582 DH, Réalisé 74 483 DH. Variance : 14.5%. Tendance vs N-1 : 28.3%."
+Achats pour la catégorie INFORMATIQUE ?,"Catégorie INFORMATIQUE : 69 lignes, valeur 79 133 DH. Fournisseur principal : ACRAPLAST."
+Valider la configuration,Configuration validée pour le module Estran. Les paramètres sont enregistrés.
+Statut des bons de commande ?,BC en cours : 65. BC livrées : 93. Statut principal : Envoyé.
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Budget vs Réalisé pour Résultat net,Budget : 429 165 DH. Réalisé : 181 049 DH. Écart : 27.3%. Favorable.
+Statut des bons de commande ?,BC en cours : 93. BC livrées : 131. Statut principal : En révision.
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 49 096 DH, Réalisé 338 803 DH. Variance : 10.2%. Tendance vs N-1 : 0.5%."
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -21.1% vs budget. Le principal driver est « Frais généraux ». Recommandation : surveiller les postes à forte déviation.
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 31 lignes. Taux de recapture moyen : 78.4%. Biomasse totale : 1167 kg."
+Compare Primaire et Hors calibre,"Primaire : 27 lignes, taux recapture 43.0%. Hors calibre : 29 lignes, taux recapture 35.5%."
+Quelles sont les anomalies financières ?,1 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -12.6%.
+Statut des bons de commande ?,BC en cours : 69. BC livrées : 112. Statut principal : Confirmation reçue.
+Y a-t-il des anomalies sur le parc P7-ext ?,"Oui, 5 anomalies détectées (Mineure) via LOF. Biomasse écart : 1080 kg. Vérifiez les lignes en zone Sud 1."
+Au revoir,Bonne journée !
+Quelles sont les anomalies financières ?,7 anomalies détectées via Isolation Forest. Poste principal : Chiffre d'affaires avec variance de -27.7%.
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 46.6% pour les opérations d'Échantillonnage.
+Achats pour la catégorie MATÉRIEL D'USURE ?,"Catégorie MATÉRIEL D'USURE : 18 lignes, valeur 5 630 DH. Fournisseur principal : AGATRAVE."
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Capex vs Opex ?,"Opex : 274 lignes, 373 075 DH. Capex : 91 lignes, 434 463 DH."
+Bye,À bientôt ! L'assistant reste disponible.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 48 lignes. Taux de recapture moyen : 77.5%. Biomasse totale : 1380 kg."
+Statut des bons de commande ?,BC en cours : 68. BC livrées : 60. Statut principal : Document lié créé.
+Combien de DA sont en cours ?,Il y a 68 DA en cours dont 16 sans commande associée. Valeur totale : 81 428 DH.
+Quel est le taux de recapture du parc P5 ?,Le taux de recapture moyen du parc P5 est de 34.0% pour les opérations d'Échantillonnage.
+Quel est le taux de recapture du parc P7 ?,Le taux de recapture moyen du parc P7 est de 43.6% pour les opérations d'Transfert.
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 481 363 DH, Réalisé 148 417 DH. Variance : -6.8%. Tendance vs N-1 : 16.5%."
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, conditions paiement"
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 976 kg. Taux de recapture : 20.2%.
+Au revoir,Bonne journée !
+Bye,À bientôt ! L'assistant reste disponible.
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 48.5% pour les opérations d'Transfert.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 14 lignes. Taux de recapture moyen : 51.3%. Biomasse totale : 1191 kg."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 398 kg. Taux de recapture : 66.1%.
+Bye,Bonne journée !
+Quelles sont les anomalies financières ?,6 anomalies détectées via Isolation Forest. Poste principal : Chiffre d'affaires avec variance de -13.1%.
+Y a-t-il des anomalies sur le parc P3 ?,"Oui, 4 anomalies détectées (Majeure) via One-Class SVM. Biomasse écart : 1251 kg. Vérifiez les lignes en zone Nord."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 367 kg. Taux de recapture : 49.3%.
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1065 kg. Taux de recapture : 43.8%.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 19 DA. BC associées : 22. Taux de transformation DA→BC : 65%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Achats pour la catégorie ELECTRICITÉ ?,"Catégorie ELECTRICITÉ : 22 lignes, valeur 141 090 DH. Fournisseur principal : ENTERPRISE BOUKRATE."
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 44 DA. BC associées : 21. Taux de transformation DA→BC : 75%.
+Combien de DA sont en cours ?,Il y a 10 DA en cours dont 28 sans commande associée. Valeur totale : 114 343 DH.
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 149 555 DH, Réalisé 44 074 DH. Variance : 15.8%. Tendance vs N-1 : -13.6%."
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 742 kg. Taux de recapture : 29.8%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 26.5% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 27 lignes. Taux de recapture moyen : 48.6%. Biomasse totale : 857 kg."
+Quel est le taux de recapture du parc P2-3 ?,Le taux de recapture moyen du parc P2-3 est de 51.2% pour les opérations d'Échantillonnage.
+Compare Primaire et Hors calibre,"Primaire : 19 lignes, taux recapture 33.9%. Hors calibre : 22 lignes, taux recapture 79.7%."
+Fichiers : Suivi Global CCS.xlsm,"Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, coût unitaire"
+Quel est le statut du poste Main d'oeuvre directe ?,"Poste MOD (Main d'oeuvre directe) : Budget 313 229 DH, Réalisé 197 609 DH. Variance : -20.7%. Tendance vs N-1 : -19.1%."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 415 011 DH, Réalisé 76 671 DH. Variance : -21.7%. Tendance vs N-1 : -12.8%."
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1812 kg. Taux de recapture : 69.1%.
+Achats pour la catégorie CARBURANTS ?,"Catégorie CARBURANTS : 66 lignes, valeur 410 442 DH. Fournisseur principal : AGATRAVE."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Bye,À bientôt ! L'assistant reste disponible.
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Résumé YTD Finance,"YTD : Budget total 187 257 DH, Réalisé 452 108 DH. Variance globale : 16.9%. Principaux drivers : Amortissements, EBITDA."
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 292 633 DH, Réalisé 355 766 DH. Variance : -6.8%. Tendance vs N-1 : -14.9%."
+Combien de DA sont en cours ?,Il y a 18 DA en cours dont 20 sans commande associée. Valeur totale : 16 738 DH.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 35.4% pour les opérations d'Transfert.
+KPI de MAROUANE AITTOUGHA ?,MAROUANE AITTOUGHA a créé 29 DA. BC associées : 12. Taux de transformation DA→BC : 84%.
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 10 lignes. Taux de recapture moyen : 89.6%. Biomasse totale : 442 kg."
+Y a-t-il des anomalies sur le parc P5 ?,"Oui, 3 anomalies détectées (Majeure) via Z-Score. Biomasse écart : 1016 kg. Vérifiez les lignes en zone Sud 1."
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 977 kg. Taux de recapture : 38.9%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 29.4% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Achats pour la catégorie CO2 INTRANT ?,"Catégorie CO2 INTRANT : 17 lignes, valeur 229 825 DH. Fournisseur principal : AGA IKHWAN."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Comment fonctionne LOF ?,LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Y a-t-il des anomalies sur le parc P5 ?,"Oui, 2 anomalies détectées (Mineure) via LOF. Biomasse écart : 872 kg. Vérifiez les lignes en zone Est."
+Quelles sont les anomalies financières ?,6 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -2.6%.
+Quelles sont les anomalies financières ?,1 anomalies détectées via LOF. Poste principal : Amortissements avec variance de 3.2%.
+Évolution mensuelle des achats ?,"Dernier mois : 26 DA créées, 15 BC créées. Valeur : 111 994 DH. Tendance : stable."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 36 lignes. Taux de recapture moyen : 25.2%. Biomasse totale : 1489 kg."
+Accès pour admin et manager,Accès configuré pour admin et manager. Délais ou priorités spécifiques ?
+Comment fonctionne LOF ?,LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 66.5% pour les opérations d'Transfert.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Accès pour chef de production et directeur,Accès configuré pour chef de production et directeur. Délais ou priorités spécifiques ?
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 40 lignes. Taux de recapture moyen : 48.6%. Biomasse totale : 660 kg."
+Résumé YTD Finance,"YTD : Budget total 443 612 DH, Réalisé 41 445 DH. Variance globale : -15.0%. Principaux drivers : Investissements, EBITDA."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Fichiers : Suivi Global CCS.xlsm,"Fichier enregistré. Champs sensibles à masquer ? Exemple : marge, remise"
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1575 kg. Taux de recapture : 65.5%.
+Quelles sont les données du parc P6 ?,Le parc P6 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1500 kg. Taux de recapture : 32.0%.
+Achats pour la catégorie ENGRAIS SOLIDE ?,"Catégorie ENGRAIS SOLIDE : 15 lignes, valeur 57 441 DH. Fournisseur principal : AGRIROUES MAROC."
+Statut des bons de commande ?,BC en cours : 63. BC livrées : 115. Statut principal : En cours d'approbation.
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1404 kg. Taux de recapture : 58.8%.
+Quelles sont les anomalies financières ?,3 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de -20.2%.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 39.4% pour les opérations d'Transfert.
+Fournisseur AGATRAVE ?,"AGATRAVE : 24 commandes, valeur totale 70 327 DH. Catégories : ÉQUIPEMENT LABORATOIRE, STRUCTURE MÉTALLIQUE."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Accès pour tous et contrôleur de gestion,Accès configuré pour tous et contrôleur de gestion. Délais ou priorités spécifiques ?
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Achats pour la catégorie ENGRAIS SOLIDE ?,"Catégorie ENGRAIS SOLIDE : 9 lignes, valeur 414 665 DH. Fournisseur principal : ACRAPLAST."
+Au revoir,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 1681 kg. Taux de recapture : 85.5%.
+Statut des bons de commande ?,BC en cours : 88. BC livrées : 141. Statut principal : Confirmation reçue.
+Capex vs Opex ?,"Opex : 264 lignes, 367 849 DH. Capex : 66 lignes, 131 002 DH."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 22 lignes. Taux de recapture moyen : 32.7%. Biomasse totale : 1398 kg."
+Accès pour responsable qualité et contrôleur de gestion,Accès configuré pour responsable qualité et contrôleur de gestion. Délais ou priorités spécifiques ?
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 29 926 DH, Réalisé 193 424 DH. Variance : 19.9%. Tendance vs N-1 : -25.4%."
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1173 kg. Taux de recapture : 62.8%.
+Combien de DA sont en cours ?,Il y a 49 DA en cours dont 27 sans commande associée. Valeur totale : 61 659 DH.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 50 lignes. Taux de recapture moyen : 31.1%. Biomasse totale : 1328 kg."
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 50.3% pour les opérations d'Transfert.
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 25 134 DH, Réalisé 125 110 DH. Variance : -4.8%. Tendance vs N-1 : 17.6%."
+KPI de SOUFIANE ELKAFRAOUI ?,SOUFIANE ELKAFRAOUI a créé 41 DA. BC associées : 5. Taux de transformation DA→BC : 71%.
+Au revoir,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Compare Primaire et Hors calibre,"Primaire : 31 lignes, taux recapture 72.4%. Hors calibre : 18 lignes, taux recapture 60.9%."
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+KPI de RIDA AYYI ?,RIDA AYYI a créé 11 DA. BC associées : 11. Taux de transformation DA→BC : 65%.
+Budget vs Réalisé pour EBITDA,Budget : 63 997 DH. Réalisé : 300 767 DH. Écart : 10.6%. Défavorable.
+Achats pour la catégorie CARBURANTS ?,"Catégorie CARBURANTS : 55 lignes, valeur 191 473 DH. Fournisseur principal : AGATRAVE."
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 1255 kg. Taux de recapture : 66.5%.
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 5 DA. BC associées : 37. Taux de transformation DA→BC : 95%.
+Quel est le taux de recapture du parc P7 ?,Le taux de recapture moyen du parc P7 est de 22.0% pour les opérations d'Transfert.
+Résumé YTD Finance,"YTD : Budget total 90 621 DH, Réalisé 471 266 DH. Variance globale : 12.8%. Principaux drivers : Matières premières, Amortissements."
+Accès pour tous et admin,Accès configuré pour tous et admin. Délais ou priorités spécifiques ?
+Évolution mensuelle des achats ?,"Dernier mois : 53 DA créées, 58 BC créées. Valeur : 233 443 DH. Tendance : hausse."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 49 lignes. Taux de recapture moyen : 48.2%. Biomasse totale : 757 kg."
+Statut des bons de commande ?,BC en cours : 25. BC livrées : 194. Statut principal : Envoyé.
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 47 lignes. Taux de recapture moyen : 75.5%. Biomasse totale : 1535 kg."
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 59 773 DH, Réalisé 181 069 DH. Variance : -4.2%. Tendance vs N-1 : -13.0%."
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 290 839 DH, Réalisé 489 938 DH. Variance : -23.8%. Tendance vs N-1 : 20.8%."
+Compare Primaire et Hors calibre,"Primaire : 33 lignes, taux recapture 54.8%. Hors calibre : 19 lignes, taux recapture 74.3%."
+Quel est le statut du poste EBITDA ?,"Poste EBITDA (EBITDA) : Budget 15 279 DH, Réalisé 94 689 DH. Variance : -13.6%. Tendance vs N-1 : 15.7%."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 527 kg. Taux de recapture : 75.4%.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 276 365 DH, Réalisé 349 869 DH. Variance : -11.5%. Tendance vs N-1 : -16.8%."
+Quel est le taux de recapture du parc P7 ?,Le taux de recapture moyen du parc P7 est de 69.2% pour les opérations d'Transfert.
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quelles sont les anomalies financières ?,5 anomalies détectées via Z-Score. Poste principal : Résultat net avec variance de -15.1%.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 36 lignes. Taux de recapture moyen : 87.5%. Biomasse totale : 458 kg."
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 6.6% vs budget. Le principal driver est « Frais généraux ». Recommandation : surveiller les postes à forte déviation.
+Statut des bons de commande ?,BC en cours : 88. BC livrées : 171. Statut principal : Envoyé.
+Combien de DA sont en cours ?,Il y a 38 DA en cours dont 12 sans commande associée. Valeur totale : 70 128 DH.
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quel est le taux de recapture du parc P2 ?,Le taux de recapture moyen du parc P2 est de 72.4% pour les opérations d'Échantillonnage.
+Compare Primaire et Hors calibre,"Primaire : 37 lignes, taux recapture 68.0%. Hors calibre : 11 lignes, taux recapture 83.7%."
+Statut des bons de commande ?,BC en cours : 80. BC livrées : 131. Statut principal : Envoyé.
+Accès pour tous et admin,Accès configuré pour tous et admin. Délais ou priorités spécifiques ?
+Résumé YTD Finance,"YTD : Budget total 126 519 DH, Réalisé 384 372 DH. Variance globale : 9.4%. Principaux drivers : Matières premières, Amortissements."
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 12.3% vs budget. Le principal driver est « Investissements ». Recommandation : surveiller les postes à forte déviation.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Compare Primaire et Hors calibre,"Primaire : 25 lignes, taux recapture 81.1%. Hors calibre : 11 lignes, taux recapture 63.2%."
+Y a-t-il des anomalies sur le parc P5 ?,"Oui, 2 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1129 kg. Vérifiez les lignes en zone Ouest."
+Quelles sont les anomalies financières ?,5 anomalies détectées via Z-Score. Poste principal : Chiffre d'affaires avec variance de -24.6%.
+Accès pour directeur et tous,Accès configuré pour directeur et tous. Délais ou priorités spécifiques ?
+Comment fonctionne LOF ?,LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Valider la configuration,Configuration validée pour le module Achats. Les paramètres sont enregistrés.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -11.2% vs budget. Le principal driver est « Main d'oeuvre directe ». Recommandation : surveiller les postes à forte déviation.
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 381 456 DH, Réalisé 429 464 DH. Variance : 8.7%. Tendance vs N-1 : -21.1%."
+Budget vs Réalisé pour Amortissements,Budget : 484 547 DH. Réalisé : 232 032 DH. Écart : 9.4%. Défavorable.
+Quelles sont les anomalies financières ?,5 anomalies détectées via Isolation Forest. Poste principal : Main d'oeuvre directe avec variance de 28.5%.
+Capex vs Opex ?,"Opex : 449 lignes, 171 693 DH. Capex : 124 lignes, 1 396 DH."
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Sud 1. Phase : Échantillonnage. Biomasse récoltée : 976 kg. Taux de recapture : 67.4%.
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Combien de DA sont en cours ?,Il y a 78 DA en cours dont 17 sans commande associée. Valeur totale : 277 365 DH.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Statut des bons de commande ?,BC en cours : 39. BC livrées : 52. Statut principal : Envoyé.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 21 lignes. Taux de recapture moyen : 75.1%. Biomasse totale : 1480 kg."
+KPI de RIDA AYYI ?,RIDA AYYI a créé 7 DA. BC associées : 7. Taux de transformation DA→BC : 77%.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 28.0% pour les opérations d'Échantillonnage.
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 21.8% pour les opérations d'Transfert.
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 842 kg. Taux de recapture : 66.4%.
+Achats pour la catégorie CO2 INTRANT ?,"Catégorie CO2 INTRANT : 30 lignes, valeur 240 151 DH. Fournisseur principal : AGATRAVE."
+Fournisseur AGRIROUES MAROC ?,"AGRIROUES MAROC : 16 commandes, valeur totale 53 795 DH. Catégories : PRESTATION, CARBURANTS."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 588 kg. Taux de recapture : 40.8%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 5.8% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 196 662 DH, Réalisé 117 822 DH. Variance : -28.3%. Tendance vs N-1 : 25.8%."
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : remise, aucun"
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud 1. Phase : Échantillonnage. Biomasse récoltée : 400 kg. Taux de recapture : 23.5%.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, marge"
+Quel est le statut du poste Main d'oeuvre directe ?,"Poste MOD (Main d'oeuvre directe) : Budget 351 433 DH, Réalisé 368 585 DH. Variance : 19.7%. Tendance vs N-1 : 14.3%."
+Fournisseur AGA IKHWAN ?,"AGA IKHWAN : 16 commandes, valeur totale 372 419 DH. Catégories : CO2 INTRANT, CO2 INTRANT."
+Statut des bons de commande ?,BC en cours : 96. BC livrées : 62. Statut principal : Envoyé.
+Achats pour la catégorie ENGRAIS SOLIDE ?,"Catégorie ENGRAIS SOLIDE : 8 lignes, valeur 499 748 DH. Fournisseur principal : AGA IKHWAN."
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : conditions paiement, salaires"
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 27.4% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1530 kg. Taux de recapture : 69.1%.
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 816 kg. Taux de recapture : 48.4%.
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 290 kg. Taux de recapture : 20.2%.
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Budget vs Réalisé pour EBITDA,Budget : 369 671 DH. Réalisé : 108 773 DH. Écart : 11.4%. Défavorable.
+Compare Primaire et Hors calibre,"Primaire : 17 lignes, taux recapture 80.2%. Hors calibre : 22 lignes, taux recapture 87.7%."
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 23 lignes. Taux de recapture moyen : 66.4%. Biomasse totale : 1020 kg."
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 32 lignes. Taux de recapture moyen : 28.0%. Biomasse totale : 660 kg."
+Combien de DA sont en cours ?,Il y a 51 DA en cours dont 21 sans commande associée. Valeur totale : 231 751 DH.
+Compare Primaire et Hors calibre,"Primaire : 24 lignes, taux recapture 22.3%. Hors calibre : 21 lignes, taux recapture 71.3%."
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 800 kg. Taux de recapture : 78.1%.
+Budget vs Réalisé pour Cash flow,Budget : 341 169 DH. Réalisé : 104 672 DH. Écart : 15.4%. Défavorable.
+Compare Primaire et Hors calibre,"Primaire : 12 lignes, taux recapture 83.7%. Hors calibre : 20 lignes, taux recapture 72.3%."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+KPI de SOUFIANE ELKAFRAOUI ?,SOUFIANE ELKAFRAOUI a créé 37 DA. BC associées : 29. Taux de transformation DA→BC : 66%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 463 225 DH, Réalisé 27 682 DH. Variance : -20.7%. Tendance vs N-1 : 15.3%."
+Quel est le taux de recapture du parc P5 ?,Le taux de recapture moyen du parc P5 est de 42.1% pour les opérations d'Échantillonnage.
+Achats pour la catégorie INFORMATIQUE ?,"Catégorie INFORMATIQUE : 71 lignes, valeur 89 010 DH. Fournisseur principal : AGUACONCEPT."
+Combien de DA sont en cours ?,Il y a 59 DA en cours dont 12 sans commande associée. Valeur totale : 234 318 DH.
+Combien de DA sont en cours ?,Il y a 57 DA en cours dont 18 sans commande associée. Valeur totale : 368 119 DH.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Statut des bons de commande ?,BC en cours : 91. BC livrées : 105. Statut principal : En cours d'approbation.
+Combien de DA sont en cours ?,Il y a 19 DA en cours dont 6 sans commande associée. Valeur totale : 222 239 DH.
+Résumé YTD Finance,"YTD : Budget total 299 292 DH, Réalisé 218 501 DH. Variance globale : -18.8%. Principaux drivers : Matières premières, Investissements."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 1341 kg. Taux de recapture : 37.4%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 4 130 DH, Réalisé 107 276 DH. Variance : -11.9%. Tendance vs N-1 : -17.3%."
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 1797 kg. Taux de recapture : 59.2%.
+Bye,Bonne journée !
+Résumé YTD Finance,"YTD : Budget total 66 280 DH, Réalisé 35 349 DH. Variance globale : -15.8%. Principaux drivers : Amortissements, Amortissements."
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 170 372 DH, Réalisé 90 211 DH. Variance : 18.1%. Tendance vs N-1 : 7.1%."
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 162 750 DH, Réalisé 344 061 DH. Variance : 11.9%. Tendance vs N-1 : -6.5%."
+Statut des bons de commande ?,BC en cours : 89. BC livrées : 175. Statut principal : Envoyé.
+Statut des bons de commande ?,BC en cours : 25. BC livrées : 152. Statut principal : En cours d'approbation.
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Compare Primaire et Hors calibre,"Primaire : 22 lignes, taux recapture 63.4%. Hors calibre : 17 lignes, taux recapture 54.8%."
+Y a-t-il des anomalies sur le parc P2 ?,"Oui, 3 anomalies détectées (Majeure) via LOF. Biomasse écart : 450 kg. Vérifiez les lignes en zone Sud 1."
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 2.8% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 22.8% pour les opérations d'Échantillonnage.
+Évolution mensuelle des achats ?,"Dernier mois : 20 DA créées, 42 BC créées. Valeur : 106 173 DH. Tendance : baisse."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 649 kg. Taux de recapture : 89.8%.
+Évolution mensuelle des achats ?,"Dernier mois : 47 DA créées, 56 BC créées. Valeur : 47 914 DH. Tendance : baisse."
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 516 kg. Taux de recapture : 84.8%.
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 67.4% pour les opérations d'Transfert.
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 20 commandes, valeur totale 84 057 DH. Catégories : ÉQUIPEMENT LABORATOIRE, ENGRAIS SOLIDE."
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 44 lignes. Taux de recapture moyen : 68.5%. Biomasse totale : 1530 kg."
+Statut des bons de commande ?,BC en cours : 91. BC livrées : 155. Statut principal : En cours d'approbation.
+Combien de DA sont en cours ?,Il y a 69 DA en cours dont 14 sans commande associée. Valeur totale : 83 837 DH.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 483 054 DH, Réalisé 40 922 DH. Variance : 21.7%. Tendance vs N-1 : 4.5%."
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 68.8% pour les opérations d'Transfert.
+Statut des bons de commande ?,BC en cours : 26. BC livrées : 51. Statut principal : En cours d'approbation.
+Statut des bons de commande ?,BC en cours : 53. BC livrées : 142. Statut principal : En révision.
+Quel est le taux de recapture du parc P4 ?,Le taux de recapture moyen du parc P4 est de 69.4% pour les opérations d'Échantillonnage.
+Y a-t-il des anomalies sur le parc P2-3 ?,"Oui, 4 anomalies détectées (Majeure) via Z-Score. Biomasse écart : 403 kg. Vérifiez les lignes en zone Sud."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Budget vs Réalisé pour Amortissements,Budget : 149 739 DH. Réalisé : 338 736 DH. Écart : -26.5%. Favorable.
+Capex vs Opex ?,"Opex : 224 lignes, 24 187 DH. Capex : 62 lignes, 328 398 DH."
+Combien de DA sont en cours ?,Il y a 58 DA en cours dont 19 sans commande associée. Valeur totale : 456 031 DH.
+Accès pour directeur et admin,Accès configuré pour directeur et admin. Délais ou priorités spécifiques ?
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 409 kg. Taux de recapture : 26.5%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -28.1% vs budget. Le principal driver est « Matières premières ». Recommandation : surveiller les postes à forte déviation.
+Accès pour tous et manager,Accès configuré pour tous et manager. Délais ou priorités spécifiques ?
+Résumé YTD Finance,"YTD : Budget total 202 992 DH, Réalisé 479 059 DH. Variance globale : 3.7%. Principaux drivers : EBITDA, EBITDA."
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Au revoir,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 81.1% pour les opérations d'Transfert.
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 5 lignes. Taux de recapture moyen : 39.8%. Biomasse totale : 811 kg."
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Quelles sont les anomalies financières ?,8 anomalies détectées via LOF. Poste principal : Amortissements avec variance de 6.4%.
+Combien de DA sont en cours ?,Il y a 68 DA en cours dont 25 sans commande associée. Valeur totale : 134 980 DH.
+Combien de DA sont en cours ?,Il y a 44 DA en cours dont 15 sans commande associée. Valeur totale : 158 406 DH.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 16 lignes. Taux de recapture moyen : 52.9%. Biomasse totale : 1534 kg."
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, salaires"
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 743 kg. Taux de recapture : 47.7%.
+Combien de DA sont en cours ?,Il y a 71 DA en cours dont 9 sans commande associée. Valeur totale : 238 639 DH.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 1909 kg. Taux de recapture : 45.8%.
+Compare Primaire et Hors calibre,"Primaire : 17 lignes, taux recapture 53.0%. Hors calibre : 29 lignes, taux recapture 81.9%."
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1044 kg. Taux de recapture : 21.7%.
+Capex vs Opex ?,"Opex : 247 lignes, 383 318 DH. Capex : 108 lignes, 332 939 DH."
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Achats pour la catégorie ELECTRICITÉ ?,"Catégorie ELECTRICITÉ : 60 lignes, valeur 144 783 DH. Fournisseur principal : AGUACONCEPT."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1064 kg. Taux de recapture : 22.2%.
+Quelles sont les anomalies financières ?,3 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de -18.6%.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Capex vs Opex ?,"Opex : 216 lignes, 235 889 DH. Capex : 83 lignes, 182 854 DH."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Y a-t-il des anomalies sur le parc P3 ?,"Oui, 4 anomalies détectées (Majeure) via One-Class SVM. Biomasse écart : 1562 kg. Vérifiez les lignes en zone Ouest."
+Évolution mensuelle des achats ?,"Dernier mois : 75 DA créées, 42 BC créées. Valeur : 363 972 DH. Tendance : hausse."
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 31 lignes. Taux de recapture moyen : 23.1%. Biomasse totale : 1725 kg."
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 447 kg. Taux de recapture : 37.4%.
+Résumé YTD Finance,"YTD : Budget total 53 890 DH, Réalisé 42 079 DH. Variance globale : -10.3%. Principaux drivers : EBITDA, EBITDA."
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Accès pour directeur et manager,Accès configuré pour directeur et manager. Délais ou priorités spécifiques ?
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 412 kg. Taux de recapture : 85.7%.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 49 lignes. Taux de recapture moyen : 53.9%. Biomasse totale : 259 kg."
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 15 lignes. Taux de recapture moyen : 20.2%. Biomasse totale : 1122 kg."
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 23 commandes, valeur totale 344 718 DH. Catégories : MATÉRIEL D'USURE, MATÉRIEL D'USURE."
+Statut des bons de commande ?,BC en cours : 46. BC livrées : 135. Statut principal : Confirmation reçue.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1932 kg. Taux de recapture : 23.6%.
+Combien de DA sont en cours ?,Il y a 17 DA en cours dont 22 sans commande associée. Valeur totale : 473 473 DH.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Quelles sont les anomalies financières ?,6 anomalies détectées via Z-Score. Poste principal : Amortissements avec variance de -27.3%.
+Achats pour la catégorie ELECTRICITÉ ?,"Catégorie ELECTRICITÉ : 43 lignes, valeur 126 988 DH. Fournisseur principal : ENTERPRISE BOUKRATE."
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 80.8% pour les opérations d'Transfert.
+Résumé YTD Finance,"YTD : Budget total 70 045 DH, Réalisé 23 344 DH. Variance globale : -8.9%. Principaux drivers : Amortissements, Main d'oeuvre directe."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1240 kg. Taux de recapture : 25.6%.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 35 lignes. Taux de recapture moyen : 74.7%. Biomasse totale : 742 kg."
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 43 DA. BC associées : 23. Taux de transformation DA→BC : 84%.
+Résumé YTD Finance,"YTD : Budget total 362 943 DH, Réalisé 260 945 DH. Variance globale : -8.0%. Principaux drivers : Investissements, EBITDA."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1195 kg. Taux de recapture : 77.1%.
+Y a-t-il des anomalies sur le parc P2-2 ?,"Oui, 4 anomalies détectées (Mineure) via Isolation Forest. Biomasse écart : 365 kg. Vérifiez les lignes en zone Ouest."
+Compare Primaire et Hors calibre,"Primaire : 12 lignes, taux recapture 64.5%. Hors calibre : 24 lignes, taux recapture 83.7%."
+Résumé YTD Finance,"YTD : Budget total 208 850 DH, Réalisé 375 979 DH. Variance globale : 13.1%. Principaux drivers : Investissements, Résultat net."
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, marge"
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 1333 kg. Taux de recapture : 80.3%.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 34 lignes. Taux de recapture moyen : 58.6%. Biomasse totale : 985 kg."
+Accès pour manager et chef de production,Accès configuré pour manager et chef de production. Délais ou priorités spécifiques ?
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 34 lignes. Taux de recapture moyen : 86.3%. Biomasse totale : 1526 kg."
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 29.9% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation.
+Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?,"Catégorie ÉQUIPEMENT LABORATOIRE : 37 lignes, valeur 495 144 DH. Fournisseur principal : AGRIROUES MAROC."
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 78.3% pour les opérations d'Transfert.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 50.5% pour les opérations d'Transfert.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 15 lignes. Taux de recapture moyen : 75.5%. Biomasse totale : 1418 kg."
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : aucun, CA_client"
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 699 kg. Taux de recapture : 30.3%.
+Combien de DA sont en cours ?,Il y a 56 DA en cours dont 27 sans commande associée. Valeur totale : 123 990 DH.
+Résumé YTD Finance,"YTD : Budget total 105 051 DH, Réalisé 64 397 DH. Variance globale : -21.9%. Principaux drivers : Matières premières, Cash flow."
+Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?,"Catégorie ÉQUIPEMENT LABORATOIRE : 53 lignes, valeur 421 667 DH. Fournisseur principal : ACRAPLAST."
+Quelles sont les anomalies financières ?,3 anomalies détectées via LOF. Poste principal : Main d'oeuvre directe avec variance de 9.5%.
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, salaires"
+Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?,"Catégorie ÉQUIPEMENT LABORATOIRE : 42 lignes, valeur 385 385 DH. Fournisseur principal : AGA IKHWAN."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Combien de DA sont en cours ?,Il y a 49 DA en cours dont 28 sans commande associée. Valeur totale : 11 513 DH.
+Résumé YTD Finance,"YTD : Budget total 350 240 DH, Réalisé 182 250 DH. Variance globale : 12.6%. Principaux drivers : Investissements, Investissements."
+Évolution mensuelle des achats ?,"Dernier mois : 43 DA créées, 34 BC créées. Valeur : 71 995 DH. Tendance : stable."
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, remise"
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 847 kg. Taux de recapture : 85.4%.
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 13 DA. BC associées : 8. Taux de transformation DA→BC : 92%.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+KPI de MAMOUN OUDGHIRI ?,MAMOUN OUDGHIRI a créé 29 DA. BC associées : 27. Taux de transformation DA→BC : 95%.
+Combien de DA sont en cours ?,Il y a 22 DA en cours dont 10 sans commande associée. Valeur totale : 73 821 DH.
+Compare Primaire et Hors calibre,"Primaire : 15 lignes, taux recapture 34.1%. Hors calibre : 27 lignes, taux recapture 81.4%."
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 82 627 DH, Réalisé 194 114 DH. Variance : -11.3%. Tendance vs N-1 : -10.5%."
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 10 DA. BC associées : 25. Taux de transformation DA→BC : 95%.
+Capex vs Opex ?,"Opex : 493 lignes, 140 264 DH. Capex : 115 lignes, 472 040 DH."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 25 lignes. Taux de recapture moyen : 63.9%. Biomasse totale : 1755 kg."
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 58.7% pour les opérations d'Transfert.
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Statut des bons de commande ?,BC en cours : 67. BC livrées : 130. Statut principal : En cours d'approbation.
+Résumé YTD Finance,"YTD : Budget total 8 716 DH, Réalisé 331 426 DH. Variance globale : 0.9%. Principaux drivers : Frais généraux, Main d'oeuvre directe."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Compare Primaire et Hors calibre,"Primaire : 40 lignes, taux recapture 49.7%. Hors calibre : 18 lignes, taux recapture 52.0%."
+Quel est le statut du poste Résultat net ?,"Poste RN (Résultat net) : Budget 274 807 DH, Réalisé 41 333 DH. Variance : -6.3%. Tendance vs N-1 : -11.4%."
+Accès pour chef de production et admin,Accès configuré pour chef de production et admin. Délais ou priorités spécifiques ?
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : salaires, CA_client"
+Quel est le statut du poste Main d'oeuvre directe ?,"Poste MOD (Main d'oeuvre directe) : Budget 174 877 DH, Réalisé 42 830 DH. Variance : 5.0%. Tendance vs N-1 : -21.5%."
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 43.8% pour les opérations d'Transfert.
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 436 kg. Taux de recapture : 47.0%.
+Résumé YTD Finance,"YTD : Budget total 469 147 DH, Réalisé 202 813 DH. Variance globale : -9.7%. Principaux drivers : Main d'oeuvre directe, Cash flow."
+Statut des bons de commande ?,BC en cours : 44. BC livrées : 63. Statut principal : Confirmation reçue.
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 322 541 DH, Réalisé 311 568 DH. Variance : 0.4%. Tendance vs N-1 : -2.2%."
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1848 kg. Taux de recapture : 42.1%.
+Capex vs Opex ?,"Opex : 450 lignes, 74 638 DH. Capex : 123 lignes, 331 660 DH."
+Quel est le taux de recapture du parc P4 ?,Le taux de recapture moyen du parc P4 est de 87.6% pour les opérations d'Transfert.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 45 lignes. Taux de recapture moyen : 34.8%. Biomasse totale : 1552 kg."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Statut des bons de commande ?,BC en cours : 50. BC livrées : 191. Statut principal : Confirmation reçue.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 38 lignes. Taux de recapture moyen : 83.7%. Biomasse totale : 231 kg."
+Combien de DA sont en cours ?,Il y a 80 DA en cours dont 20 sans commande associée. Valeur totale : 397 169 DH.
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1128 kg. Taux de recapture : 64.5%.
+Comment fonctionne LOF ?,LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Quelles sont les données du parc P6 ?,Le parc P6 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 1907 kg. Taux de recapture : 58.0%.
+Valider la configuration,Configuration validée pour le module Estran. Les paramètres sont enregistrés.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 353 453 DH, Réalisé 42 872 DH. Variance : -13.7%. Tendance vs N-1 : 9.7%."
+KPI de SOUFIANE ELKAFRAOUI ?,SOUFIANE ELKAFRAOUI a créé 34 DA. BC associées : 26. Taux de transformation DA→BC : 63%.
+Combien de DA sont en cours ?,Il y a 58 DA en cours dont 12 sans commande associée. Valeur totale : 129 867 DH.
+Résumé YTD Finance,"YTD : Budget total 248 297 DH, Réalisé 132 909 DH. Variance globale : -27.8%. Principaux drivers : Frais généraux, EBITDA."
+Résumé YTD Finance,"YTD : Budget total 435 460 DH, Réalisé 408 595 DH. Variance globale : 11.1%. Principaux drivers : Cash flow, Main d'oeuvre directe."
+Résumé YTD Finance,"YTD : Budget total 416 225 DH, Réalisé 189 626 DH. Variance globale : 0.5%. Principaux drivers : Matières premières, Frais généraux."
+Statut des bons de commande ?,BC en cours : 68. BC livrées : 184. Statut principal : Confirmation reçue.
+Statut des bons de commande ?,BC en cours : 68. BC livrées : 195. Statut principal : Envoyé.
+Quelles sont les anomalies financières ?,3 anomalies détectées via One-Class SVM. Poste principal : Investissements avec variance de 3.7%.
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 46 DA. BC associées : 5. Taux de transformation DA→BC : 65%.
+Comment fonctionne One-Class SVM ?,One-Class SVM est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Accès pour responsable achat et admin,Accès configuré pour responsable achat et admin. Délais ou priorités spécifiques ?
+Capex vs Opex ?,"Opex : 326 lignes, 399 331 DH. Capex : 136 lignes, 205 988 DH."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1692 kg. Taux de recapture : 75.0%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Statut des bons de commande ?,BC en cours : 45. BC livrées : 134. Statut principal : Envoyé.
+Combien de DA sont en cours ?,Il y a 17 DA en cours dont 26 sans commande associée. Valeur totale : 62 083 DH.
+Quel est le statut du poste Frais généraux ?,"Poste FG (Frais généraux) : Budget 168 672 DH, Réalisé 317 297 DH. Variance : -1.5%. Tendance vs N-1 : -20.9%."
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 391 277 DH, Réalisé 278 225 DH. Variance : -17.1%. Tendance vs N-1 : -4.8%."
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 5.6% vs budget. Le principal driver est « Investissements ». Recommandation : surveiller les postes à forte déviation.
+Capex vs Opex ?,"Opex : 305 lignes, 426 623 DH. Capex : 76 lignes, 422 382 DH."
+Statut des bons de commande ?,BC en cours : 90. BC livrées : 199. Statut principal : En révision.
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 32.7% pour les opérations d'Transfert.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Quelles sont les données du parc P6 ?,Le parc P6 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 607 kg. Taux de recapture : 30.7%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Fournisseur ENTERPRISE BOUKRATE ?,"ENTERPRISE BOUKRATE : 27 commandes, valeur totale 369 072 DH. Catégories : STRUCTURE MÉTALLIQUE, INFORMATIQUE."
+Capex vs Opex ?,"Opex : 342 lignes, 364 324 DH. Capex : 97 lignes, 238 491 DH."
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 69.0% pour les opérations d'Transfert.
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Y a-t-il des anomalies sur le parc P7 ?,"Oui, 5 anomalies détectées (Critique) via One-Class SVM. Biomasse écart : 232 kg. Vérifiez les lignes en zone Est."
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 19 commandes, valeur totale 203 766 DH. Catégories : MATÉRIEL D'USURE, INFORMATIQUE."
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Statut des bons de commande ?,BC en cours : 46. BC livrées : 67. Statut principal : Document lié créé.
+Achats pour la catégorie CARBURANTS ?,"Catégorie CARBURANTS : 46 lignes, valeur 316 356 DH. Fournisseur principal : AGRIROUES MAROC."
+Statut des bons de commande ?,BC en cours : 83. BC livrées : 169. Statut principal : Document lié créé.
+Résumé YTD Finance,"YTD : Budget total 59 579 DH, Réalisé 13 686 DH. Variance globale : 14.1%. Principaux drivers : Cash flow, Investissements."
+Capex vs Opex ?,"Opex : 365 lignes, 369 226 DH. Capex : 87 lignes, 151 793 DH."
+Statut des bons de commande ?,BC en cours : 35. BC livrées : 172. Statut principal : Envoyé.
+Compare Primaire et Hors calibre,"Primaire : 17 lignes, taux recapture 64.2%. Hors calibre : 19 lignes, taux recapture 89.8%."
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 770 kg. Taux de recapture : 52.4%.
+Compare Primaire et Hors calibre,"Primaire : 40 lignes, taux recapture 22.6%. Hors calibre : 25 lignes, taux recapture 28.1%."
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Y a-t-il des anomalies sur le parc P7-ext ?,"Oui, 5 anomalies détectées (Mineure) via One-Class SVM. Biomasse écart : 980 kg. Vérifiez les lignes en zone Nord."
+Résumé YTD Finance,"YTD : Budget total 233 888 DH, Réalisé 316 047 DH. Variance globale : 13.1%. Principaux drivers : Main d'oeuvre directe, Cash flow."
+Compare Primaire et Hors calibre,"Primaire : 17 lignes, taux recapture 57.2%. Hors calibre : 28 lignes, taux recapture 67.7%."
+Capex vs Opex ?,"Opex : 410 lignes, 481 799 DH. Capex : 57 lignes, 145 497 DH."
+Achats pour la catégorie STRUCTURE MÉTALLIQUE ?,"Catégorie STRUCTURE MÉTALLIQUE : 76 lignes, valeur 474 689 DH. Fournisseur principal : AGRIROUES MAROC."
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1851 kg. Taux de recapture : 33.9%.
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 37 DA. BC associées : 30. Taux de transformation DA→BC : 71%.
+Quelles sont les anomalies financières ?,2 anomalies détectées via Z-Score. Poste principal : Main d'oeuvre directe avec variance de 22.9%.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 357 210 DH, Réalisé 484 622 DH. Variance : 22.9%. Tendance vs N-1 : 8.6%."
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 242 153 DH, Réalisé 403 507 DH. Variance : -13.1%. Tendance vs N-1 : -7.1%."
+Capex vs Opex ?,"Opex : 343 lignes, 313 025 DH. Capex : 118 lignes, 88 378 DH."
+Compare Primaire et Hors calibre,"Primaire : 16 lignes, taux recapture 63.5%. Hors calibre : 14 lignes, taux recapture 64.0%."
+Y a-t-il des anomalies sur le parc P6 ?,"Oui, 2 anomalies détectées (Critique) via Z-Score. Biomasse écart : 1277 kg. Vérifiez les lignes en zone Sud."
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 26 lignes. Taux de recapture moyen : 79.7%. Biomasse totale : 1959 kg."
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 12 lignes. Taux de recapture moyen : 87.9%. Biomasse totale : 1027 kg."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1436 kg. Taux de recapture : 38.5%.
+Combien de DA sont en cours ?,Il y a 75 DA en cours dont 19 sans commande associée. Valeur totale : 424 087 DH.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 22.0% pour les opérations d'Transfert.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Sud 1. Phase : Échantillonnage. Biomasse récoltée : 455 kg. Taux de recapture : 88.1%.
+Statut des bons de commande ?,BC en cours : 21. BC livrées : 104. Statut principal : Envoyé.
+Budget vs Réalisé pour Main d'oeuvre directe,Budget : 219 192 DH. Réalisé : 462 650 DH. Écart : 20.3%. Favorable.
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Évolution mensuelle des achats ?,"Dernier mois : 39 DA créées, 25 BC créées. Valeur : 458 549 DH. Tendance : stable."
+Achats pour la catégorie PLOMBERIE ?,"Catégorie PLOMBERIE : 66 lignes, valeur 54 913 DH. Fournisseur principal : ENTERPRISE BOUKRATE."
+Évolution mensuelle des achats ?,"Dernier mois : 74 DA créées, 25 BC créées. Valeur : 231 460 DH. Tendance : stable."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 25 lignes. Taux de recapture moyen : 62.3%. Biomasse totale : 252 kg."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Évolution mensuelle des achats ?,"Dernier mois : 69 DA créées, 23 BC créées. Valeur : 336 470 DH. Tendance : baisse."
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Compare Primaire et Hors calibre,"Primaire : 35 lignes, taux recapture 59.0%. Hors calibre : 12 lignes, taux recapture 75.3%."
+Valider la configuration,Configuration validée pour le module Achats. Les paramètres sont enregistrés.
+Statut des bons de commande ?,BC en cours : 24. BC livrées : 69. Statut principal : En cours de préparation.
+Quel est le taux de recapture du parc P4 ?,Le taux de recapture moyen du parc P4 est de 50.5% pour les opérations d'Transfert.
+Statut des bons de commande ?,BC en cours : 30. BC livrées : 165. Statut principal : Confirmation reçue.
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -7.9% vs budget. Le principal driver est « Matières premières ». Recommandation : surveiller les postes à forte déviation.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, aucun"
+Achats pour la catégorie CO2 INTRANT ?,"Catégorie CO2 INTRANT : 47 lignes, valeur 225 866 DH. Fournisseur principal : AIR LIQUIDE MAROC."
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 5 commandes, valeur totale 296 531 DH. Catégories : PLOMBERIE, PRESTATION."
+Statut des bons de commande ?,BC en cours : 27. BC livrées : 85. Statut principal : En révision.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 34 lignes. Taux de recapture moyen : 85.3%. Biomasse totale : 1980 kg."
+Capex vs Opex ?,"Opex : 230 lignes, 298 983 DH. Capex : 94 lignes, 279 168 DH."
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Achats pour la catégorie STRUCTURE MÉTALLIQUE ?,"Catégorie STRUCTURE MÉTALLIQUE : 7 lignes, valeur 445 314 DH. Fournisseur principal : ACRAPLAST."
+Budget vs Réalisé pour Main d'oeuvre directe,Budget : 57 366 DH. Réalisé : 322 892 DH. Écart : 14.5%. Favorable.
+Quelles sont les anomalies financières ?,7 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de 3.5%.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 100 766 DH, Réalisé 118 873 DH. Variance : 30.0%. Tendance vs N-1 : -20.7%."
+Compare Primaire et Hors calibre,"Primaire : 17 lignes, taux recapture 62.5%. Hors calibre : 21 lignes, taux recapture 35.3%."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 43 lignes. Taux de recapture moyen : 61.7%. Biomasse totale : 1466 kg."
+Fournisseur AGUACONCEPT ?,"AGUACONCEPT : 15 commandes, valeur totale 2 433 DH. Catégories : PRESTATION, PRESTATION."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 589 kg. Taux de recapture : 57.5%.
+Quelles sont les anomalies financières ?,7 anomalies détectées via Z-Score. Poste principal : Frais généraux avec variance de -17.1%.
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 42 lignes. Taux de recapture moyen : 89.3%. Biomasse totale : 825 kg."
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 11 DA. BC associées : 36. Taux de transformation DA→BC : 69%.
+KPI de RIDA AYYI ?,RIDA AYYI a créé 30 DA. BC associées : 32. Taux de transformation DA→BC : 75%.
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 801 kg. Taux de recapture : 50.4%.
+Combien de DA sont en cours ?,Il y a 51 DA en cours dont 7 sans commande associée. Valeur totale : 210 252 DH.
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 57.4% pour les opérations d'Transfert.
+Résumé YTD Finance,"YTD : Budget total 165 563 DH, Réalisé 489 455 DH. Variance globale : -11.4%. Principaux drivers : Résultat net, Investissements."
+Budget vs Réalisé pour Frais généraux,Budget : 26 715 DH. Réalisé : 351 285 DH. Écart : 24.3%. Favorable.
+Statut des bons de commande ?,BC en cours : 96. BC livrées : 58. Statut principal : En cours d'approbation.
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 847 kg. Taux de recapture : 85.0%.
+Quel est le taux de recapture du parc P2-3 ?,Le taux de recapture moyen du parc P2-3 est de 50.0% pour les opérations d'Transfert.
+Budget vs Réalisé pour Chiffre d'affaires,Budget : 4 958 DH. Réalisé : 156 543 DH. Écart : 4.1%. Favorable.
+Valider la configuration,Configuration validée pour le module Estran. Les paramètres sont enregistrés.
+Accès pour tous et responsable qualité,Accès configuré pour tous et responsable qualité. Délais ou priorités spécifiques ?
+Budget vs Réalisé pour Amortissements,Budget : 149 292 DH. Réalisé : 238 309 DH. Écart : 29.3%. Défavorable.
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Résumé YTD Finance,"YTD : Budget total 65 360 DH, Réalisé 419 185 DH. Variance globale : -7.9%. Principaux drivers : Résultat net, Cash flow."
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."
+Quelles sont les anomalies financières ?,6 anomalies détectées via Isolation Forest. Poste principal : Chiffre d'affaires avec variance de -25.1%.
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1551 kg. Taux de recapture : 33.5%.
+Résumé YTD Finance,"YTD : Budget total 499 636 DH, Réalisé 16 426 DH. Variance globale : -21.4%. Principaux drivers : Cash flow, Chiffre d'affaires."
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Y a-t-il des anomalies sur le parc P6 ?,"Oui, 1 anomalies détectées (Majeure) via LOF. Biomasse écart : 516 kg. Vérifiez les lignes en zone Sud 1."
+Quelles sont les anomalies financières ?,5 anomalies détectées via LOF. Poste principal : Résultat net avec variance de 7.1%.
+Y a-t-il des anomalies sur le parc P5 ?,"Oui, 5 anomalies détectées (Critique) via LOF. Biomasse écart : 340 kg. Vérifiez les lignes en zone Nord."
+Quel est le taux de recapture du parc P4 ?,Le taux de recapture moyen du parc P4 est de 78.8% pour les opérations d'Échantillonnage.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 22 lignes. Taux de recapture moyen : 58.4%. Biomasse totale : 789 kg."
+Au revoir,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Y a-t-il des anomalies sur le parc P2-4 ?,"Oui, 1 anomalies détectées (Critique) via LOF. Biomasse écart : 763 kg. Vérifiez les lignes en zone Nord."
+Y a-t-il des anomalies sur le parc P6 ?,"Oui, 1 anomalies détectées (Critique) via Isolation Forest. Biomasse écart : 469 kg. Vérifiez les lignes en zone Sud."
+Quel est le statut du poste Frais généraux ?,"Poste FG (Frais généraux) : Budget 262 381 DH, Réalisé 293 032 DH. Variance : 20.0%. Tendance vs N-1 : 18.4%."
+Capex vs Opex ?,"Opex : 308 lignes, 259 473 DH. Capex : 84 lignes, 169 374 DH."
+Quel est le statut du poste Main d'oeuvre directe ?,"Poste MOD (Main d'oeuvre directe) : Budget 378 207 DH, Réalisé 229 566 DH. Variance : -27.4%. Tendance vs N-1 : -8.1%."
+Achats pour la catégorie CARBURANTS ?,"Catégorie CARBURANTS : 68 lignes, valeur 76 611 DH. Fournisseur principal : AGATRAVE."
+KPI de MAMOUN OUDGHIRI ?,MAMOUN OUDGHIRI a créé 19 DA. BC associées : 7. Taux de transformation DA→BC : 81%.
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 29 commandes, valeur totale 353 254 DH. Catégories : CARBURANTS, INFORMATIQUE."
+Fournisseur AGRIROUES MAROC ?,"AGRIROUES MAROC : 12 commandes, valeur totale 61 414 DH. Catégories : ELECTRICITÉ, ÉQUIPEMENT LABORATOIRE."
+Fournisseur AGATRAVE ?,"AGATRAVE : 11 commandes, valeur totale 406 482 DH. Catégories : ENGRAIS SOLIDE, ÉQUIPEMENT LABORATOIRE."
+Accès pour responsable achat et responsable qualité,Accès configuré pour responsable achat et responsable qualité. Délais ou priorités spécifiques ?
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1746 kg. Taux de recapture : 71.1%.
+Résumé YTD Finance,"YTD : Budget total 425 558 DH, Réalisé 70 801 DH. Variance globale : -26.2%. Principaux drivers : Cash flow, Chiffre d'affaires."
+Quel est le taux de recapture du parc P7 ?,Le taux de recapture moyen du parc P7 est de 35.7% pour les opérations d'Échantillonnage.
+Résumé YTD Finance,"YTD : Budget total 153 948 DH, Réalisé 105 791 DH. Variance globale : -27.4%. Principaux drivers : Frais généraux, Chiffre d'affaires."
+Statut des bons de commande ?,BC en cours : 73. BC livrées : 125. Statut principal : Envoyé.
+Quel est le taux de recapture du parc P2-3 ?,Le taux de recapture moyen du parc P2-3 est de 20.7% pour les opérations d'Échantillonnage.
+À bientôt,À bientôt ! L'assistant reste disponible.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, salaires"
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, prix"
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -5.4% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation.
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Compare Primaire et Hors calibre,"Primaire : 24 lignes, taux recapture 37.9%. Hors calibre : 10 lignes, taux recapture 82.9%."
+Résumé YTD Finance,"YTD : Budget total 315 959 DH, Réalisé 431 243 DH. Variance globale : -19.2%. Principaux drivers : EBITDA, Amortissements."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Achats pour la catégorie ELECTRICITÉ ?,"Catégorie ELECTRICITÉ : 59 lignes, valeur 413 803 DH. Fournisseur principal : AGUACONCEPT."
+Compare Primaire et Hors calibre,"Primaire : 10 lignes, taux recapture 38.5%. Hors calibre : 13 lignes, taux recapture 51.8%."
+Fournisseur CACED SARL ?,"CACED SARL : 27 commandes, valeur totale 377 052 DH. Catégories : CO2 INTRANT, ENGRAIS SOLIDE."
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1169 kg. Taux de recapture : 75.6%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Statut des bons de commande ?,BC en cours : 49. BC livrées : 188. Statut principal : Envoyé.
+Statut des bons de commande ?,BC en cours : 86. BC livrées : 106. Statut principal : En cours d'approbation.
+Combien de DA sont en cours ?,Il y a 79 DA en cours dont 9 sans commande associée. Valeur totale : 342 740 DH.
+Statut des bons de commande ?,BC en cours : 37. BC livrées : 109. Statut principal : Document lié créé.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Résumé YTD Finance,"YTD : Budget total 144 046 DH, Réalisé 335 366 DH. Variance globale : 28.8%. Principaux drivers : Chiffre d'affaires, Matières premières."
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 648 kg. Taux de recapture : 32.3%.
+Évolution mensuelle des achats ?,"Dernier mois : 50 DA créées, 19 BC créées. Valeur : 120 134 DH. Tendance : stable."
+Accès pour admin et manager,Accès configuré pour admin et manager. Délais ou priorités spécifiques ?
+Statut des bons de commande ?,BC en cours : 58. BC livrées : 86. Statut principal : En cours de préparation.
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 363 kg. Taux de recapture : 79.9%.
+Quelles sont les anomalies financières ?,8 anomalies détectées via One-Class SVM. Poste principal : Investissements avec variance de -29.5%.
+Au revoir,Bonne journée !
+Compare Primaire et Hors calibre,"Primaire : 38 lignes, taux recapture 63.9%. Hors calibre : 11 lignes, taux recapture 41.6%."
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 184 137 DH, Réalisé 3 301 DH. Variance : -19.1%. Tendance vs N-1 : -21.4%."
+Combien de DA sont en cours ?,Il y a 17 DA en cours dont 19 sans commande associée. Valeur totale : 69 276 DH.
+Résumé YTD Finance,"YTD : Budget total 22 924 DH, Réalisé 333 374 DH. Variance globale : -6.8%. Principaux drivers : Amortissements, EBITDA."
+Combien de DA sont en cours ?,Il y a 60 DA en cours dont 13 sans commande associée. Valeur totale : 428 156 DH.
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Fournisseur AGUACONCEPT ?,"AGUACONCEPT : 17 commandes, valeur totale 121 659 DH. Catégories : MATÉRIEL D'USURE, ELECTRICITÉ."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 1472 kg. Taux de recapture : 89.9%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Compare Primaire et Hors calibre,"Primaire : 19 lignes, taux recapture 83.2%. Hors calibre : 11 lignes, taux recapture 42.7%."
+Statut des bons de commande ?,BC en cours : 58. BC livrées : 146. Statut principal : Envoyé.
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Statut des bons de commande ?,BC en cours : 82. BC livrées : 167. Statut principal : Envoyé.
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Résumé YTD Finance,"YTD : Budget total 180 724 DH, Réalisé 67 384 DH. Variance globale : 22.7%. Principaux drivers : Investissements, Main d'oeuvre directe."
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 30 DA. BC associées : 7. Taux de transformation DA→BC : 79%.
+Résumé YTD Finance,"YTD : Budget total 369 218 DH, Réalisé 234 075 DH. Variance globale : -17.1%. Principaux drivers : EBITDA, Cash flow."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 345 kg. Taux de recapture : 69.5%.
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 24.4% pour les opérations d'Transfert.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 53.5% pour les opérations d'Transfert.
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 33 lignes. Taux de recapture moyen : 28.7%. Biomasse totale : 1610 kg."
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."
+Quelles sont les anomalies financières ?,6 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de 28.5%.
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 36.7% pour les opérations d'Transfert.
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 30.7% pour les opérations d'Échantillonnage.
+Statut des bons de commande ?,BC en cours : 38. BC livrées : 54. Statut principal : Confirmation reçue.
+Fournisseur ACRAPLAST ?,"ACRAPLAST : 22 commandes, valeur totale 203 858 DH. Catégories : INFORMATIQUE, MATÉRIEL D'USURE."
+Budget vs Réalisé pour Main d'oeuvre directe,Budget : 446 300 DH. Réalisé : 264 452 DH. Écart : -1.9%. Favorable.
+Combien de DA sont en cours ?,Il y a 10 DA en cours dont 29 sans commande associée. Valeur totale : 12 019 DH.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quelles sont les données du parc P6 ?,Le parc P6 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 693 kg. Taux de recapture : 81.5%.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 429 kg. Taux de recapture : 25.3%.
+Y a-t-il des anomalies sur le parc P3 ?,"Oui, 2 anomalies détectées (Mineure) via Isolation Forest. Biomasse écart : 303 kg. Vérifiez les lignes en zone Ouest."
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 17.8% vs budget. Le principal driver est « Chiffre d'affaires ». Recommandation : surveiller les postes à forte déviation.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 43 lignes. Taux de recapture moyen : 55.6%. Biomasse totale : 2000 kg."
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, fournisseur"
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 28.8% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Combien de DA sont en cours ?,Il y a 47 DA en cours dont 16 sans commande associée. Valeur totale : 322 340 DH.
+Résumé YTD Finance,"YTD : Budget total 200 825 DH, Réalisé 497 894 DH. Variance globale : 4.0%. Principaux drivers : Main d'oeuvre directe, Cash flow."
+Combien de DA sont en cours ?,Il y a 61 DA en cours dont 18 sans commande associée. Valeur totale : 270 255 DH.
+Achats pour la catégorie INFORMATIQUE ?,"Catégorie INFORMATIQUE : 30 lignes, valeur 310 597 DH. Fournisseur principal : AIR LIQUIDE MAROC."
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 339 kg. Taux de recapture : 67.3%.
+Combien de DA sont en cours ?,Il y a 75 DA en cours dont 18 sans commande associée. Valeur totale : 239 593 DH.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 45 lignes. Taux de recapture moyen : 50.9%. Biomasse totale : 305 kg."
+Accès pour contrôleur de gestion et chef de production,Accès configuré pour contrôleur de gestion et chef de production. Délais ou priorités spécifiques ?
+Évolution mensuelle des achats ?,"Dernier mois : 20 DA créées, 59 BC créées. Valeur : 180 231 DH. Tendance : hausse."
+Combien de DA sont en cours ?,Il y a 37 DA en cours dont 29 sans commande associée. Valeur totale : 129 843 DH.
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 24 DA. BC associées : 31. Taux de transformation DA→BC : 83%.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+KPI de RIDA AYYI ?,RIDA AYYI a créé 28 DA. BC associées : 9. Taux de transformation DA→BC : 65%.
+Quel est le taux de recapture du parc P4 ?,Le taux de recapture moyen du parc P4 est de 87.5% pour les opérations d'Échantillonnage.
+Bye,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Compare Primaire et Hors calibre,"Primaire : 13 lignes, taux recapture 36.6%. Hors calibre : 28 lignes, taux recapture 45.1%."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 8 lignes. Taux de recapture moyen : 33.1%. Biomasse totale : 940 kg."
+Achats pour la catégorie ELECTRICITÉ ?,"Catégorie ELECTRICITÉ : 43 lignes, valeur 3 648 DH. Fournisseur principal : AGUACONCEPT."
+Quelles sont les anomalies financières ?,6 anomalies détectées via LOF. Poste principal : Frais généraux avec variance de 6.1%.
+Quelles sont les anomalies financières ?,3 anomalies détectées via One-Class SVM. Poste principal : Investissements avec variance de -24.4%.
+Compare Primaire et Hors calibre,"Primaire : 28 lignes, taux recapture 30.0%. Hors calibre : 24 lignes, taux recapture 64.7%."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 770 kg. Taux de recapture : 66.8%.
+Quelles sont les anomalies financières ?,7 anomalies détectées via One-Class SVM. Poste principal : Cash flow avec variance de -25.6%.
+Quel est le taux de recapture du parc P5 ?,Le taux de recapture moyen du parc P5 est de 45.3% pour les opérations d'Transfert.
+Quel est le statut du poste EBITDA ?,"Poste EBITDA (EBITDA) : Budget 442 823 DH, Réalisé 413 301 DH. Variance : -23.9%. Tendance vs N-1 : 16.3%."
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 77 353 DH, Réalisé 435 807 DH. Variance : -3.8%. Tendance vs N-1 : 26.8%."
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 19 890 DH, Réalisé 347 141 DH. Variance : -9.8%. Tendance vs N-1 : 16.0%."
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 70.7% pour les opérations d'Transfert.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 322 719 DH, Réalisé 2 853 DH. Variance : 24.4%. Tendance vs N-1 : -28.9%."
+Comment fonctionne One-Class SVM ?,One-Class SVM est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+KPI de MAROUANE AITTOUGHA ?,MAROUANE AITTOUGHA a créé 17 DA. BC associées : 36. Taux de transformation DA→BC : 76%.
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 1591 kg. Taux de recapture : 88.7%.
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 18 commandes, valeur totale 151 532 DH. Catégories : ELECTRICITÉ, ELECTRICITÉ."
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -17.6% vs budget. Le principal driver est « Amortissements ». Recommandation : surveiller les postes à forte déviation.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 19.7% vs budget. Le principal driver est « Investissements ». Recommandation : surveiller les postes à forte déviation.
+Résumé YTD Finance,"YTD : Budget total 391 909 DH, Réalisé 8 615 DH. Variance globale : -8.6%. Principaux drivers : Matières premières, Amortissements."
+Y a-t-il des anomalies sur le parc P7-ext ?,"Oui, 3 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1517 kg. Vérifiez les lignes en zone Sud."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 849 kg. Taux de recapture : 86.5%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -1.5% vs budget. Le principal driver est « Chiffre d'affaires ». Recommandation : surveiller les postes à forte déviation.
+Quelles sont les données du parc P7 ?,Le parc P7 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 630 kg. Taux de recapture : 67.7%.
+Compare Primaire et Hors calibre,"Primaire : 19 lignes, taux recapture 65.4%. Hors calibre : 13 lignes, taux recapture 29.8%."
+KPI de MAMOUN OUDGHIRI ?,MAMOUN OUDGHIRI a créé 5 DA. BC associées : 4. Taux de transformation DA→BC : 93%.
+Capex vs Opex ?,"Opex : 247 lignes, 211 309 DH. Capex : 115 lignes, 393 212 DH."
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 49 lignes. Taux de recapture moyen : 80.2%. Biomasse totale : 345 kg."
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1606 kg. Taux de recapture : 70.4%.
+Comment fonctionne LOF ?,LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Statut des bons de commande ?,BC en cours : 91. BC livrées : 185. Statut principal : Envoyé.
+Statut des bons de commande ?,BC en cours : 83. BC livrées : 190. Statut principal : En cours de préparation.
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 45 DA. BC associées : 20. Taux de transformation DA→BC : 88%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 655 kg. Taux de recapture : 34.0%.
+Résumé YTD Finance,"YTD : Budget total 152 333 DH, Réalisé 467 414 DH. Variance globale : -12.0%. Principaux drivers : Main d'oeuvre directe, Main d'oeuvre directe."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1234 kg. Taux de recapture : 62.1%.
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 413 882 DH, Réalisé 330 866 DH. Variance : 8.8%. Tendance vs N-1 : -26.0%."
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1185 kg. Taux de recapture : 35.0%.
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 85.9% pour les opérations d'Échantillonnage.
+Valider la configuration,Configuration validée pour le module Estran. Les paramètres sont enregistrés.
+Combien de DA sont en cours ?,Il y a 24 DA en cours dont 26 sans commande associée. Valeur totale : 107 789 DH.
+Combien de DA sont en cours ?,Il y a 48 DA en cours dont 19 sans commande associée. Valeur totale : 353 207 DH.
+Résumé YTD Finance,"YTD : Budget total 152 810 DH, Réalisé 225 144 DH. Variance globale : -29.9%. Principaux drivers : Amortissements, Frais généraux."
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1024 kg. Taux de recapture : 71.0%.
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 290 kg. Taux de recapture : 69.6%.
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Compare Primaire et Hors calibre,"Primaire : 19 lignes, taux recapture 72.3%. Hors calibre : 20 lignes, taux recapture 76.3%."
+KPI de SOUFIANE ELKAFRAOUI ?,SOUFIANE ELKAFRAOUI a créé 44 DA. BC associées : 28. Taux de transformation DA→BC : 80%.
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Combien de DA sont en cours ?,Il y a 78 DA en cours dont 30 sans commande associée. Valeur totale : 348 276 DH.
+Fournisseur AGA IKHWAN ?,"AGA IKHWAN : 23 commandes, valeur totale 281 841 DH. Catégories : ELECTRICITÉ, ENGRAIS SOLIDE."
+Fournisseur ENTERPRISE BOUKRATE ?,"ENTERPRISE BOUKRATE : 24 commandes, valeur totale 452 369 DH. Catégories : CO2 INTRANT, ENGRAIS SOLIDE."
+Combien de DA sont en cours ?,Il y a 17 DA en cours dont 22 sans commande associée. Valeur totale : 242 519 DH.
+Achats pour la catégorie STRUCTURE MÉTALLIQUE ?,"Catégorie STRUCTURE MÉTALLIQUE : 62 lignes, valeur 313 589 DH. Fournisseur principal : AGA IKHWAN."
+Résumé YTD Finance,"YTD : Budget total 420 132 DH, Réalisé 43 412 DH. Variance globale : 13.6%. Principaux drivers : Matières premières, Résultat net."
+Quel est le taux de recapture du parc P2-3 ?,Le taux de recapture moyen du parc P2-3 est de 40.4% pour les opérations d'Échantillonnage.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 23 lignes. Taux de recapture moyen : 22.3%. Biomasse totale : 790 kg."
+Aide,"Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."
+Évolution mensuelle des achats ?,"Dernier mois : 30 DA créées, 18 BC créées. Valeur : 207 897 DH. Tendance : baisse."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1743 kg. Taux de recapture : 79.4%.
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 62.0% pour les opérations d'Échantillonnage.
+Résumé YTD Finance,"YTD : Budget total 166 313 DH, Réalisé 336 870 DH. Variance globale : -25.6%. Principaux drivers : Cash flow, Investissements."
+Statut des bons de commande ?,BC en cours : 44. BC livrées : 200. Statut principal : En cours de préparation.
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 76.6% pour les opérations d'Transfert.
+KPI de RIDA AYYI ?,RIDA AYYI a créé 6 DA. BC associées : 16. Taux de transformation DA→BC : 69%.
+Résumé YTD Finance,"YTD : Budget total 68 137 DH, Réalisé 320 937 DH. Variance globale : 23.1%. Principaux drivers : Matières premières, EBITDA."
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 417 kg. Taux de recapture : 80.9%.
+Accès pour admin et responsable qualité,Accès configuré pour admin et responsable qualité. Délais ou priorités spécifiques ?
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -18.6% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : marge, fournisseur"
+Statut des bons de commande ?,BC en cours : 73. BC livrées : 154. Statut principal : Envoyé.
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 208 279 DH, Réalisé 451 912 DH. Variance : 14.5%. Tendance vs N-1 : -3.8%."
+Quelles sont les données du parc P6 ?,Le parc P6 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 743 kg. Taux de recapture : 22.7%.
+Combien de DA sont en cours ?,Il y a 78 DA en cours dont 9 sans commande associée. Valeur totale : 86 364 DH.
+Quelles sont les données du parc P7 ?,Le parc P7 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1498 kg. Taux de recapture : 79.7%.
+Accès pour tous et responsable achat,Accès configuré pour tous et responsable achat. Délais ou priorités spécifiques ?
+Quel est le taux de recapture du parc P2 ?,Le taux de recapture moyen du parc P2 est de 79.5% pour les opérations d'Transfert.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Quel est le taux de recapture du parc P4 ?,Le taux de recapture moyen du parc P4 est de 54.1% pour les opérations d'Transfert.
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 46 305 DH, Réalisé 229 062 DH. Variance : 20.7%. Tendance vs N-1 : -15.4%."
+Capex vs Opex ?,"Opex : 375 lignes, 468 894 DH. Capex : 137 lignes, 399 740 DH."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 859 kg. Taux de recapture : 52.5%.
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, aucun"
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 943 kg. Taux de recapture : 81.5%.
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1438 kg. Taux de recapture : 34.7%.
+Quelles sont les anomalies financières ?,8 anomalies détectées via LOF. Poste principal : Main d'oeuvre directe avec variance de -24.2%.
+Quel est le taux de recapture du parc P7-ext ?,Le taux de recapture moyen du parc P7-ext est de 82.4% pour les opérations d'Transfert.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 47 lignes. Taux de recapture moyen : 80.9%. Biomasse totale : 1146 kg."
+Achats pour la catégorie CO2 INTRANT ?,"Catégorie CO2 INTRANT : 45 lignes, valeur 93 233 DH. Fournisseur principal : AGUACONCEPT."
+Capex vs Opex ?,"Opex : 337 lignes, 329 254 DH. Capex : 103 lignes, 196 798 DH."
+KPI de MAROUANE AITTOUGHA ?,MAROUANE AITTOUGHA a créé 18 DA. BC associées : 39. Taux de transformation DA→BC : 90%.
+Statut des bons de commande ?,BC en cours : 73. BC livrées : 54. Statut principal : Envoyé.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 13.3% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation.
+Accès pour responsable qualité et chef de production,Accès configuré pour responsable qualité et chef de production. Délais ou priorités spécifiques ?
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 474 042 DH, Réalisé 437 939 DH. Variance : -18.4%. Tendance vs N-1 : 10.7%."
+Combien de DA sont en cours ?,Il y a 74 DA en cours dont 11 sans commande associée. Valeur totale : 300 360 DH.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 231 944 DH, Réalisé 331 127 DH. Variance : -11.8%. Tendance vs N-1 : -13.5%."
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, coût unitaire"
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Résumé YTD Finance,"YTD : Budget total 184 411 DH, Réalisé 234 524 DH. Variance globale : -27.5%. Principaux drivers : Amortissements, Résultat net."
+Quel est le taux de recapture du parc P7 ?,Le taux de recapture moyen du parc P7 est de 79.6% pour les opérations d'Échantillonnage.
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Fournisseur ACRAPLAST ?,"ACRAPLAST : 3 commandes, valeur totale 254 174 DH. Catégories : ELECTRICITÉ, PRESTATION."
+Résumé YTD Finance,"YTD : Budget total 490 171 DH, Réalisé 371 994 DH. Variance globale : -16.5%. Principaux drivers : Investissements, EBITDA."
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 365 042 DH, Réalisé 435 841 DH. Variance : -21.7%. Tendance vs N-1 : 12.3%."
+Quelles sont les données du parc P7 ?,Le parc P7 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1156 kg. Taux de recapture : 80.5%.
+Fichiers : Suivi Global CCS.xlsm,"Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, marge"
+Fournisseur AGATRAVE ?,"AGATRAVE : 28 commandes, valeur totale 457 268 DH. Catégories : ENGRAIS SOLIDE, ELECTRICITÉ."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1876 kg. Taux de recapture : 86.6%.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : aucun, coût unitaire"
+Compare Primaire et Hors calibre,"Primaire : 33 lignes, taux recapture 26.3%. Hors calibre : 13 lignes, taux recapture 73.2%."
+Quel est le statut du poste Amortissements ?,"Poste AMORT (Amortissements) : Budget 453 214 DH, Réalisé 328 942 DH. Variance : -11.0%. Tendance vs N-1 : -3.6%."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 636 kg. Taux de recapture : 55.4%.
+Achats pour la catégorie PRESTATION ?,"Catégorie PRESTATION : 61 lignes, valeur 418 316 DH. Fournisseur principal : ENTERPRISE BOUKRATE."
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 22 lignes. Taux de recapture moyen : 77.9%. Biomasse totale : 346 kg."
+Compare Primaire et Hors calibre,"Primaire : 24 lignes, taux recapture 83.1%. Hors calibre : 27 lignes, taux recapture 31.1%."
+Quelles sont les données du parc P2-4 ?,Le parc P2-4 est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 593 kg. Taux de recapture : 69.3%.
+Quelles sont les anomalies financières ?,1 anomalies détectées via LOF. Poste principal : Cash flow avec variance de -5.1%.
+Quel est le statut du poste Main d'oeuvre directe ?,"Poste MOD (Main d'oeuvre directe) : Budget 400 740 DH, Réalisé 134 065 DH. Variance : -12.6%. Tendance vs N-1 : -22.8%."
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : remise, marge"
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+KPI de MAROUANE AITTOUGHA ?,MAROUANE AITTOUGHA a créé 32 DA. BC associées : 31. Taux de transformation DA→BC : 95%.
+Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?,"Catégorie ÉQUIPEMENT LABORATOIRE : 44 lignes, valeur 179 965 DH. Fournisseur principal : AGA IKHWAN."
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1880 kg. Taux de recapture : 75.7%.
+KPI de SOUFIANE ELKAFRAOUI ?,SOUFIANE ELKAFRAOUI a créé 45 DA. BC associées : 33. Taux de transformation DA→BC : 91%.
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 81.7% pour les opérations d'Échantillonnage.
+Y a-t-il des anomalies sur le parc P8 ?,"Oui, 4 anomalies détectées (Majeure) via Isolation Forest. Biomasse écart : 789 kg. Vérifiez les lignes en zone Nord."
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 76 878 DH, Réalisé 134 301 DH. Variance : -18.2%. Tendance vs N-1 : 6.1%."
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 26 lignes. Taux de recapture moyen : 85.4%. Biomasse totale : 1239 kg."
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1718 kg. Taux de recapture : 50.9%.
+Capex vs Opex ?,"Opex : 379 lignes, 451 537 DH. Capex : 140 lignes, 320 052 DH."
+Valider la configuration,Configuration validée pour le module Finance. Les paramètres sont enregistrés.
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 72.6% pour les opérations d'Transfert.
+Bye,Au revoir ! Bonne utilisation d'AZURA AQUA.
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 630 kg. Taux de recapture : 50.1%.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : conditions paiement, fournisseur"
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 15 lignes. Taux de recapture moyen : 43.1%. Biomasse totale : 1620 kg."
+Statut des bons de commande ?,BC en cours : 97. BC livrées : 102. Statut principal : En cours d'approbation.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Valider la configuration,Configuration validée pour le module Achats. Les paramètres sont enregistrés.
+Bye,À bientôt ! L'assistant reste disponible.
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 201 kg. Taux de recapture : 61.9%.
+Salut,"Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"
+Capex vs Opex ?,"Opex : 435 lignes, 8 636 DH. Capex : 65 lignes, 487 390 DH."
+Résumé YTD Finance,"YTD : Budget total 239 759 DH, Réalisé 33 029 DH. Variance globale : -23.3%. Principaux drivers : Cash flow, Investissements."
+Combien de DA sont en cours ?,Il y a 79 DA en cours dont 18 sans commande associée. Valeur totale : 278 986 DH.
+Achats pour la catégorie INFORMATIQUE ?,"Catégorie INFORMATIQUE : 56 lignes, valeur 394 722 DH. Fournisseur principal : ACRAPLAST."
+Quelles sont les données du parc P5 ?,Le parc P5 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 409 kg. Taux de recapture : 67.4%.
+Fournisseur AIR LIQUIDE MAROC ?,"AIR LIQUIDE MAROC : 21 commandes, valeur totale 201 274 DH. Catégories : MATÉRIEL D'USURE, ELECTRICITÉ."
+Accès pour admin et contrôleur de gestion,Accès configuré pour admin et contrôleur de gestion. Délais ou priorités spécifiques ?
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 83.3% pour les opérations d'Échantillonnage.
+Y a-t-il des anomalies sur le parc P7-ext ?,"Oui, 5 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1402 kg. Vérifiez les lignes en zone Est."
+Achats pour la catégorie INFORMATIQUE ?,"Catégorie INFORMATIQUE : 36 lignes, valeur 170 958 DH. Fournisseur principal : AGUACONCEPT."
+Fournisseur AGUACONCEPT ?,"AGUACONCEPT : 20 commandes, valeur totale 265 095 DH. Catégories : CO2 INTRANT, MATÉRIEL D'USURE."
+Y a-t-il des anomalies sur le parc P3 ?,"Oui, 5 anomalies détectées (Majeure) via LOF. Biomasse écart : 1459 kg. Vérifiez les lignes en zone Sud."
+Quel est le statut du poste Main d'oeuvre directe ?,"Poste MOD (Main d'oeuvre directe) : Budget 457 804 DH, Réalisé 131 173 DH. Variance : -26.9%. Tendance vs N-1 : -1.2%."
+Valider la configuration,Configuration validée pour le module Estran. Les paramètres sont enregistrés.
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Statut des bons de commande ?,BC en cours : 58. BC livrées : 120. Statut principal : Document lié créé.
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 9 DA. BC associées : 8. Taux de transformation DA→BC : 77%.
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 34 lignes. Taux de recapture moyen : 26.2%. Biomasse totale : 716 kg."
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 236 303 DH, Réalisé 54 364 DH. Variance : 18.7%. Tendance vs N-1 : 20.2%."
+Évolution mensuelle des achats ?,"Dernier mois : 25 DA créées, 21 BC créées. Valeur : 54 207 DH. Tendance : stable."
+Valider la configuration,Configuration validée pour le module Achats. Les paramètres sont enregistrés.
+Achats pour la catégorie STRUCTURE MÉTALLIQUE ?,"Catégorie STRUCTURE MÉTALLIQUE : 57 lignes, valeur 352 934 DH. Fournisseur principal : AGA IKHWAN."
+Combien de DA sont en cours ?,Il y a 46 DA en cours dont 18 sans commande associée. Valeur totale : 94 462 DH.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 58.9% pour les opérations d'Échantillonnage.
+Y a-t-il des anomalies sur le parc P7 ?,"Oui, 4 anomalies détectées (Critique) via Isolation Forest. Biomasse écart : 386 kg. Vérifiez les lignes en zone Sud."
+KPI de SAID BOUKHLIK ?,SAID BOUKHLIK a créé 36 DA. BC associées : 30. Taux de transformation DA→BC : 81%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 22.4% vs budget. Le principal driver est « Chiffre d'affaires ». Recommandation : surveiller les postes à forte déviation.
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 22 DA. BC associées : 37. Taux de transformation DA→BC : 78%.
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Résumé YTD Finance,"YTD : Budget total 271 734 DH, Réalisé 80 324 DH. Variance globale : -11.8%. Principaux drivers : Main d'oeuvre directe, Amortissements."
+Fournisseur ACRAPLAST ?,"ACRAPLAST : 29 commandes, valeur totale 236 554 DH. Catégories : INFORMATIQUE, PLOMBERIE."
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 74.8% pour les opérations d'Transfert.
+Quel est le taux de recapture du parc P2-4 ?,Le taux de recapture moyen du parc P2-4 est de 59.5% pour les opérations d'Échantillonnage.
+Quel est le statut du poste Frais généraux ?,"Poste FG (Frais généraux) : Budget 423 316 DH, Réalisé 225 078 DH. Variance : 20.7%. Tendance vs N-1 : 28.5%."
+Y a-t-il des anomalies sur le parc P2-4 ?,"Oui, 3 anomalies détectées (Critique) via LOF. Biomasse écart : 466 kg. Vérifiez les lignes en zone Nord."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Accès pour admin et contrôleur de gestion,Accès configuré pour admin et contrôleur de gestion. Délais ou priorités spécifiques ?
+Merci,De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA.
+KPI de MAMOUN OUDGHIRI ?,MAMOUN OUDGHIRI a créé 19 DA. BC associées : 25. Taux de transformation DA→BC : 95%.
+Accès pour directeur et responsable achat,Accès configuré pour directeur et responsable achat. Délais ou priorités spécifiques ?
+Quel est le statut du poste Frais généraux ?,"Poste FG (Frais généraux) : Budget 232 988 DH, Réalisé 320 227 DH. Variance : -12.9%. Tendance vs N-1 : 14.9%."
+Quelles sont les données du parc P4 ?,Le parc P4 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 419 kg. Taux de recapture : 72.0%.
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 162 410 DH, Réalisé 293 136 DH. Variance : -7.4%. Tendance vs N-1 : 17.5%."
+Accès pour chef de production et responsable achat,Accès configuré pour chef de production et responsable achat. Délais ou priorités spécifiques ?
+Comment fonctionne LOF ?,LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1489 kg. Taux de recapture : 60.3%.
+Évolution mensuelle des achats ?,"Dernier mois : 78 DA créées, 23 BC créées. Valeur : 462 599 DH. Tendance : baisse."
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Achats pour la catégorie CO2 INTRANT ?,"Catégorie CO2 INTRANT : 52 lignes, valeur 205 166 DH. Fournisseur principal : AGA IKHWAN."
+Statut des bons de commande ?,BC en cours : 96. BC livrées : 132. Statut principal : Envoyé.
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 66.9% pour les opérations d'Échantillonnage.
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 1729 kg. Taux de recapture : 60.9%.
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 13 864 DH, Réalisé 319 388 DH. Variance : 25.7%. Tendance vs N-1 : 19.8%."
+Accès pour admin et contrôleur de gestion,Accès configuré pour admin et contrôleur de gestion. Délais ou priorités spécifiques ?
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : conditions paiement, conditions paiement"
+Comment fonctionne Z-Score ?,Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 35.5% pour les opérations d'Échantillonnage.
+Fournisseur CACED SARL ?,"CACED SARL : 26 commandes, valeur totale 322 068 DH. Catégories : PRESTATION, CO2 INTRANT."
+Quel est le statut du poste Résultat net ?,"Poste RN (Résultat net) : Budget 372 081 DH, Réalisé 335 718 DH. Variance : -4.9%. Tendance vs N-1 : -23.1%."
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 57.7% pour les opérations d'Échantillonnage.
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."
+Montre les données de type Échantillonnage,"Pour le type « Échantillonnage », il y a 44 lignes. Taux de recapture moyen : 87.2%. Biomasse totale : 403 kg."
+Statut des bons de commande ?,BC en cours : 56. BC livrées : 147. Statut principal : En cours d'approbation.
+Quel est le statut du poste Cash flow ?,"Poste CF (Cash flow) : Budget 318 382 DH, Réalisé 231 858 DH. Variance : -5.1%. Tendance vs N-1 : -17.1%."
+Quelles sont les données du parc P7-ext ?,Le parc P7-ext est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1718 kg. Taux de recapture : 39.3%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 28.0% vs budget. Le principal driver est « Frais généraux ». Recommandation : surveiller les postes à forte déviation.
+Combien de DA sont en cours ?,Il y a 41 DA en cours dont 5 sans commande associée. Valeur totale : 136 826 DH.
+Quelles sont les données du parc P7 ?,Le parc P7 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1222 kg. Taux de recapture : 47.7%.
+Hello,Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?
+Statut des bons de commande ?,BC en cours : 46. BC livrées : 134. Statut principal : En cours de préparation.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."
+Quelles sont les données du parc P7 ?,Le parc P7 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1783 kg. Taux de recapture : 39.5%.
+Quelles sont les données du parc P2-3 ?,Le parc P2-3 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 1280 kg. Taux de recapture : 81.1%.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 1.5% vs budget. Le principal driver est « Amortissements ». Recommandation : surveiller les postes à forte déviation.
+Comment fonctionne Isolation Forest ?,Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Y a-t-il des anomalies sur le parc P2 ?,"Oui, 4 anomalies détectées (Majeure) via Z-Score. Biomasse écart : 1605 kg. Vérifiez les lignes en zone Sud."
+Combien de DA sont en cours ?,Il y a 20 DA en cours dont 21 sans commande associée. Valeur totale : 234 324 DH.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de 24.7% vs budget. Le principal driver est « Amortissements ». Recommandation : surveiller les postes à forte déviation.
+Accès pour directeur et tous,Accès configuré pour directeur et tous. Délais ou priorités spécifiques ?
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Fichiers : Suivi Global CCS.xlsm,"Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, coût unitaire"
+Quel est le taux de recapture du parc P2 ?,Le taux de recapture moyen du parc P2 est de 69.6% pour les opérations d'Échantillonnage.
+Combien de DA sont en cours ?,Il y a 27 DA en cours dont 29 sans commande associée. Valeur totale : 336 443 DH.
+Quel est le taux de recapture du parc P6 ?,Le taux de recapture moyen du parc P6 est de 78.4% pour les opérations d'Transfert.
+Combien de DA sont en cours ?,Il y a 63 DA en cours dont 16 sans commande associée. Valeur totale : 467 415 DH.
+Combien de DA sont en cours ?,Il y a 54 DA en cours dont 8 sans commande associée. Valeur totale : 93 671 DH.
+Quel est le statut du poste Chiffre d'affaires ?,"Poste CA (Chiffre d'affaires) : Budget 184 619 DH, Réalisé 266 090 DH. Variance : -25.5%. Tendance vs N-1 : -2.3%."
+Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?,"Catégorie ÉQUIPEMENT LABORATOIRE : 26 lignes, valeur 339 314 DH. Fournisseur principal : CACED SARL."
+Achats pour la catégorie CARBURANTS ?,"Catégorie CARBURANTS : 33 lignes, valeur 267 841 DH. Fournisseur principal : AGRIROUES MAROC."
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1299 kg. Taux de recapture : 72.6%.
+Statut des bons de commande ?,BC en cours : 74. BC livrées : 192. Statut principal : En cours d'approbation.
+Bonjour,Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?
+Comment fonctionne One-Class SVM ?,One-Class SVM est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants.
+Achats pour la catégorie INFORMATIQUE ?,"Catégorie INFORMATIQUE : 56 lignes, valeur 280 262 DH. Fournisseur principal : AGUACONCEPT."
+Fournisseur ENTERPRISE BOUKRATE ?,"ENTERPRISE BOUKRATE : 8 commandes, valeur totale 409 432 DH. Catégories : CO2 INTRANT, INFORMATIQUE."
+Configure le module Estran,"Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Y a-t-il des anomalies sur le parc P3 ?,"Oui, 1 anomalies détectées (Majeure) via One-Class SVM. Biomasse écart : 1862 kg. Vérifiez les lignes en zone Est."
+Statut des bons de commande ?,BC en cours : 26. BC livrées : 138. Statut principal : En cours de préparation.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 9 lignes. Taux de recapture moyen : 39.3%. Biomasse totale : 1817 kg."
+Quel est le taux de recapture du parc P2-2 ?,Le taux de recapture moyen du parc P2-2 est de 75.5% pour les opérations d'Échantillonnage.
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 36.9% pour les opérations d'Transfert.
+Fichiers : Exemple BDD estran.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, fournisseur"
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, marge"
+Quel est le statut du poste Investissements ?,"Poste CAPEX (Investissements) : Budget 415 240 DH, Réalisé 387 507 DH. Variance : 23.8%. Tendance vs N-1 : -3.0%."
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Comment importer des données ?,Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo).
+Fichiers : ventes.xlsx,"Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, marge"
+Combien de DA sont en cours ?,Il y a 45 DA en cours dont 11 sans commande associée. Valeur totale : 491 573 DH.
+Quels modules sont disponibles ?,"Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."
+Capex vs Opex ?,"Opex : 383 lignes, 445 800 DH. Capex : 58 lignes, 417 264 DH."
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 784 kg. Taux de recapture : 49.6%.
+Fournisseur ENTERPRISE BOUKRATE ?,"ENTERPRISE BOUKRATE : 4 commandes, valeur totale 144 202 DH. Catégories : PRESTATION, ENGRAIS SOLIDE."
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Configure le module Achats,"Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Combien de DA sont en cours ?,Il y a 61 DA en cours dont 26 sans commande associée. Valeur totale : 263 565 DH.
+Compare Primaire et Hors calibre,"Primaire : 24 lignes, taux recapture 86.2%. Hors calibre : 28 lignes, taux recapture 40.9%."
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 26 lignes. Taux de recapture moyen : 58.6%. Biomasse totale : 1312 kg."
+KPI de MOHAMED TAOUFIQ ?,MOHAMED TAOUFIQ a créé 39 DA. BC associées : 24. Taux de transformation DA→BC : 84%.
+Montre les données de type Récolte commerciale,"Pour le type « Récolte commerciale », il y a 11 lignes. Taux de recapture moyen : 81.2%. Biomasse totale : 1101 kg."
+Quelles sont les données du parc P3 ?,Le parc P3 est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 833 kg. Taux de recapture : 66.7%.
+Quel est le taux de recapture du parc P3 ?,Le taux de recapture moyen du parc P3 est de 55.4% pour les opérations d'Transfert.
+Montre les données de type Transfert,"Pour le type « Transfert », il y a 36 lignes. Taux de recapture moyen : 85.3%. Biomasse totale : 797 kg."
+Statut des bons de commande ?,BC en cours : 57. BC livrées : 109. Statut principal : En cours de préparation.
+Capex vs Opex ?,"Opex : 345 lignes, 177 180 DH. Capex : 120 lignes, 303 103 DH."
+Quel est le statut du poste Matières premières ?,"Poste MP (Matières premières) : Budget 264 628 DH, Réalisé 338 856 DH. Variance : -19.6%. Tendance vs N-1 : -15.1%."
+Combien de DA sont en cours ?,Il y a 11 DA en cours dont 13 sans commande associée. Valeur totale : 342 818 DH.
+Génère un commentaire IA sur les finances,Le résultat YTD montre une variance de -0.6% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation.
+Bye,À bientôt ! L'assistant reste disponible.
+Quelles sont les données du parc P2 ?,Le parc P2 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1310 kg. Taux de recapture : 24.3%.
+Compare Primaire et Hors calibre,"Primaire : 18 lignes, taux recapture 84.0%. Hors calibre : 25 lignes, taux recapture 87.7%."
+Évolution mensuelle des achats ?,"Dernier mois : 39 DA créées, 59 BC créées. Valeur : 396 059 DH. Tendance : hausse."
+Configure le module Finance,"Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"
+Valider la configuration,Configuration validée pour le module Achats. Les paramètres sont enregistrés.
+Quelles sont les données du parc P2-2 ?,Le parc P2-2 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1993 kg. Taux de recapture : 70.4%.
+Montre les données de type Retour commercial,"Pour le type « Retour commercial », il y a 45 lignes. Taux de recapture moyen : 77.0%. Biomasse totale : 386 kg."
+Statut des bons de commande ?,BC en cours : 48. BC livrées : 126. Statut principal : En cours de préparation.
+Y a-t-il des anomalies sur le parc P2-3 ?,"Oui, 5 anomalies détectées (Critique) via One-Class SVM. Biomasse écart : 1572 kg. Vérifiez les lignes en zone Sud."
+Quelles sont les données du parc P8 ?,Le parc P8 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 988 kg. Taux de recapture : 46.7%.
+Quel est le taux de recapture du parc P8 ?,Le taux de recapture moyen du parc P8 est de 89.8% pour les opérations d'Transfert.
+Compare Primaire et Hors calibre,"Primaire : 19 lignes, taux recapture 89.5%. Hors calibre : 19 lignes, taux recapture 21.5%."
+Quel est le statut du poste Frais généraux ?,"Poste FG (Frais généraux) : Budget 437 861 DH, Réalisé 78 491 DH. Variance : 2.9%. Tendance vs N-1 : 13.6%."
+Y a-t-il des anomalies sur le parc P5 ?,"Oui, 3 anomalies détectées (Critique) via One-Class SVM. Biomasse écart : 435 kg. Vérifiez les lignes en zone Ouest."
+Budget vs Réalisé pour EBITDA,Budget : 22 154 DH. Réalisé : 150 901 DH. Écart : 27.3%. Favorable.
+Combien de DA sont en cours ?,Il y a 58 DA en cours dont 17 sans commande associée. Valeur totale : 42 174 DH.
+Que fais-tu ?,"Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."

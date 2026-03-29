@@ -48,12 +48,21 @@ def _safe_int(val):
         return None
 
 
+def _validate_excel_extension(path: Path) -> None:
+    """Reject non-.xlsx/.xlsm files for macro safety."""
+    ext = path.suffix.lower()
+    if ext not in (".xlsx", ".xlsm"):
+        raise ValueError(f"Format non autorisé. Utilisez .xlsx ou .xlsm uniquement (reçu: {ext})")
+
+
 async def seed_from_excel(session: AsyncSession, excel_path: Path, replace: bool = True) -> dict[str, int]:
     """
     Load Excel at excel_path and sync to DB. Returns counts.
     replace=True: truncates tables before load (use for sync).
     replace=False: appends only (use for seed without clearing).
+    Only .xlsx and .xlsm are accepted (macro safety).
     """
+    _validate_excel_extension(excel_path)
     counts = {"estran": 0, "finance": 0, "purchases": 0}
 
     if replace:
@@ -218,16 +227,18 @@ async def seed_from_excel(session: AsyncSession, excel_path: Path, replace: bool
                 counts["finance"] += 1
     wb.close()
 
-    # Purchases (synthetic - TB ACHAT has no tabular data)
-    da_bc = [
-        *[PurchaseDA(reference="DA-2025-001", amount=Decimal("15000"), delay_days=5, status="En cours", critical_flag=False),
-          PurchaseDA(reference="DA-2025-002", amount=Decimal("45000"), delay_days=12, status="En cours", critical_flag=True)],
-        *[PurchaseBC(reference="BC-2025-101", amount=Decimal("22000"), delay_days=3, status="Non livré", critical_flag=False, expected_delivery_date=date(2025, 2, 15)),
-          PurchaseBC(reference="BC-2025-102", amount=Decimal("78000"), delay_days=18, status="Non livré", critical_flag=True, expected_delivery_date=date(2025, 1, 28))],
-    ]
-    for r in da_bc:
-        session.add(r)
-        counts["purchases"] += 1
+    # Purchases : lignes de démo uniquement si le classeur a bien alimenté Estran ou Finance
+    # (évite d'afficher « que des achats » après import d'un mauvais fichier ex. Suivi CCS seul).
+    if counts["estran"] > 0 or counts["finance"] > 0:
+        da_bc = [
+            *[PurchaseDA(reference="DA-2025-001", amount=Decimal("15000"), delay_days=5, status="En cours", critical_flag=False),
+              PurchaseDA(reference="DA-2025-002", amount=Decimal("45000"), delay_days=12, status="En cours", critical_flag=True)],
+            *[PurchaseBC(reference="BC-2025-101", amount=Decimal("22000"), delay_days=3, status="Non livré", critical_flag=False, expected_delivery_date=date(2025, 2, 15)),
+              PurchaseBC(reference="BC-2025-102", amount=Decimal("78000"), delay_days=18, status="Non livré", critical_flag=True, expected_delivery_date=date(2025, 1, 28))],
+        ]
+        for r in da_bc:
+            session.add(r)
+            counts["purchases"] += 1
     await session.commit()
 
     return counts

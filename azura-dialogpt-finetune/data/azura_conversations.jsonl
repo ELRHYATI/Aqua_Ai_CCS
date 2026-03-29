@@ -1,0 +1,1000 @@
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1551 kg. Taux de recapture : 53.3%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 1602 kg. Taux de recapture : 42.7%."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 1406 kg. Taux de recapture : 39.5%."}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 42.9% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 14 lignes. Taux de recapture moyen : 30.4%. Biomasse totale : 1352 kg."}
+{"prompt": "Achats pour la catégorie PLOMBERIE ?", "response": "Catégorie PLOMBERIE : 42 lignes, valeur 217 055 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 19 lignes. Taux de recapture moyen : 87.3%. Biomasse totale : 1912 kg."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 53 DA en cours dont 30 sans commande associée. Valeur totale : 154 777 DH."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 25 DA créées, 38 BC créées. Valeur : 348 493 DH. Tendance : baisse."}
+{"prompt": "Quelles sont les données du parc P6 ?", "response": "Le parc P6 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1283 kg. Taux de recapture : 20.5%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 351 993 DH, Réalisé 334 340 DH. Variance globale : -5.6%. Principaux drivers : Investissements, Main d'oeuvre directe."}
+{"prompt": "Fournisseur ACRAPLAST ?", "response": "ACRAPLAST : 13 commandes, valeur totale 103 423 DH. Catégories : CO2 INTRANT, STRUCTURE MÉTALLIQUE."}
+{"prompt": "Budget vs Réalisé pour Résultat net", "response": "Budget : 413 218 DH. Réalisé : 259 823 DH. Écart : -18.8%. Défavorable."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 20 DA créées, 54 BC créées. Valeur : 340 897 DH. Tendance : hausse."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 26 DA en cours dont 28 sans commande associée. Valeur totale : 116 853 DH."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 24 lignes, taux recapture 87.4%. Hors calibre : 14 lignes, taux recapture 72.8%."}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 67.5% pour les opérations d'Transfert."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 190 205 DH, Réalisé 162 034 DH. Variance : -19.2%. Tendance vs N-1 : -17.1%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 248 lignes, 71 187 DH. Capex : 146 lignes, 412 028 DH."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 244 lignes, 230 299 DH. Capex : 65 lignes, 406 754 DH."}
+{"prompt": "Accès pour admin et responsable achat", "response": "Accès configuré pour admin et responsable achat. Délais ou priorités spécifiques ?"}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "2 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -3.0%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 11 lignes, taux recapture 40.5%. Hors calibre : 21 lignes, taux recapture 50.1%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 266 lignes, 296 921 DH. Capex : 112 lignes, 413 398 DH."}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Budget vs Réalisé pour Frais généraux", "response": "Budget : 280 673 DH. Réalisé : 387 384 DH. Écart : 13.4%. Favorable."}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 219 598 DH, Réalisé 85 065 DH. Variance : 19.0%. Tendance vs N-1 : 18.1%."}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 61.4% pour les opérations d'Échantillonnage."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 34 DA en cours dont 10 sans commande associée. Valeur totale : 320 416 DH."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 25 DA créées, 56 BC créées. Valeur : 189 071 DH. Tendance : stable."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 43.5% pour les opérations d'Échantillonnage."}
+{"prompt": "Budget vs Réalisé pour Résultat net", "response": "Budget : 342 403 DH. Réalisé : 490 326 DH. Écart : 22.8%. Défavorable."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 419 lignes, 87 122 DH. Capex : 128 lignes, 73 099 DH."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via LOF. Poste principal : Cash flow avec variance de -22.6%."}
+{"prompt": "À bientôt", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 277 689 DH, Réalisé 192 487 DH. Variance globale : -6.1%. Principaux drivers : EBITDA, Frais généraux."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 51.5% pour les opérations d'Échantillonnage."}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Budget vs Réalisé pour Frais généraux", "response": "Budget : 106 041 DH. Réalisé : 434 185 DH. Écart : 2.3%. Défavorable."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : salaires, marge"}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 222 007 DH, Réalisé 58 393 DH. Variance : 16.6%. Tendance vs N-1 : -15.7%."}
+{"prompt": "Budget vs Réalisé pour Matières premières", "response": "Budget : 357 240 DH. Réalisé : 404 203 DH. Écart : -21.8%. Favorable."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 697 kg. Taux de recapture : 74.9%."}
+{"prompt": "Fournisseur AGATRAVE ?", "response": "AGATRAVE : 14 commandes, valeur totale 184 641 DH. Catégories : CO2 INTRANT, INFORMATIQUE."}
+{"prompt": "Budget vs Réalisé pour Frais généraux", "response": "Budget : 27 620 DH. Réalisé : 52 632 DH. Écart : -5.2%. Défavorable."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 31. BC livrées : 187. Statut principal : En cours de préparation."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 36 lignes, taux recapture 64.7%. Hors calibre : 21 lignes, taux recapture 27.6%."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 436 kg. Taux de recapture : 81.4%."}
+{"prompt": "Bye", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 402 638 DH, Réalisé 67 750 DH. Variance globale : -4.0%. Principaux drivers : Chiffre d'affaires, Matières premières."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 33 lignes. Taux de recapture moyen : 25.6%. Biomasse totale : 281 kg."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Fournisseur AGA IKHWAN ?", "response": "AGA IKHWAN : 20 commandes, valeur totale 267 909 DH. Catégories : STRUCTURE MÉTALLIQUE, INFORMATIQUE."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 403 363 DH, Réalisé 214 761 DH. Variance globale : 19.4%. Principaux drivers : Matières premières, Main d'oeuvre directe."}
+{"prompt": "Achats pour la catégorie PRESTATION ?", "response": "Catégorie PRESTATION : 71 lignes, valeur 253 292 DH. Fournisseur principal : ACRAPLAST."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 431 lignes, 39 692 DH. Capex : 131 lignes, 416 698 DH."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "KPI de SOUFIANE ELKAFRAOUI ?", "response": "SOUFIANE ELKAFRAOUI a créé 11 DA. BC associées : 36. Taux de transformation DA→BC : 62%."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Estran. Les paramètres sont enregistrés."}
+{"prompt": "Y a-t-il des anomalies sur le parc P8 ?", "response": "Oui, 1 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1460 kg. Vérifiez les lignes en zone Sud 1."}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "3 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -2.0%."}
+{"prompt": "Quelles sont les données du parc P7 ?", "response": "Le parc P7 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 927 kg. Taux de recapture : 34.7%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 34. BC livrées : 58. Statut principal : En cours de préparation."}
+{"prompt": "KPI de MAMOUN OUDGHIRI ?", "response": "MAMOUN OUDGHIRI a créé 8 DA. BC associées : 3. Taux de transformation DA→BC : 70%."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 27 DA. BC associées : 6. Taux de transformation DA→BC : 66%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 36 lignes, taux recapture 66.1%. Hors calibre : 18 lignes, taux recapture 20.6%."}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1233 kg. Taux de recapture : 49.9%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 1841 kg. Taux de recapture : 52.5%."}
+{"prompt": "Au revoir", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Quel est le statut du poste Résultat net ?", "response": "Poste RN (Résultat net) : Budget 36 582 DH, Réalisé 74 483 DH. Variance : 14.5%. Tendance vs N-1 : 28.3%."}
+{"prompt": "Achats pour la catégorie INFORMATIQUE ?", "response": "Catégorie INFORMATIQUE : 69 lignes, valeur 79 133 DH. Fournisseur principal : ACRAPLAST."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Estran. Les paramètres sont enregistrés."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 65. BC livrées : 93. Statut principal : Envoyé."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Budget vs Réalisé pour Résultat net", "response": "Budget : 429 165 DH. Réalisé : 181 049 DH. Écart : 27.3%. Favorable."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 93. BC livrées : 131. Statut principal : En révision."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 49 096 DH, Réalisé 338 803 DH. Variance : 10.2%. Tendance vs N-1 : 0.5%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -21.1% vs budget. Le principal driver est « Frais généraux ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 31 lignes. Taux de recapture moyen : 78.4%. Biomasse totale : 1167 kg."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 27 lignes, taux recapture 43.0%. Hors calibre : 29 lignes, taux recapture 35.5%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "1 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -12.6%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 69. BC livrées : 112. Statut principal : Confirmation reçue."}
+{"prompt": "Y a-t-il des anomalies sur le parc P7-ext ?", "response": "Oui, 5 anomalies détectées (Mineure) via LOF. Biomasse écart : 1080 kg. Vérifiez les lignes en zone Sud 1."}
+{"prompt": "Au revoir", "response": "Bonne journée !"}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "7 anomalies détectées via Isolation Forest. Poste principal : Chiffre d'affaires avec variance de -27.7%."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 46.6% pour les opérations d'Échantillonnage."}
+{"prompt": "Achats pour la catégorie MATÉRIEL D'USURE ?", "response": "Catégorie MATÉRIEL D'USURE : 18 lignes, valeur 5 630 DH. Fournisseur principal : AGATRAVE."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 274 lignes, 373 075 DH. Capex : 91 lignes, 434 463 DH."}
+{"prompt": "Bye", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 48 lignes. Taux de recapture moyen : 77.5%. Biomasse totale : 1380 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 68. BC livrées : 60. Statut principal : Document lié créé."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 68 DA en cours dont 16 sans commande associée. Valeur totale : 81 428 DH."}
+{"prompt": "Quel est le taux de recapture du parc P5 ?", "response": "Le taux de recapture moyen du parc P5 est de 34.0% pour les opérations d'Échantillonnage."}
+{"prompt": "Quel est le taux de recapture du parc P7 ?", "response": "Le taux de recapture moyen du parc P7 est de 43.6% pour les opérations d'Transfert."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 481 363 DH, Réalisé 148 417 DH. Variance : -6.8%. Tendance vs N-1 : 16.5%."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, conditions paiement"}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 976 kg. Taux de recapture : 20.2%."}
+{"prompt": "Au revoir", "response": "Bonne journée !"}
+{"prompt": "Bye", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 48.5% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 14 lignes. Taux de recapture moyen : 51.3%. Biomasse totale : 1191 kg."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 398 kg. Taux de recapture : 66.1%."}
+{"prompt": "Bye", "response": "Bonne journée !"}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via Isolation Forest. Poste principal : Chiffre d'affaires avec variance de -13.1%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P3 ?", "response": "Oui, 4 anomalies détectées (Majeure) via One-Class SVM. Biomasse écart : 1251 kg. Vérifiez les lignes en zone Nord."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 367 kg. Taux de recapture : 49.3%."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1065 kg. Taux de recapture : 43.8%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 19 DA. BC associées : 22. Taux de transformation DA→BC : 65%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Achats pour la catégorie ELECTRICITÉ ?", "response": "Catégorie ELECTRICITÉ : 22 lignes, valeur 141 090 DH. Fournisseur principal : ENTERPRISE BOUKRATE."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 44 DA. BC associées : 21. Taux de transformation DA→BC : 75%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 10 DA en cours dont 28 sans commande associée. Valeur totale : 114 343 DH."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 149 555 DH, Réalisé 44 074 DH. Variance : 15.8%. Tendance vs N-1 : -13.6%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 742 kg. Taux de recapture : 29.8%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 26.5% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 27 lignes. Taux de recapture moyen : 48.6%. Biomasse totale : 857 kg."}
+{"prompt": "Quel est le taux de recapture du parc P2-3 ?", "response": "Le taux de recapture moyen du parc P2-3 est de 51.2% pour les opérations d'Échantillonnage."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 19 lignes, taux recapture 33.9%. Hors calibre : 22 lignes, taux recapture 79.7%."}
+{"prompt": "Fichiers : Suivi Global CCS.xlsm", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, coût unitaire"}
+{"prompt": "Quel est le statut du poste Main d'oeuvre directe ?", "response": "Poste MOD (Main d'oeuvre directe) : Budget 313 229 DH, Réalisé 197 609 DH. Variance : -20.7%. Tendance vs N-1 : -19.1%."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 415 011 DH, Réalisé 76 671 DH. Variance : -21.7%. Tendance vs N-1 : -12.8%."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1812 kg. Taux de recapture : 69.1%."}
+{"prompt": "Achats pour la catégorie CARBURANTS ?", "response": "Catégorie CARBURANTS : 66 lignes, valeur 410 442 DH. Fournisseur principal : AGATRAVE."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Bye", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 187 257 DH, Réalisé 452 108 DH. Variance globale : 16.9%. Principaux drivers : Amortissements, EBITDA."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 292 633 DH, Réalisé 355 766 DH. Variance : -6.8%. Tendance vs N-1 : -14.9%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 18 DA en cours dont 20 sans commande associée. Valeur totale : 16 738 DH."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 35.4% pour les opérations d'Transfert."}
+{"prompt": "KPI de MAROUANE AITTOUGHA ?", "response": "MAROUANE AITTOUGHA a créé 29 DA. BC associées : 12. Taux de transformation DA→BC : 84%."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 10 lignes. Taux de recapture moyen : 89.6%. Biomasse totale : 442 kg."}
+{"prompt": "Y a-t-il des anomalies sur le parc P5 ?", "response": "Oui, 3 anomalies détectées (Majeure) via Z-Score. Biomasse écart : 1016 kg. Vérifiez les lignes en zone Sud 1."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 977 kg. Taux de recapture : 38.9%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 29.4% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Achats pour la catégorie CO2 INTRANT ?", "response": "Catégorie CO2 INTRANT : 17 lignes, valeur 229 825 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Comment fonctionne LOF ?", "response": "LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Y a-t-il des anomalies sur le parc P5 ?", "response": "Oui, 2 anomalies détectées (Mineure) via LOF. Biomasse écart : 872 kg. Vérifiez les lignes en zone Est."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via Z-Score. Poste principal : Investissements avec variance de -2.6%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "1 anomalies détectées via LOF. Poste principal : Amortissements avec variance de 3.2%."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 26 DA créées, 15 BC créées. Valeur : 111 994 DH. Tendance : stable."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 36 lignes. Taux de recapture moyen : 25.2%. Biomasse totale : 1489 kg."}
+{"prompt": "Accès pour admin et manager", "response": "Accès configuré pour admin et manager. Délais ou priorités spécifiques ?"}
+{"prompt": "Comment fonctionne LOF ?", "response": "LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 66.5% pour les opérations d'Transfert."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Accès pour chef de production et directeur", "response": "Accès configuré pour chef de production et directeur. Délais ou priorités spécifiques ?"}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 40 lignes. Taux de recapture moyen : 48.6%. Biomasse totale : 660 kg."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 443 612 DH, Réalisé 41 445 DH. Variance globale : -15.0%. Principaux drivers : Investissements, EBITDA."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Fichiers : Suivi Global CCS.xlsm", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : marge, remise"}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1575 kg. Taux de recapture : 65.5%."}
+{"prompt": "Quelles sont les données du parc P6 ?", "response": "Le parc P6 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1500 kg. Taux de recapture : 32.0%."}
+{"prompt": "Achats pour la catégorie ENGRAIS SOLIDE ?", "response": "Catégorie ENGRAIS SOLIDE : 15 lignes, valeur 57 441 DH. Fournisseur principal : AGRIROUES MAROC."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 63. BC livrées : 115. Statut principal : En cours d'approbation."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1404 kg. Taux de recapture : 58.8%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "3 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de -20.2%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 39.4% pour les opérations d'Transfert."}
+{"prompt": "Fournisseur AGATRAVE ?", "response": "AGATRAVE : 24 commandes, valeur totale 70 327 DH. Catégories : ÉQUIPEMENT LABORATOIRE, STRUCTURE MÉTALLIQUE."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Accès pour tous et contrôleur de gestion", "response": "Accès configuré pour tous et contrôleur de gestion. Délais ou priorités spécifiques ?"}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Achats pour la catégorie ENGRAIS SOLIDE ?", "response": "Catégorie ENGRAIS SOLIDE : 9 lignes, valeur 414 665 DH. Fournisseur principal : ACRAPLAST."}
+{"prompt": "Au revoir", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 1681 kg. Taux de recapture : 85.5%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 88. BC livrées : 141. Statut principal : Confirmation reçue."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 264 lignes, 367 849 DH. Capex : 66 lignes, 131 002 DH."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 22 lignes. Taux de recapture moyen : 32.7%. Biomasse totale : 1398 kg."}
+{"prompt": "Accès pour responsable qualité et contrôleur de gestion", "response": "Accès configuré pour responsable qualité et contrôleur de gestion. Délais ou priorités spécifiques ?"}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 29 926 DH, Réalisé 193 424 DH. Variance : 19.9%. Tendance vs N-1 : -25.4%."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1173 kg. Taux de recapture : 62.8%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 49 DA en cours dont 27 sans commande associée. Valeur totale : 61 659 DH."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 50 lignes. Taux de recapture moyen : 31.1%. Biomasse totale : 1328 kg."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 50.3% pour les opérations d'Transfert."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 25 134 DH, Réalisé 125 110 DH. Variance : -4.8%. Tendance vs N-1 : 17.6%."}
+{"prompt": "KPI de SOUFIANE ELKAFRAOUI ?", "response": "SOUFIANE ELKAFRAOUI a créé 41 DA. BC associées : 5. Taux de transformation DA→BC : 71%."}
+{"prompt": "Au revoir", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 31 lignes, taux recapture 72.4%. Hors calibre : 18 lignes, taux recapture 60.9%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "KPI de RIDA AYYI ?", "response": "RIDA AYYI a créé 11 DA. BC associées : 11. Taux de transformation DA→BC : 65%."}
+{"prompt": "Budget vs Réalisé pour EBITDA", "response": "Budget : 63 997 DH. Réalisé : 300 767 DH. Écart : 10.6%. Défavorable."}
+{"prompt": "Achats pour la catégorie CARBURANTS ?", "response": "Catégorie CARBURANTS : 55 lignes, valeur 191 473 DH. Fournisseur principal : AGATRAVE."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 1255 kg. Taux de recapture : 66.5%."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 5 DA. BC associées : 37. Taux de transformation DA→BC : 95%."}
+{"prompt": "Quel est le taux de recapture du parc P7 ?", "response": "Le taux de recapture moyen du parc P7 est de 22.0% pour les opérations d'Transfert."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 90 621 DH, Réalisé 471 266 DH. Variance globale : 12.8%. Principaux drivers : Matières premières, Amortissements."}
+{"prompt": "Accès pour tous et admin", "response": "Accès configuré pour tous et admin. Délais ou priorités spécifiques ?"}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 53 DA créées, 58 BC créées. Valeur : 233 443 DH. Tendance : hausse."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 49 lignes. Taux de recapture moyen : 48.2%. Biomasse totale : 757 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 25. BC livrées : 194. Statut principal : Envoyé."}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 47 lignes. Taux de recapture moyen : 75.5%. Biomasse totale : 1535 kg."}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 59 773 DH, Réalisé 181 069 DH. Variance : -4.2%. Tendance vs N-1 : -13.0%."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 290 839 DH, Réalisé 489 938 DH. Variance : -23.8%. Tendance vs N-1 : 20.8%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 33 lignes, taux recapture 54.8%. Hors calibre : 19 lignes, taux recapture 74.3%."}
+{"prompt": "Quel est le statut du poste EBITDA ?", "response": "Poste EBITDA (EBITDA) : Budget 15 279 DH, Réalisé 94 689 DH. Variance : -13.6%. Tendance vs N-1 : 15.7%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 527 kg. Taux de recapture : 75.4%."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 276 365 DH, Réalisé 349 869 DH. Variance : -11.5%. Tendance vs N-1 : -16.8%."}
+{"prompt": "Quel est le taux de recapture du parc P7 ?", "response": "Le taux de recapture moyen du parc P7 est de 69.2% pour les opérations d'Transfert."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "5 anomalies détectées via Z-Score. Poste principal : Résultat net avec variance de -15.1%."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 36 lignes. Taux de recapture moyen : 87.5%. Biomasse totale : 458 kg."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 6.6% vs budget. Le principal driver est « Frais généraux ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 88. BC livrées : 171. Statut principal : Envoyé."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 38 DA en cours dont 12 sans commande associée. Valeur totale : 70 128 DH."}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quel est le taux de recapture du parc P2 ?", "response": "Le taux de recapture moyen du parc P2 est de 72.4% pour les opérations d'Échantillonnage."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 37 lignes, taux recapture 68.0%. Hors calibre : 11 lignes, taux recapture 83.7%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 80. BC livrées : 131. Statut principal : Envoyé."}
+{"prompt": "Accès pour tous et admin", "response": "Accès configuré pour tous et admin. Délais ou priorités spécifiques ?"}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 126 519 DH, Réalisé 384 372 DH. Variance globale : 9.4%. Principaux drivers : Matières premières, Amortissements."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 12.3% vs budget. Le principal driver est « Investissements ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 25 lignes, taux recapture 81.1%. Hors calibre : 11 lignes, taux recapture 63.2%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P5 ?", "response": "Oui, 2 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1129 kg. Vérifiez les lignes en zone Ouest."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "5 anomalies détectées via Z-Score. Poste principal : Chiffre d'affaires avec variance de -24.6%."}
+{"prompt": "Accès pour directeur et tous", "response": "Accès configuré pour directeur et tous. Délais ou priorités spécifiques ?"}
+{"prompt": "Comment fonctionne LOF ?", "response": "LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Achats. Les paramètres sont enregistrés."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -11.2% vs budget. Le principal driver est « Main d'oeuvre directe ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 381 456 DH, Réalisé 429 464 DH. Variance : 8.7%. Tendance vs N-1 : -21.1%."}
+{"prompt": "Budget vs Réalisé pour Amortissements", "response": "Budget : 484 547 DH. Réalisé : 232 032 DH. Écart : 9.4%. Défavorable."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "5 anomalies détectées via Isolation Forest. Poste principal : Main d'oeuvre directe avec variance de 28.5%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 449 lignes, 171 693 DH. Capex : 124 lignes, 1 396 DH."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Sud 1. Phase : Échantillonnage. Biomasse récoltée : 976 kg. Taux de recapture : 67.4%."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 78 DA en cours dont 17 sans commande associée. Valeur totale : 277 365 DH."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 39. BC livrées : 52. Statut principal : Envoyé."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 21 lignes. Taux de recapture moyen : 75.1%. Biomasse totale : 1480 kg."}
+{"prompt": "KPI de RIDA AYYI ?", "response": "RIDA AYYI a créé 7 DA. BC associées : 7. Taux de transformation DA→BC : 77%."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 28.0% pour les opérations d'Échantillonnage."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 21.8% pour les opérations d'Transfert."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 842 kg. Taux de recapture : 66.4%."}
+{"prompt": "Achats pour la catégorie CO2 INTRANT ?", "response": "Catégorie CO2 INTRANT : 30 lignes, valeur 240 151 DH. Fournisseur principal : AGATRAVE."}
+{"prompt": "Fournisseur AGRIROUES MAROC ?", "response": "AGRIROUES MAROC : 16 commandes, valeur totale 53 795 DH. Catégories : PRESTATION, CARBURANTS."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 588 kg. Taux de recapture : 40.8%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 5.8% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 196 662 DH, Réalisé 117 822 DH. Variance : -28.3%. Tendance vs N-1 : 25.8%."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : remise, aucun"}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud 1. Phase : Échantillonnage. Biomasse récoltée : 400 kg. Taux de recapture : 23.5%."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, marge"}
+{"prompt": "Quel est le statut du poste Main d'oeuvre directe ?", "response": "Poste MOD (Main d'oeuvre directe) : Budget 351 433 DH, Réalisé 368 585 DH. Variance : 19.7%. Tendance vs N-1 : 14.3%."}
+{"prompt": "Fournisseur AGA IKHWAN ?", "response": "AGA IKHWAN : 16 commandes, valeur totale 372 419 DH. Catégories : CO2 INTRANT, CO2 INTRANT."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 96. BC livrées : 62. Statut principal : Envoyé."}
+{"prompt": "Achats pour la catégorie ENGRAIS SOLIDE ?", "response": "Catégorie ENGRAIS SOLIDE : 8 lignes, valeur 499 748 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : conditions paiement, salaires"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 27.4% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1530 kg. Taux de recapture : 69.1%."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 816 kg. Taux de recapture : 48.4%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 290 kg. Taux de recapture : 20.2%."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Budget vs Réalisé pour EBITDA", "response": "Budget : 369 671 DH. Réalisé : 108 773 DH. Écart : 11.4%. Défavorable."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 17 lignes, taux recapture 80.2%. Hors calibre : 22 lignes, taux recapture 87.7%."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 23 lignes. Taux de recapture moyen : 66.4%. Biomasse totale : 1020 kg."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 32 lignes. Taux de recapture moyen : 28.0%. Biomasse totale : 660 kg."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 51 DA en cours dont 21 sans commande associée. Valeur totale : 231 751 DH."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 24 lignes, taux recapture 22.3%. Hors calibre : 21 lignes, taux recapture 71.3%."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 800 kg. Taux de recapture : 78.1%."}
+{"prompt": "Budget vs Réalisé pour Cash flow", "response": "Budget : 341 169 DH. Réalisé : 104 672 DH. Écart : 15.4%. Défavorable."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 12 lignes, taux recapture 83.7%. Hors calibre : 20 lignes, taux recapture 72.3%."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "KPI de SOUFIANE ELKAFRAOUI ?", "response": "SOUFIANE ELKAFRAOUI a créé 37 DA. BC associées : 29. Taux de transformation DA→BC : 66%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 463 225 DH, Réalisé 27 682 DH. Variance : -20.7%. Tendance vs N-1 : 15.3%."}
+{"prompt": "Quel est le taux de recapture du parc P5 ?", "response": "Le taux de recapture moyen du parc P5 est de 42.1% pour les opérations d'Échantillonnage."}
+{"prompt": "Achats pour la catégorie INFORMATIQUE ?", "response": "Catégorie INFORMATIQUE : 71 lignes, valeur 89 010 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 59 DA en cours dont 12 sans commande associée. Valeur totale : 234 318 DH."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 57 DA en cours dont 18 sans commande associée. Valeur totale : 368 119 DH."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 91. BC livrées : 105. Statut principal : En cours d'approbation."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 19 DA en cours dont 6 sans commande associée. Valeur totale : 222 239 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 299 292 DH, Réalisé 218 501 DH. Variance globale : -18.8%. Principaux drivers : Matières premières, Investissements."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 1341 kg. Taux de recapture : 37.4%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 4 130 DH, Réalisé 107 276 DH. Variance : -11.9%. Tendance vs N-1 : -17.3%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 1797 kg. Taux de recapture : 59.2%."}
+{"prompt": "Bye", "response": "Bonne journée !"}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 66 280 DH, Réalisé 35 349 DH. Variance globale : -15.8%. Principaux drivers : Amortissements, Amortissements."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 170 372 DH, Réalisé 90 211 DH. Variance : 18.1%. Tendance vs N-1 : 7.1%."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 162 750 DH, Réalisé 344 061 DH. Variance : 11.9%. Tendance vs N-1 : -6.5%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 89. BC livrées : 175. Statut principal : Envoyé."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 25. BC livrées : 152. Statut principal : En cours d'approbation."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 22 lignes, taux recapture 63.4%. Hors calibre : 17 lignes, taux recapture 54.8%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2 ?", "response": "Oui, 3 anomalies détectées (Majeure) via LOF. Biomasse écart : 450 kg. Vérifiez les lignes en zone Sud 1."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 2.8% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 22.8% pour les opérations d'Échantillonnage."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 20 DA créées, 42 BC créées. Valeur : 106 173 DH. Tendance : baisse."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 649 kg. Taux de recapture : 89.8%."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 47 DA créées, 56 BC créées. Valeur : 47 914 DH. Tendance : baisse."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 516 kg. Taux de recapture : 84.8%."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 67.4% pour les opérations d'Transfert."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 20 commandes, valeur totale 84 057 DH. Catégories : ÉQUIPEMENT LABORATOIRE, ENGRAIS SOLIDE."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 44 lignes. Taux de recapture moyen : 68.5%. Biomasse totale : 1530 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 91. BC livrées : 155. Statut principal : En cours d'approbation."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 69 DA en cours dont 14 sans commande associée. Valeur totale : 83 837 DH."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 483 054 DH, Réalisé 40 922 DH. Variance : 21.7%. Tendance vs N-1 : 4.5%."}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 68.8% pour les opérations d'Transfert."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 26. BC livrées : 51. Statut principal : En cours d'approbation."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 53. BC livrées : 142. Statut principal : En révision."}
+{"prompt": "Quel est le taux de recapture du parc P4 ?", "response": "Le taux de recapture moyen du parc P4 est de 69.4% pour les opérations d'Échantillonnage."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2-3 ?", "response": "Oui, 4 anomalies détectées (Majeure) via Z-Score. Biomasse écart : 403 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Budget vs Réalisé pour Amortissements", "response": "Budget : 149 739 DH. Réalisé : 338 736 DH. Écart : -26.5%. Favorable."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 224 lignes, 24 187 DH. Capex : 62 lignes, 328 398 DH."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 58 DA en cours dont 19 sans commande associée. Valeur totale : 456 031 DH."}
+{"prompt": "Accès pour directeur et admin", "response": "Accès configuré pour directeur et admin. Délais ou priorités spécifiques ?"}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 409 kg. Taux de recapture : 26.5%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -28.1% vs budget. Le principal driver est « Matières premières ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Accès pour tous et manager", "response": "Accès configuré pour tous et manager. Délais ou priorités spécifiques ?"}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 202 992 DH, Réalisé 479 059 DH. Variance globale : 3.7%. Principaux drivers : EBITDA, EBITDA."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Au revoir", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 81.1% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 5 lignes. Taux de recapture moyen : 39.8%. Biomasse totale : 811 kg."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "8 anomalies détectées via LOF. Poste principal : Amortissements avec variance de 6.4%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 68 DA en cours dont 25 sans commande associée. Valeur totale : 134 980 DH."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 44 DA en cours dont 15 sans commande associée. Valeur totale : 158 406 DH."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 16 lignes. Taux de recapture moyen : 52.9%. Biomasse totale : 1534 kg."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, salaires"}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 743 kg. Taux de recapture : 47.7%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 71 DA en cours dont 9 sans commande associée. Valeur totale : 238 639 DH."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 1909 kg. Taux de recapture : 45.8%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 17 lignes, taux recapture 53.0%. Hors calibre : 29 lignes, taux recapture 81.9%."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1044 kg. Taux de recapture : 21.7%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 247 lignes, 383 318 DH. Capex : 108 lignes, 332 939 DH."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Achats pour la catégorie ELECTRICITÉ ?", "response": "Catégorie ELECTRICITÉ : 60 lignes, valeur 144 783 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1064 kg. Taux de recapture : 22.2%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "3 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de -18.6%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 216 lignes, 235 889 DH. Capex : 83 lignes, 182 854 DH."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Y a-t-il des anomalies sur le parc P3 ?", "response": "Oui, 4 anomalies détectées (Majeure) via One-Class SVM. Biomasse écart : 1562 kg. Vérifiez les lignes en zone Ouest."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 75 DA créées, 42 BC créées. Valeur : 363 972 DH. Tendance : hausse."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 31 lignes. Taux de recapture moyen : 23.1%. Biomasse totale : 1725 kg."}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 447 kg. Taux de recapture : 37.4%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 53 890 DH, Réalisé 42 079 DH. Variance globale : -10.3%. Principaux drivers : EBITDA, EBITDA."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Accès pour directeur et manager", "response": "Accès configuré pour directeur et manager. Délais ou priorités spécifiques ?"}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 412 kg. Taux de recapture : 85.7%."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 49 lignes. Taux de recapture moyen : 53.9%. Biomasse totale : 259 kg."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 15 lignes. Taux de recapture moyen : 20.2%. Biomasse totale : 1122 kg."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 23 commandes, valeur totale 344 718 DH. Catégories : MATÉRIEL D'USURE, MATÉRIEL D'USURE."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 46. BC livrées : 135. Statut principal : Confirmation reçue."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1932 kg. Taux de recapture : 23.6%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 17 DA en cours dont 22 sans commande associée. Valeur totale : 473 473 DH."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via Z-Score. Poste principal : Amortissements avec variance de -27.3%."}
+{"prompt": "Achats pour la catégorie ELECTRICITÉ ?", "response": "Catégorie ELECTRICITÉ : 43 lignes, valeur 126 988 DH. Fournisseur principal : ENTERPRISE BOUKRATE."}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 80.8% pour les opérations d'Transfert."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 70 045 DH, Réalisé 23 344 DH. Variance globale : -8.9%. Principaux drivers : Amortissements, Main d'oeuvre directe."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1240 kg. Taux de recapture : 25.6%."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 35 lignes. Taux de recapture moyen : 74.7%. Biomasse totale : 742 kg."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 43 DA. BC associées : 23. Taux de transformation DA→BC : 84%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 362 943 DH, Réalisé 260 945 DH. Variance globale : -8.0%. Principaux drivers : Investissements, EBITDA."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1195 kg. Taux de recapture : 77.1%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2-2 ?", "response": "Oui, 4 anomalies détectées (Mineure) via Isolation Forest. Biomasse écart : 365 kg. Vérifiez les lignes en zone Ouest."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 12 lignes, taux recapture 64.5%. Hors calibre : 24 lignes, taux recapture 83.7%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 208 850 DH, Réalisé 375 979 DH. Variance globale : 13.1%. Principaux drivers : Investissements, Résultat net."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, marge"}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 1333 kg. Taux de recapture : 80.3%."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 34 lignes. Taux de recapture moyen : 58.6%. Biomasse totale : 985 kg."}
+{"prompt": "Accès pour manager et chef de production", "response": "Accès configuré pour manager et chef de production. Délais ou priorités spécifiques ?"}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 34 lignes. Taux de recapture moyen : 86.3%. Biomasse totale : 1526 kg."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 29.9% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?", "response": "Catégorie ÉQUIPEMENT LABORATOIRE : 37 lignes, valeur 495 144 DH. Fournisseur principal : AGRIROUES MAROC."}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 78.3% pour les opérations d'Transfert."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 50.5% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 15 lignes. Taux de recapture moyen : 75.5%. Biomasse totale : 1418 kg."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : aucun, CA_client"}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 699 kg. Taux de recapture : 30.3%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 56 DA en cours dont 27 sans commande associée. Valeur totale : 123 990 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 105 051 DH, Réalisé 64 397 DH. Variance globale : -21.9%. Principaux drivers : Matières premières, Cash flow."}
+{"prompt": "Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?", "response": "Catégorie ÉQUIPEMENT LABORATOIRE : 53 lignes, valeur 421 667 DH. Fournisseur principal : ACRAPLAST."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "3 anomalies détectées via LOF. Poste principal : Main d'oeuvre directe avec variance de 9.5%."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, salaires"}
+{"prompt": "Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?", "response": "Catégorie ÉQUIPEMENT LABORATOIRE : 42 lignes, valeur 385 385 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 49 DA en cours dont 28 sans commande associée. Valeur totale : 11 513 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 350 240 DH, Réalisé 182 250 DH. Variance globale : 12.6%. Principaux drivers : Investissements, Investissements."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 43 DA créées, 34 BC créées. Valeur : 71 995 DH. Tendance : stable."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, remise"}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 847 kg. Taux de recapture : 85.4%."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 13 DA. BC associées : 8. Taux de transformation DA→BC : 92%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "KPI de MAMOUN OUDGHIRI ?", "response": "MAMOUN OUDGHIRI a créé 29 DA. BC associées : 27. Taux de transformation DA→BC : 95%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 22 DA en cours dont 10 sans commande associée. Valeur totale : 73 821 DH."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 15 lignes, taux recapture 34.1%. Hors calibre : 27 lignes, taux recapture 81.4%."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 82 627 DH, Réalisé 194 114 DH. Variance : -11.3%. Tendance vs N-1 : -10.5%."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 10 DA. BC associées : 25. Taux de transformation DA→BC : 95%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 493 lignes, 140 264 DH. Capex : 115 lignes, 472 040 DH."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 25 lignes. Taux de recapture moyen : 63.9%. Biomasse totale : 1755 kg."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 58.7% pour les opérations d'Transfert."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 67. BC livrées : 130. Statut principal : En cours d'approbation."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 8 716 DH, Réalisé 331 426 DH. Variance globale : 0.9%. Principaux drivers : Frais généraux, Main d'oeuvre directe."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 40 lignes, taux recapture 49.7%. Hors calibre : 18 lignes, taux recapture 52.0%."}
+{"prompt": "Quel est le statut du poste Résultat net ?", "response": "Poste RN (Résultat net) : Budget 274 807 DH, Réalisé 41 333 DH. Variance : -6.3%. Tendance vs N-1 : -11.4%."}
+{"prompt": "Accès pour chef de production et admin", "response": "Accès configuré pour chef de production et admin. Délais ou priorités spécifiques ?"}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : salaires, CA_client"}
+{"prompt": "Quel est le statut du poste Main d'oeuvre directe ?", "response": "Poste MOD (Main d'oeuvre directe) : Budget 174 877 DH, Réalisé 42 830 DH. Variance : 5.0%. Tendance vs N-1 : -21.5%."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 43.8% pour les opérations d'Transfert."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 436 kg. Taux de recapture : 47.0%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 469 147 DH, Réalisé 202 813 DH. Variance globale : -9.7%. Principaux drivers : Main d'oeuvre directe, Cash flow."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 44. BC livrées : 63. Statut principal : Confirmation reçue."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 322 541 DH, Réalisé 311 568 DH. Variance : 0.4%. Tendance vs N-1 : -2.2%."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1848 kg. Taux de recapture : 42.1%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 450 lignes, 74 638 DH. Capex : 123 lignes, 331 660 DH."}
+{"prompt": "Quel est le taux de recapture du parc P4 ?", "response": "Le taux de recapture moyen du parc P4 est de 87.6% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 45 lignes. Taux de recapture moyen : 34.8%. Biomasse totale : 1552 kg."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 50. BC livrées : 191. Statut principal : Confirmation reçue."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 38 lignes. Taux de recapture moyen : 83.7%. Biomasse totale : 231 kg."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 80 DA en cours dont 20 sans commande associée. Valeur totale : 397 169 DH."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1128 kg. Taux de recapture : 64.5%."}
+{"prompt": "Comment fonctionne LOF ?", "response": "LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Quelles sont les données du parc P6 ?", "response": "Le parc P6 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 1907 kg. Taux de recapture : 58.0%."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Estran. Les paramètres sont enregistrés."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 353 453 DH, Réalisé 42 872 DH. Variance : -13.7%. Tendance vs N-1 : 9.7%."}
+{"prompt": "KPI de SOUFIANE ELKAFRAOUI ?", "response": "SOUFIANE ELKAFRAOUI a créé 34 DA. BC associées : 26. Taux de transformation DA→BC : 63%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 58 DA en cours dont 12 sans commande associée. Valeur totale : 129 867 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 248 297 DH, Réalisé 132 909 DH. Variance globale : -27.8%. Principaux drivers : Frais généraux, EBITDA."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 435 460 DH, Réalisé 408 595 DH. Variance globale : 11.1%. Principaux drivers : Cash flow, Main d'oeuvre directe."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 416 225 DH, Réalisé 189 626 DH. Variance globale : 0.5%. Principaux drivers : Matières premières, Frais généraux."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 68. BC livrées : 184. Statut principal : Confirmation reçue."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 68. BC livrées : 195. Statut principal : Envoyé."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "3 anomalies détectées via One-Class SVM. Poste principal : Investissements avec variance de 3.7%."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 46 DA. BC associées : 5. Taux de transformation DA→BC : 65%."}
+{"prompt": "Comment fonctionne One-Class SVM ?", "response": "One-Class SVM est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Accès pour responsable achat et admin", "response": "Accès configuré pour responsable achat et admin. Délais ou priorités spécifiques ?"}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 326 lignes, 399 331 DH. Capex : 136 lignes, 205 988 DH."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1692 kg. Taux de recapture : 75.0%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 45. BC livrées : 134. Statut principal : Envoyé."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 17 DA en cours dont 26 sans commande associée. Valeur totale : 62 083 DH."}
+{"prompt": "Quel est le statut du poste Frais généraux ?", "response": "Poste FG (Frais généraux) : Budget 168 672 DH, Réalisé 317 297 DH. Variance : -1.5%. Tendance vs N-1 : -20.9%."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 391 277 DH, Réalisé 278 225 DH. Variance : -17.1%. Tendance vs N-1 : -4.8%."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 5.6% vs budget. Le principal driver est « Investissements ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 305 lignes, 426 623 DH. Capex : 76 lignes, 422 382 DH."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 90. BC livrées : 199. Statut principal : En révision."}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 32.7% pour les opérations d'Transfert."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Quelles sont les données du parc P6 ?", "response": "Le parc P6 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 607 kg. Taux de recapture : 30.7%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Fournisseur ENTERPRISE BOUKRATE ?", "response": "ENTERPRISE BOUKRATE : 27 commandes, valeur totale 369 072 DH. Catégories : STRUCTURE MÉTALLIQUE, INFORMATIQUE."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 342 lignes, 364 324 DH. Capex : 97 lignes, 238 491 DH."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 69.0% pour les opérations d'Transfert."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Y a-t-il des anomalies sur le parc P7 ?", "response": "Oui, 5 anomalies détectées (Critique) via One-Class SVM. Biomasse écart : 232 kg. Vérifiez les lignes en zone Est."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 19 commandes, valeur totale 203 766 DH. Catégories : MATÉRIEL D'USURE, INFORMATIQUE."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 46. BC livrées : 67. Statut principal : Document lié créé."}
+{"prompt": "Achats pour la catégorie CARBURANTS ?", "response": "Catégorie CARBURANTS : 46 lignes, valeur 316 356 DH. Fournisseur principal : AGRIROUES MAROC."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 83. BC livrées : 169. Statut principal : Document lié créé."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 59 579 DH, Réalisé 13 686 DH. Variance globale : 14.1%. Principaux drivers : Cash flow, Investissements."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 365 lignes, 369 226 DH. Capex : 87 lignes, 151 793 DH."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 35. BC livrées : 172. Statut principal : Envoyé."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 17 lignes, taux recapture 64.2%. Hors calibre : 19 lignes, taux recapture 89.8%."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Sud 1. Phase : grossissement. Biomasse récoltée : 770 kg. Taux de recapture : 52.4%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 40 lignes, taux recapture 22.6%. Hors calibre : 25 lignes, taux recapture 28.1%."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Y a-t-il des anomalies sur le parc P7-ext ?", "response": "Oui, 5 anomalies détectées (Mineure) via One-Class SVM. Biomasse écart : 980 kg. Vérifiez les lignes en zone Nord."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 233 888 DH, Réalisé 316 047 DH. Variance globale : 13.1%. Principaux drivers : Main d'oeuvre directe, Cash flow."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 17 lignes, taux recapture 57.2%. Hors calibre : 28 lignes, taux recapture 67.7%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 410 lignes, 481 799 DH. Capex : 57 lignes, 145 497 DH."}
+{"prompt": "Achats pour la catégorie STRUCTURE MÉTALLIQUE ?", "response": "Catégorie STRUCTURE MÉTALLIQUE : 76 lignes, valeur 474 689 DH. Fournisseur principal : AGRIROUES MAROC."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1851 kg. Taux de recapture : 33.9%."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 37 DA. BC associées : 30. Taux de transformation DA→BC : 71%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "2 anomalies détectées via Z-Score. Poste principal : Main d'oeuvre directe avec variance de 22.9%."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 357 210 DH, Réalisé 484 622 DH. Variance : 22.9%. Tendance vs N-1 : 8.6%."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 242 153 DH, Réalisé 403 507 DH. Variance : -13.1%. Tendance vs N-1 : -7.1%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 343 lignes, 313 025 DH. Capex : 118 lignes, 88 378 DH."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 16 lignes, taux recapture 63.5%. Hors calibre : 14 lignes, taux recapture 64.0%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P6 ?", "response": "Oui, 2 anomalies détectées (Critique) via Z-Score. Biomasse écart : 1277 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 26 lignes. Taux de recapture moyen : 79.7%. Biomasse totale : 1959 kg."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 12 lignes. Taux de recapture moyen : 87.9%. Biomasse totale : 1027 kg."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1436 kg. Taux de recapture : 38.5%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 75 DA en cours dont 19 sans commande associée. Valeur totale : 424 087 DH."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 22.0% pour les opérations d'Transfert."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Sud 1. Phase : Échantillonnage. Biomasse récoltée : 455 kg. Taux de recapture : 88.1%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 21. BC livrées : 104. Statut principal : Envoyé."}
+{"prompt": "Budget vs Réalisé pour Main d'oeuvre directe", "response": "Budget : 219 192 DH. Réalisé : 462 650 DH. Écart : 20.3%. Favorable."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 39 DA créées, 25 BC créées. Valeur : 458 549 DH. Tendance : stable."}
+{"prompt": "Achats pour la catégorie PLOMBERIE ?", "response": "Catégorie PLOMBERIE : 66 lignes, valeur 54 913 DH. Fournisseur principal : ENTERPRISE BOUKRATE."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 74 DA créées, 25 BC créées. Valeur : 231 460 DH. Tendance : stable."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 25 lignes. Taux de recapture moyen : 62.3%. Biomasse totale : 252 kg."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 69 DA créées, 23 BC créées. Valeur : 336 470 DH. Tendance : baisse."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 35 lignes, taux recapture 59.0%. Hors calibre : 12 lignes, taux recapture 75.3%."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Achats. Les paramètres sont enregistrés."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 24. BC livrées : 69. Statut principal : En cours de préparation."}
+{"prompt": "Quel est le taux de recapture du parc P4 ?", "response": "Le taux de recapture moyen du parc P4 est de 50.5% pour les opérations d'Transfert."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 30. BC livrées : 165. Statut principal : Confirmation reçue."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -7.9% vs budget. Le principal driver est « Matières premières ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, aucun"}
+{"prompt": "Achats pour la catégorie CO2 INTRANT ?", "response": "Catégorie CO2 INTRANT : 47 lignes, valeur 225 866 DH. Fournisseur principal : AIR LIQUIDE MAROC."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 5 commandes, valeur totale 296 531 DH. Catégories : PLOMBERIE, PRESTATION."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 27. BC livrées : 85. Statut principal : En révision."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 34 lignes. Taux de recapture moyen : 85.3%. Biomasse totale : 1980 kg."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 230 lignes, 298 983 DH. Capex : 94 lignes, 279 168 DH."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Achats pour la catégorie STRUCTURE MÉTALLIQUE ?", "response": "Catégorie STRUCTURE MÉTALLIQUE : 7 lignes, valeur 445 314 DH. Fournisseur principal : ACRAPLAST."}
+{"prompt": "Budget vs Réalisé pour Main d'oeuvre directe", "response": "Budget : 57 366 DH. Réalisé : 322 892 DH. Écart : 14.5%. Favorable."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "7 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de 3.5%."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 100 766 DH, Réalisé 118 873 DH. Variance : 30.0%. Tendance vs N-1 : -20.7%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 17 lignes, taux recapture 62.5%. Hors calibre : 21 lignes, taux recapture 35.3%."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 43 lignes. Taux de recapture moyen : 61.7%. Biomasse totale : 1466 kg."}
+{"prompt": "Fournisseur AGUACONCEPT ?", "response": "AGUACONCEPT : 15 commandes, valeur totale 2 433 DH. Catégories : PRESTATION, PRESTATION."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 589 kg. Taux de recapture : 57.5%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "7 anomalies détectées via Z-Score. Poste principal : Frais généraux avec variance de -17.1%."}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 42 lignes. Taux de recapture moyen : 89.3%. Biomasse totale : 825 kg."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 11 DA. BC associées : 36. Taux de transformation DA→BC : 69%."}
+{"prompt": "KPI de RIDA AYYI ?", "response": "RIDA AYYI a créé 30 DA. BC associées : 32. Taux de transformation DA→BC : 75%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 801 kg. Taux de recapture : 50.4%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 51 DA en cours dont 7 sans commande associée. Valeur totale : 210 252 DH."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 57.4% pour les opérations d'Transfert."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 165 563 DH, Réalisé 489 455 DH. Variance globale : -11.4%. Principaux drivers : Résultat net, Investissements."}
+{"prompt": "Budget vs Réalisé pour Frais généraux", "response": "Budget : 26 715 DH. Réalisé : 351 285 DH. Écart : 24.3%. Favorable."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 96. BC livrées : 58. Statut principal : En cours d'approbation."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 847 kg. Taux de recapture : 85.0%."}
+{"prompt": "Quel est le taux de recapture du parc P2-3 ?", "response": "Le taux de recapture moyen du parc P2-3 est de 50.0% pour les opérations d'Transfert."}
+{"prompt": "Budget vs Réalisé pour Chiffre d'affaires", "response": "Budget : 4 958 DH. Réalisé : 156 543 DH. Écart : 4.1%. Favorable."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Estran. Les paramètres sont enregistrés."}
+{"prompt": "Accès pour tous et responsable qualité", "response": "Accès configuré pour tous et responsable qualité. Délais ou priorités spécifiques ?"}
+{"prompt": "Budget vs Réalisé pour Amortissements", "response": "Budget : 149 292 DH. Réalisé : 238 309 DH. Écart : 29.3%. Défavorable."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 65 360 DH, Réalisé 419 185 DH. Variance globale : -7.9%. Principaux drivers : Résultat net, Cash flow."}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via Isolation Forest. Poste principal : Chiffre d'affaires avec variance de -25.1%."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1551 kg. Taux de recapture : 33.5%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 499 636 DH, Réalisé 16 426 DH. Variance globale : -21.4%. Principaux drivers : Cash flow, Chiffre d'affaires."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Y a-t-il des anomalies sur le parc P6 ?", "response": "Oui, 1 anomalies détectées (Majeure) via LOF. Biomasse écart : 516 kg. Vérifiez les lignes en zone Sud 1."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "5 anomalies détectées via LOF. Poste principal : Résultat net avec variance de 7.1%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P5 ?", "response": "Oui, 5 anomalies détectées (Critique) via LOF. Biomasse écart : 340 kg. Vérifiez les lignes en zone Nord."}
+{"prompt": "Quel est le taux de recapture du parc P4 ?", "response": "Le taux de recapture moyen du parc P4 est de 78.8% pour les opérations d'Échantillonnage."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 22 lignes. Taux de recapture moyen : 58.4%. Biomasse totale : 789 kg."}
+{"prompt": "Au revoir", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2-4 ?", "response": "Oui, 1 anomalies détectées (Critique) via LOF. Biomasse écart : 763 kg. Vérifiez les lignes en zone Nord."}
+{"prompt": "Y a-t-il des anomalies sur le parc P6 ?", "response": "Oui, 1 anomalies détectées (Critique) via Isolation Forest. Biomasse écart : 469 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Quel est le statut du poste Frais généraux ?", "response": "Poste FG (Frais généraux) : Budget 262 381 DH, Réalisé 293 032 DH. Variance : 20.0%. Tendance vs N-1 : 18.4%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 308 lignes, 259 473 DH. Capex : 84 lignes, 169 374 DH."}
+{"prompt": "Quel est le statut du poste Main d'oeuvre directe ?", "response": "Poste MOD (Main d'oeuvre directe) : Budget 378 207 DH, Réalisé 229 566 DH. Variance : -27.4%. Tendance vs N-1 : -8.1%."}
+{"prompt": "Achats pour la catégorie CARBURANTS ?", "response": "Catégorie CARBURANTS : 68 lignes, valeur 76 611 DH. Fournisseur principal : AGATRAVE."}
+{"prompt": "KPI de MAMOUN OUDGHIRI ?", "response": "MAMOUN OUDGHIRI a créé 19 DA. BC associées : 7. Taux de transformation DA→BC : 81%."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 29 commandes, valeur totale 353 254 DH. Catégories : CARBURANTS, INFORMATIQUE."}
+{"prompt": "Fournisseur AGRIROUES MAROC ?", "response": "AGRIROUES MAROC : 12 commandes, valeur totale 61 414 DH. Catégories : ELECTRICITÉ, ÉQUIPEMENT LABORATOIRE."}
+{"prompt": "Fournisseur AGATRAVE ?", "response": "AGATRAVE : 11 commandes, valeur totale 406 482 DH. Catégories : ENGRAIS SOLIDE, ÉQUIPEMENT LABORATOIRE."}
+{"prompt": "Accès pour responsable achat et responsable qualité", "response": "Accès configuré pour responsable achat et responsable qualité. Délais ou priorités spécifiques ?"}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1746 kg. Taux de recapture : 71.1%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 425 558 DH, Réalisé 70 801 DH. Variance globale : -26.2%. Principaux drivers : Cash flow, Chiffre d'affaires."}
+{"prompt": "Quel est le taux de recapture du parc P7 ?", "response": "Le taux de recapture moyen du parc P7 est de 35.7% pour les opérations d'Échantillonnage."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 153 948 DH, Réalisé 105 791 DH. Variance globale : -27.4%. Principaux drivers : Frais généraux, Chiffre d'affaires."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 73. BC livrées : 125. Statut principal : Envoyé."}
+{"prompt": "Quel est le taux de recapture du parc P2-3 ?", "response": "Le taux de recapture moyen du parc P2-3 est de 20.7% pour les opérations d'Échantillonnage."}
+{"prompt": "À bientôt", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, salaires"}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, prix"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -5.4% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 24 lignes, taux recapture 37.9%. Hors calibre : 10 lignes, taux recapture 82.9%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 315 959 DH, Réalisé 431 243 DH. Variance globale : -19.2%. Principaux drivers : EBITDA, Amortissements."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Achats pour la catégorie ELECTRICITÉ ?", "response": "Catégorie ELECTRICITÉ : 59 lignes, valeur 413 803 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 10 lignes, taux recapture 38.5%. Hors calibre : 13 lignes, taux recapture 51.8%."}
+{"prompt": "Fournisseur CACED SARL ?", "response": "CACED SARL : 27 commandes, valeur totale 377 052 DH. Catégories : CO2 INTRANT, ENGRAIS SOLIDE."}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1169 kg. Taux de recapture : 75.6%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 49. BC livrées : 188. Statut principal : Envoyé."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 86. BC livrées : 106. Statut principal : En cours d'approbation."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 79 DA en cours dont 9 sans commande associée. Valeur totale : 342 740 DH."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 37. BC livrées : 109. Statut principal : Document lié créé."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 144 046 DH, Réalisé 335 366 DH. Variance globale : 28.8%. Principaux drivers : Chiffre d'affaires, Matières premières."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 648 kg. Taux de recapture : 32.3%."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 50 DA créées, 19 BC créées. Valeur : 120 134 DH. Tendance : stable."}
+{"prompt": "Accès pour admin et manager", "response": "Accès configuré pour admin et manager. Délais ou priorités spécifiques ?"}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 58. BC livrées : 86. Statut principal : En cours de préparation."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 363 kg. Taux de recapture : 79.9%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "8 anomalies détectées via One-Class SVM. Poste principal : Investissements avec variance de -29.5%."}
+{"prompt": "Au revoir", "response": "Bonne journée !"}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 38 lignes, taux recapture 63.9%. Hors calibre : 11 lignes, taux recapture 41.6%."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 184 137 DH, Réalisé 3 301 DH. Variance : -19.1%. Tendance vs N-1 : -21.4%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 17 DA en cours dont 19 sans commande associée. Valeur totale : 69 276 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 22 924 DH, Réalisé 333 374 DH. Variance globale : -6.8%. Principaux drivers : Amortissements, EBITDA."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 60 DA en cours dont 13 sans commande associée. Valeur totale : 428 156 DH."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Fournisseur AGUACONCEPT ?", "response": "AGUACONCEPT : 17 commandes, valeur totale 121 659 DH. Catégories : MATÉRIEL D'USURE, ELECTRICITÉ."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 1472 kg. Taux de recapture : 89.9%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 19 lignes, taux recapture 83.2%. Hors calibre : 11 lignes, taux recapture 42.7%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 58. BC livrées : 146. Statut principal : Envoyé."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 82. BC livrées : 167. Statut principal : Envoyé."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 180 724 DH, Réalisé 67 384 DH. Variance globale : 22.7%. Principaux drivers : Investissements, Main d'oeuvre directe."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 30 DA. BC associées : 7. Taux de transformation DA→BC : 79%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 369 218 DH, Réalisé 234 075 DH. Variance globale : -17.1%. Principaux drivers : EBITDA, Cash flow."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 345 kg. Taux de recapture : 69.5%."}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 24.4% pour les opérations d'Transfert."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 53.5% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 33 lignes. Taux de recapture moyen : 28.7%. Biomasse totale : 1610 kg."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via One-Class SVM. Poste principal : Amortissements avec variance de 28.5%."}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 36.7% pour les opérations d'Transfert."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 30.7% pour les opérations d'Échantillonnage."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 38. BC livrées : 54. Statut principal : Confirmation reçue."}
+{"prompt": "Fournisseur ACRAPLAST ?", "response": "ACRAPLAST : 22 commandes, valeur totale 203 858 DH. Catégories : INFORMATIQUE, MATÉRIEL D'USURE."}
+{"prompt": "Budget vs Réalisé pour Main d'oeuvre directe", "response": "Budget : 446 300 DH. Réalisé : 264 452 DH. Écart : -1.9%. Favorable."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 10 DA en cours dont 29 sans commande associée. Valeur totale : 12 019 DH."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quelles sont les données du parc P6 ?", "response": "Le parc P6 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 693 kg. Taux de recapture : 81.5%."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 429 kg. Taux de recapture : 25.3%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P3 ?", "response": "Oui, 2 anomalies détectées (Mineure) via Isolation Forest. Biomasse écart : 303 kg. Vérifiez les lignes en zone Ouest."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 17.8% vs budget. Le principal driver est « Chiffre d'affaires ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 43 lignes. Taux de recapture moyen : 55.6%. Biomasse totale : 2000 kg."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, fournisseur"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 28.8% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 47 DA en cours dont 16 sans commande associée. Valeur totale : 322 340 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 200 825 DH, Réalisé 497 894 DH. Variance globale : 4.0%. Principaux drivers : Main d'oeuvre directe, Cash flow."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 61 DA en cours dont 18 sans commande associée. Valeur totale : 270 255 DH."}
+{"prompt": "Achats pour la catégorie INFORMATIQUE ?", "response": "Catégorie INFORMATIQUE : 30 lignes, valeur 310 597 DH. Fournisseur principal : AIR LIQUIDE MAROC."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 339 kg. Taux de recapture : 67.3%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 75 DA en cours dont 18 sans commande associée. Valeur totale : 239 593 DH."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 45 lignes. Taux de recapture moyen : 50.9%. Biomasse totale : 305 kg."}
+{"prompt": "Accès pour contrôleur de gestion et chef de production", "response": "Accès configuré pour contrôleur de gestion et chef de production. Délais ou priorités spécifiques ?"}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 20 DA créées, 59 BC créées. Valeur : 180 231 DH. Tendance : hausse."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 37 DA en cours dont 29 sans commande associée. Valeur totale : 129 843 DH."}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 24 DA. BC associées : 31. Taux de transformation DA→BC : 83%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "KPI de RIDA AYYI ?", "response": "RIDA AYYI a créé 28 DA. BC associées : 9. Taux de transformation DA→BC : 65%."}
+{"prompt": "Quel est le taux de recapture du parc P4 ?", "response": "Le taux de recapture moyen du parc P4 est de 87.5% pour les opérations d'Échantillonnage."}
+{"prompt": "Bye", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 13 lignes, taux recapture 36.6%. Hors calibre : 28 lignes, taux recapture 45.1%."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 8 lignes. Taux de recapture moyen : 33.1%. Biomasse totale : 940 kg."}
+{"prompt": "Achats pour la catégorie ELECTRICITÉ ?", "response": "Catégorie ELECTRICITÉ : 43 lignes, valeur 3 648 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "6 anomalies détectées via LOF. Poste principal : Frais généraux avec variance de 6.1%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "3 anomalies détectées via One-Class SVM. Poste principal : Investissements avec variance de -24.4%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 28 lignes, taux recapture 30.0%. Hors calibre : 24 lignes, taux recapture 64.7%."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 770 kg. Taux de recapture : 66.8%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "7 anomalies détectées via One-Class SVM. Poste principal : Cash flow avec variance de -25.6%."}
+{"prompt": "Quel est le taux de recapture du parc P5 ?", "response": "Le taux de recapture moyen du parc P5 est de 45.3% pour les opérations d'Transfert."}
+{"prompt": "Quel est le statut du poste EBITDA ?", "response": "Poste EBITDA (EBITDA) : Budget 442 823 DH, Réalisé 413 301 DH. Variance : -23.9%. Tendance vs N-1 : 16.3%."}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 77 353 DH, Réalisé 435 807 DH. Variance : -3.8%. Tendance vs N-1 : 26.8%."}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 19 890 DH, Réalisé 347 141 DH. Variance : -9.8%. Tendance vs N-1 : 16.0%."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 70.7% pour les opérations d'Transfert."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 322 719 DH, Réalisé 2 853 DH. Variance : 24.4%. Tendance vs N-1 : -28.9%."}
+{"prompt": "Comment fonctionne One-Class SVM ?", "response": "One-Class SVM est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "KPI de MAROUANE AITTOUGHA ?", "response": "MAROUANE AITTOUGHA a créé 17 DA. BC associées : 36. Taux de transformation DA→BC : 76%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 1591 kg. Taux de recapture : 88.7%."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 18 commandes, valeur totale 151 532 DH. Catégories : ELECTRICITÉ, ELECTRICITÉ."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -17.6% vs budget. Le principal driver est « Amortissements ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 19.7% vs budget. Le principal driver est « Investissements ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 391 909 DH, Réalisé 8 615 DH. Variance globale : -8.6%. Principaux drivers : Matières premières, Amortissements."}
+{"prompt": "Y a-t-il des anomalies sur le parc P7-ext ?", "response": "Oui, 3 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1517 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 849 kg. Taux de recapture : 86.5%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -1.5% vs budget. Le principal driver est « Chiffre d'affaires ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Quelles sont les données du parc P7 ?", "response": "Le parc P7 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 630 kg. Taux de recapture : 67.7%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 19 lignes, taux recapture 65.4%. Hors calibre : 13 lignes, taux recapture 29.8%."}
+{"prompt": "KPI de MAMOUN OUDGHIRI ?", "response": "MAMOUN OUDGHIRI a créé 5 DA. BC associées : 4. Taux de transformation DA→BC : 93%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 247 lignes, 211 309 DH. Capex : 115 lignes, 393 212 DH."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 49 lignes. Taux de recapture moyen : 80.2%. Biomasse totale : 345 kg."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1606 kg. Taux de recapture : 70.4%."}
+{"prompt": "Comment fonctionne LOF ?", "response": "LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 91. BC livrées : 185. Statut principal : Envoyé."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 83. BC livrées : 190. Statut principal : En cours de préparation."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 45 DA. BC associées : 20. Taux de transformation DA→BC : 88%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Sud. Phase : Prégro. Biomasse récoltée : 655 kg. Taux de recapture : 34.0%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 152 333 DH, Réalisé 467 414 DH. Variance globale : -12.0%. Principaux drivers : Main d'oeuvre directe, Main d'oeuvre directe."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Est. Phase : grossissement. Biomasse récoltée : 1234 kg. Taux de recapture : 62.1%."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 413 882 DH, Réalisé 330 866 DH. Variance : 8.8%. Tendance vs N-1 : -26.0%."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1185 kg. Taux de recapture : 35.0%."}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 85.9% pour les opérations d'Échantillonnage."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Estran. Les paramètres sont enregistrés."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 24 DA en cours dont 26 sans commande associée. Valeur totale : 107 789 DH."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 48 DA en cours dont 19 sans commande associée. Valeur totale : 353 207 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 152 810 DH, Réalisé 225 144 DH. Variance globale : -29.9%. Principaux drivers : Amortissements, Frais généraux."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1024 kg. Taux de recapture : 71.0%."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 290 kg. Taux de recapture : 69.6%."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 19 lignes, taux recapture 72.3%. Hors calibre : 20 lignes, taux recapture 76.3%."}
+{"prompt": "KPI de SOUFIANE ELKAFRAOUI ?", "response": "SOUFIANE ELKAFRAOUI a créé 44 DA. BC associées : 28. Taux de transformation DA→BC : 80%."}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 78 DA en cours dont 30 sans commande associée. Valeur totale : 348 276 DH."}
+{"prompt": "Fournisseur AGA IKHWAN ?", "response": "AGA IKHWAN : 23 commandes, valeur totale 281 841 DH. Catégories : ELECTRICITÉ, ENGRAIS SOLIDE."}
+{"prompt": "Fournisseur ENTERPRISE BOUKRATE ?", "response": "ENTERPRISE BOUKRATE : 24 commandes, valeur totale 452 369 DH. Catégories : CO2 INTRANT, ENGRAIS SOLIDE."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 17 DA en cours dont 22 sans commande associée. Valeur totale : 242 519 DH."}
+{"prompt": "Achats pour la catégorie STRUCTURE MÉTALLIQUE ?", "response": "Catégorie STRUCTURE MÉTALLIQUE : 62 lignes, valeur 313 589 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 420 132 DH, Réalisé 43 412 DH. Variance globale : 13.6%. Principaux drivers : Matières premières, Résultat net."}
+{"prompt": "Quel est le taux de recapture du parc P2-3 ?", "response": "Le taux de recapture moyen du parc P2-3 est de 40.4% pour les opérations d'Échantillonnage."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 23 lignes. Taux de recapture moyen : 22.3%. Biomasse totale : 790 kg."}
+{"prompt": "Aide", "response": "Je peux vous aider avec : Estran (production), Finance (budget/variances), Achats (DA/BC)."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 30 DA créées, 18 BC créées. Valeur : 207 897 DH. Tendance : baisse."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1743 kg. Taux de recapture : 79.4%."}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 62.0% pour les opérations d'Échantillonnage."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 166 313 DH, Réalisé 336 870 DH. Variance globale : -25.6%. Principaux drivers : Cash flow, Investissements."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 44. BC livrées : 200. Statut principal : En cours de préparation."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 76.6% pour les opérations d'Transfert."}
+{"prompt": "KPI de RIDA AYYI ?", "response": "RIDA AYYI a créé 6 DA. BC associées : 16. Taux de transformation DA→BC : 69%."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 68 137 DH, Réalisé 320 937 DH. Variance globale : 23.1%. Principaux drivers : Matières premières, EBITDA."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 417 kg. Taux de recapture : 80.9%."}
+{"prompt": "Accès pour admin et responsable qualité", "response": "Accès configuré pour admin et responsable qualité. Délais ou priorités spécifiques ?"}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -18.6% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : marge, fournisseur"}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 73. BC livrées : 154. Statut principal : Envoyé."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 208 279 DH, Réalisé 451 912 DH. Variance : 14.5%. Tendance vs N-1 : -3.8%."}
+{"prompt": "Quelles sont les données du parc P6 ?", "response": "Le parc P6 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 743 kg. Taux de recapture : 22.7%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 78 DA en cours dont 9 sans commande associée. Valeur totale : 86 364 DH."}
+{"prompt": "Quelles sont les données du parc P7 ?", "response": "Le parc P7 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1498 kg. Taux de recapture : 79.7%."}
+{"prompt": "Accès pour tous et responsable achat", "response": "Accès configuré pour tous et responsable achat. Délais ou priorités spécifiques ?"}
+{"prompt": "Quel est le taux de recapture du parc P2 ?", "response": "Le taux de recapture moyen du parc P2 est de 79.5% pour les opérations d'Transfert."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Quel est le taux de recapture du parc P4 ?", "response": "Le taux de recapture moyen du parc P4 est de 54.1% pour les opérations d'Transfert."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 46 305 DH, Réalisé 229 062 DH. Variance : 20.7%. Tendance vs N-1 : -15.4%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 375 lignes, 468 894 DH. Capex : 137 lignes, 399 740 DH."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 859 kg. Taux de recapture : 52.5%."}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, aucun"}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 943 kg. Taux de recapture : 81.5%."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1438 kg. Taux de recapture : 34.7%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "8 anomalies détectées via LOF. Poste principal : Main d'oeuvre directe avec variance de -24.2%."}
+{"prompt": "Quel est le taux de recapture du parc P7-ext ?", "response": "Le taux de recapture moyen du parc P7-ext est de 82.4% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 47 lignes. Taux de recapture moyen : 80.9%. Biomasse totale : 1146 kg."}
+{"prompt": "Achats pour la catégorie CO2 INTRANT ?", "response": "Catégorie CO2 INTRANT : 45 lignes, valeur 93 233 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 337 lignes, 329 254 DH. Capex : 103 lignes, 196 798 DH."}
+{"prompt": "KPI de MAROUANE AITTOUGHA ?", "response": "MAROUANE AITTOUGHA a créé 18 DA. BC associées : 39. Taux de transformation DA→BC : 90%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 73. BC livrées : 54. Statut principal : Envoyé."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 13.3% vs budget. Le principal driver est « Cash flow ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Accès pour responsable qualité et chef de production", "response": "Accès configuré pour responsable qualité et chef de production. Délais ou priorités spécifiques ?"}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 474 042 DH, Réalisé 437 939 DH. Variance : -18.4%. Tendance vs N-1 : 10.7%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 74 DA en cours dont 11 sans commande associée. Valeur totale : 300 360 DH."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 231 944 DH, Réalisé 331 127 DH. Variance : -11.8%. Tendance vs N-1 : -13.5%."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, coût unitaire"}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 184 411 DH, Réalisé 234 524 DH. Variance globale : -27.5%. Principaux drivers : Amortissements, Résultat net."}
+{"prompt": "Quel est le taux de recapture du parc P7 ?", "response": "Le taux de recapture moyen du parc P7 est de 79.6% pour les opérations d'Échantillonnage."}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Fournisseur ACRAPLAST ?", "response": "ACRAPLAST : 3 commandes, valeur totale 254 174 DH. Catégories : ELECTRICITÉ, PRESTATION."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 490 171 DH, Réalisé 371 994 DH. Variance globale : -16.5%. Principaux drivers : Investissements, EBITDA."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 365 042 DH, Réalisé 435 841 DH. Variance : -21.7%. Tendance vs N-1 : 12.3%."}
+{"prompt": "Quelles sont les données du parc P7 ?", "response": "Le parc P7 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1156 kg. Taux de recapture : 80.5%."}
+{"prompt": "Fichiers : Suivi Global CCS.xlsm", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : coût unitaire, marge"}
+{"prompt": "Fournisseur AGATRAVE ?", "response": "AGATRAVE : 28 commandes, valeur totale 457 268 DH. Catégories : ENGRAIS SOLIDE, ELECTRICITÉ."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1876 kg. Taux de recapture : 86.6%."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : aucun, coût unitaire"}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 33 lignes, taux recapture 26.3%. Hors calibre : 13 lignes, taux recapture 73.2%."}
+{"prompt": "Quel est le statut du poste Amortissements ?", "response": "Poste AMORT (Amortissements) : Budget 453 214 DH, Réalisé 328 942 DH. Variance : -11.0%. Tendance vs N-1 : -3.6%."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 636 kg. Taux de recapture : 55.4%."}
+{"prompt": "Achats pour la catégorie PRESTATION ?", "response": "Catégorie PRESTATION : 61 lignes, valeur 418 316 DH. Fournisseur principal : ENTERPRISE BOUKRATE."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 22 lignes. Taux de recapture moyen : 77.9%. Biomasse totale : 346 kg."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 24 lignes, taux recapture 83.1%. Hors calibre : 27 lignes, taux recapture 31.1%."}
+{"prompt": "Quelles sont les données du parc P2-4 ?", "response": "Le parc P2-4 est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 593 kg. Taux de recapture : 69.3%."}
+{"prompt": "Quelles sont les anomalies financières ?", "response": "1 anomalies détectées via LOF. Poste principal : Cash flow avec variance de -5.1%."}
+{"prompt": "Quel est le statut du poste Main d'oeuvre directe ?", "response": "Poste MOD (Main d'oeuvre directe) : Budget 400 740 DH, Réalisé 134 065 DH. Variance : -12.6%. Tendance vs N-1 : -22.8%."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : remise, marge"}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "KPI de MAROUANE AITTOUGHA ?", "response": "MAROUANE AITTOUGHA a créé 32 DA. BC associées : 31. Taux de transformation DA→BC : 95%."}
+{"prompt": "Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?", "response": "Catégorie ÉQUIPEMENT LABORATOIRE : 44 lignes, valeur 179 965 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 1880 kg. Taux de recapture : 75.7%."}
+{"prompt": "KPI de SOUFIANE ELKAFRAOUI ?", "response": "SOUFIANE ELKAFRAOUI a créé 45 DA. BC associées : 33. Taux de transformation DA→BC : 91%."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 81.7% pour les opérations d'Échantillonnage."}
+{"prompt": "Y a-t-il des anomalies sur le parc P8 ?", "response": "Oui, 4 anomalies détectées (Majeure) via Isolation Forest. Biomasse écart : 789 kg. Vérifiez les lignes en zone Nord."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 76 878 DH, Réalisé 134 301 DH. Variance : -18.2%. Tendance vs N-1 : 6.1%."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 26 lignes. Taux de recapture moyen : 85.4%. Biomasse totale : 1239 kg."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1718 kg. Taux de recapture : 50.9%."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 379 lignes, 451 537 DH. Capex : 140 lignes, 320 052 DH."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Finance. Les paramètres sont enregistrés."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 72.6% pour les opérations d'Transfert."}
+{"prompt": "Bye", "response": "Au revoir ! Bonne utilisation d'AZURA AQUA."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 630 kg. Taux de recapture : 50.1%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : conditions paiement, fournisseur"}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 15 lignes. Taux de recapture moyen : 43.1%. Biomasse totale : 1620 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 97. BC livrées : 102. Statut principal : En cours d'approbation."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Achats. Les paramètres sont enregistrés."}
+{"prompt": "Bye", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 201 kg. Taux de recapture : 61.9%."}
+{"prompt": "Salut", "response": "Salut ! Que souhaitez-vous consulter ? Estran, Finance, ou Achats ?"}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 435 lignes, 8 636 DH. Capex : 65 lignes, 487 390 DH."}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 239 759 DH, Réalisé 33 029 DH. Variance globale : -23.3%. Principaux drivers : Cash flow, Investissements."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 79 DA en cours dont 18 sans commande associée. Valeur totale : 278 986 DH."}
+{"prompt": "Achats pour la catégorie INFORMATIQUE ?", "response": "Catégorie INFORMATIQUE : 56 lignes, valeur 394 722 DH. Fournisseur principal : ACRAPLAST."}
+{"prompt": "Quelles sont les données du parc P5 ?", "response": "Le parc P5 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 409 kg. Taux de recapture : 67.4%."}
+{"prompt": "Fournisseur AIR LIQUIDE MAROC ?", "response": "AIR LIQUIDE MAROC : 21 commandes, valeur totale 201 274 DH. Catégories : MATÉRIEL D'USURE, ELECTRICITÉ."}
+{"prompt": "Accès pour admin et contrôleur de gestion", "response": "Accès configuré pour admin et contrôleur de gestion. Délais ou priorités spécifiques ?"}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 83.3% pour les opérations d'Échantillonnage."}
+{"prompt": "Y a-t-il des anomalies sur le parc P7-ext ?", "response": "Oui, 5 anomalies détectées (Mineure) via Z-Score. Biomasse écart : 1402 kg. Vérifiez les lignes en zone Est."}
+{"prompt": "Achats pour la catégorie INFORMATIQUE ?", "response": "Catégorie INFORMATIQUE : 36 lignes, valeur 170 958 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Fournisseur AGUACONCEPT ?", "response": "AGUACONCEPT : 20 commandes, valeur totale 265 095 DH. Catégories : CO2 INTRANT, MATÉRIEL D'USURE."}
+{"prompt": "Y a-t-il des anomalies sur le parc P3 ?", "response": "Oui, 5 anomalies détectées (Majeure) via LOF. Biomasse écart : 1459 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Quel est le statut du poste Main d'oeuvre directe ?", "response": "Poste MOD (Main d'oeuvre directe) : Budget 457 804 DH, Réalisé 131 173 DH. Variance : -26.9%. Tendance vs N-1 : -1.2%."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Estran. Les paramètres sont enregistrés."}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 58. BC livrées : 120. Statut principal : Document lié créé."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 9 DA. BC associées : 8. Taux de transformation DA→BC : 77%."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 34 lignes. Taux de recapture moyen : 26.2%. Biomasse totale : 716 kg."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 236 303 DH, Réalisé 54 364 DH. Variance : 18.7%. Tendance vs N-1 : 20.2%."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 25 DA créées, 21 BC créées. Valeur : 54 207 DH. Tendance : stable."}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Achats. Les paramètres sont enregistrés."}
+{"prompt": "Achats pour la catégorie STRUCTURE MÉTALLIQUE ?", "response": "Catégorie STRUCTURE MÉTALLIQUE : 57 lignes, valeur 352 934 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 46 DA en cours dont 18 sans commande associée. Valeur totale : 94 462 DH."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 58.9% pour les opérations d'Échantillonnage."}
+{"prompt": "Y a-t-il des anomalies sur le parc P7 ?", "response": "Oui, 4 anomalies détectées (Critique) via Isolation Forest. Biomasse écart : 386 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "KPI de SAID BOUKHLIK ?", "response": "SAID BOUKHLIK a créé 36 DA. BC associées : 30. Taux de transformation DA→BC : 81%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 22.4% vs budget. Le principal driver est « Chiffre d'affaires ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 22 DA. BC associées : 37. Taux de transformation DA→BC : 78%."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Résumé YTD Finance", "response": "YTD : Budget total 271 734 DH, Réalisé 80 324 DH. Variance globale : -11.8%. Principaux drivers : Main d'oeuvre directe, Amortissements."}
+{"prompt": "Fournisseur ACRAPLAST ?", "response": "ACRAPLAST : 29 commandes, valeur totale 236 554 DH. Catégories : INFORMATIQUE, PLOMBERIE."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 74.8% pour les opérations d'Transfert."}
+{"prompt": "Quel est le taux de recapture du parc P2-4 ?", "response": "Le taux de recapture moyen du parc P2-4 est de 59.5% pour les opérations d'Échantillonnage."}
+{"prompt": "Quel est le statut du poste Frais généraux ?", "response": "Poste FG (Frais généraux) : Budget 423 316 DH, Réalisé 225 078 DH. Variance : 20.7%. Tendance vs N-1 : 28.5%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2-4 ?", "response": "Oui, 3 anomalies détectées (Critique) via LOF. Biomasse écart : 466 kg. Vérifiez les lignes en zone Nord."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Accès pour admin et contrôleur de gestion", "response": "Accès configuré pour admin et contrôleur de gestion. Délais ou priorités spécifiques ?"}
+{"prompt": "Merci", "response": "De rien ! N'hésitez pas si vous avez d'autres questions sur AZURA AQUA."}
+{"prompt": "KPI de MAMOUN OUDGHIRI ?", "response": "MAMOUN OUDGHIRI a créé 19 DA. BC associées : 25. Taux de transformation DA→BC : 95%."}
+{"prompt": "Accès pour directeur et responsable achat", "response": "Accès configuré pour directeur et responsable achat. Délais ou priorités spécifiques ?"}
+{"prompt": "Quel est le statut du poste Frais généraux ?", "response": "Poste FG (Frais généraux) : Budget 232 988 DH, Réalisé 320 227 DH. Variance : -12.9%. Tendance vs N-1 : 14.9%."}
+{"prompt": "Quelles sont les données du parc P4 ?", "response": "Le parc P4 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 419 kg. Taux de recapture : 72.0%."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 162 410 DH, Réalisé 293 136 DH. Variance : -7.4%. Tendance vs N-1 : 17.5%."}
+{"prompt": "Accès pour chef de production et responsable achat", "response": "Accès configuré pour chef de production et responsable achat. Délais ou priorités spécifiques ?"}
+{"prompt": "Comment fonctionne LOF ?", "response": "LOF est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Sud 1. Phase : Prégro. Biomasse récoltée : 1489 kg. Taux de recapture : 60.3%."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 78 DA créées, 23 BC créées. Valeur : 462 599 DH. Tendance : baisse."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Achats pour la catégorie CO2 INTRANT ?", "response": "Catégorie CO2 INTRANT : 52 lignes, valeur 205 166 DH. Fournisseur principal : AGA IKHWAN."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 96. BC livrées : 132. Statut principal : Envoyé."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 66.9% pour les opérations d'Échantillonnage."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Nord. Phase : Prégro. Biomasse récoltée : 1729 kg. Taux de recapture : 60.9%."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 13 864 DH, Réalisé 319 388 DH. Variance : 25.7%. Tendance vs N-1 : 19.8%."}
+{"prompt": "Accès pour admin et contrôleur de gestion", "response": "Accès configuré pour admin et contrôleur de gestion. Délais ou priorités spécifiques ?"}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : conditions paiement, conditions paiement"}
+{"prompt": "Comment fonctionne Z-Score ?", "response": "Z-Score est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 35.5% pour les opérations d'Échantillonnage."}
+{"prompt": "Fournisseur CACED SARL ?", "response": "CACED SARL : 26 commandes, valeur totale 322 068 DH. Catégories : PRESTATION, CO2 INTRANT."}
+{"prompt": "Quel est le statut du poste Résultat net ?", "response": "Poste RN (Résultat net) : Budget 372 081 DH, Réalisé 335 718 DH. Variance : -4.9%. Tendance vs N-1 : -23.1%."}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 57.7% pour les opérations d'Échantillonnage."}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}
+{"prompt": "Montre les données de type Échantillonnage", "response": "Pour le type « Échantillonnage », il y a 44 lignes. Taux de recapture moyen : 87.2%. Biomasse totale : 403 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 56. BC livrées : 147. Statut principal : En cours d'approbation."}
+{"prompt": "Quel est le statut du poste Cash flow ?", "response": "Poste CF (Cash flow) : Budget 318 382 DH, Réalisé 231 858 DH. Variance : -5.1%. Tendance vs N-1 : -17.1%."}
+{"prompt": "Quelles sont les données du parc P7-ext ?", "response": "Le parc P7-ext est situé en zone Sud. Phase : grossissement. Biomasse récoltée : 1718 kg. Taux de recapture : 39.3%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 28.0% vs budget. Le principal driver est « Frais généraux ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 41 DA en cours dont 5 sans commande associée. Valeur totale : 136 826 DH."}
+{"prompt": "Quelles sont les données du parc P7 ?", "response": "Le parc P7 est situé en zone Est. Phase : Échantillonnage. Biomasse récoltée : 1222 kg. Taux de recapture : 47.7%."}
+{"prompt": "Hello", "response": "Bonjour ! Assistant AZURA AQUA à votre service. Quel module vous intéresse ?"}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 46. BC livrées : 134. Statut principal : En cours de préparation."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}
+{"prompt": "Quelles sont les données du parc P7 ?", "response": "Le parc P7 est situé en zone Ouest. Phase : grossissement. Biomasse récoltée : 1783 kg. Taux de recapture : 39.5%."}
+{"prompt": "Quelles sont les données du parc P2-3 ?", "response": "Le parc P2-3 est situé en zone Est. Phase : Prégro. Biomasse récoltée : 1280 kg. Taux de recapture : 81.1%."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 1.5% vs budget. Le principal driver est « Amortissements ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Comment fonctionne Isolation Forest ?", "response": "Isolation Forest est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2 ?", "response": "Oui, 4 anomalies détectées (Majeure) via Z-Score. Biomasse écart : 1605 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 20 DA en cours dont 21 sans commande associée. Valeur totale : 234 324 DH."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de 24.7% vs budget. Le principal driver est « Amortissements ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Accès pour directeur et tous", "response": "Accès configuré pour directeur et tous. Délais ou priorités spécifiques ?"}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Fichiers : Suivi Global CCS.xlsm", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, coût unitaire"}
+{"prompt": "Quel est le taux de recapture du parc P2 ?", "response": "Le taux de recapture moyen du parc P2 est de 69.6% pour les opérations d'Échantillonnage."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 27 DA en cours dont 29 sans commande associée. Valeur totale : 336 443 DH."}
+{"prompt": "Quel est le taux de recapture du parc P6 ?", "response": "Le taux de recapture moyen du parc P6 est de 78.4% pour les opérations d'Transfert."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 63 DA en cours dont 16 sans commande associée. Valeur totale : 467 415 DH."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 54 DA en cours dont 8 sans commande associée. Valeur totale : 93 671 DH."}
+{"prompt": "Quel est le statut du poste Chiffre d'affaires ?", "response": "Poste CA (Chiffre d'affaires) : Budget 184 619 DH, Réalisé 266 090 DH. Variance : -25.5%. Tendance vs N-1 : -2.3%."}
+{"prompt": "Achats pour la catégorie ÉQUIPEMENT LABORATOIRE ?", "response": "Catégorie ÉQUIPEMENT LABORATOIRE : 26 lignes, valeur 339 314 DH. Fournisseur principal : CACED SARL."}
+{"prompt": "Achats pour la catégorie CARBURANTS ?", "response": "Catégorie CARBURANTS : 33 lignes, valeur 267 841 DH. Fournisseur principal : AGRIROUES MAROC."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1299 kg. Taux de recapture : 72.6%."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 74. BC livrées : 192. Statut principal : En cours d'approbation."}
+{"prompt": "Bonjour", "response": "Bonjour ! Je suis l'assistant AZURA AQUA. Comment puis-je vous aider ?"}
+{"prompt": "Comment fonctionne One-Class SVM ?", "response": "One-Class SVM est un algorithme de détection d'anomalies. Il identifie les valeurs atypiques dans les données pour signaler des écarts importants."}
+{"prompt": "Achats pour la catégorie INFORMATIQUE ?", "response": "Catégorie INFORMATIQUE : 56 lignes, valeur 280 262 DH. Fournisseur principal : AGUACONCEPT."}
+{"prompt": "Fournisseur ENTERPRISE BOUKRATE ?", "response": "ENTERPRISE BOUKRATE : 8 commandes, valeur totale 409 432 DH. Catégories : CO2 INTRANT, INFORMATIQUE."}
+{"prompt": "Configure le module Estran", "response": "Module Estran sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Y a-t-il des anomalies sur le parc P3 ?", "response": "Oui, 1 anomalies détectées (Majeure) via One-Class SVM. Biomasse écart : 1862 kg. Vérifiez les lignes en zone Est."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 26. BC livrées : 138. Statut principal : En cours de préparation."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 9 lignes. Taux de recapture moyen : 39.3%. Biomasse totale : 1817 kg."}
+{"prompt": "Quel est le taux de recapture du parc P2-2 ?", "response": "Le taux de recapture moyen du parc P2-2 est de 75.5% pour les opérations d'Échantillonnage."}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 36.9% pour les opérations d'Transfert."}
+{"prompt": "Fichiers : Exemple BDD estran.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : CA_client, fournisseur"}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : prix, marge"}
+{"prompt": "Quel est le statut du poste Investissements ?", "response": "Poste CAPEX (Investissements) : Budget 415 240 DH, Réalisé 387 507 DH. Variance : 23.8%. Tendance vs N-1 : -3.0%."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Comment importer des données ?", "response": "Glissez votre fichier .xlsx dans la barre d'import en haut de chaque page. Formats supportés : .xlsx et .xls (max 20 Mo)."}
+{"prompt": "Fichiers : ventes.xlsx", "response": "Fichier enregistré. Champs sensibles à masquer ? Exemple : fournisseur, marge"}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 45 DA en cours dont 11 sans commande associée. Valeur totale : 491 573 DH."}
+{"prompt": "Quels modules sont disponibles ?", "response": "Trois modules : Estran (biomasse, parcs), Finance (budget, variances), Achats (DA, BC, fournisseurs)."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 383 lignes, 445 800 DH. Capex : 58 lignes, 417 264 DH."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Ouest. Phase : Prégro. Biomasse récoltée : 784 kg. Taux de recapture : 49.6%."}
+{"prompt": "Fournisseur ENTERPRISE BOUKRATE ?", "response": "ENTERPRISE BOUKRATE : 4 commandes, valeur totale 144 202 DH. Catégories : PRESTATION, ENGRAIS SOLIDE."}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Configure le module Achats", "response": "Module Achats sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 61 DA en cours dont 26 sans commande associée. Valeur totale : 263 565 DH."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 24 lignes, taux recapture 86.2%. Hors calibre : 28 lignes, taux recapture 40.9%."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 26 lignes. Taux de recapture moyen : 58.6%. Biomasse totale : 1312 kg."}
+{"prompt": "KPI de MOHAMED TAOUFIQ ?", "response": "MOHAMED TAOUFIQ a créé 39 DA. BC associées : 24. Taux de transformation DA→BC : 84%."}
+{"prompt": "Montre les données de type Récolte commerciale", "response": "Pour le type « Récolte commerciale », il y a 11 lignes. Taux de recapture moyen : 81.2%. Biomasse totale : 1101 kg."}
+{"prompt": "Quelles sont les données du parc P3 ?", "response": "Le parc P3 est situé en zone Ouest. Phase : Échantillonnage. Biomasse récoltée : 833 kg. Taux de recapture : 66.7%."}
+{"prompt": "Quel est le taux de recapture du parc P3 ?", "response": "Le taux de recapture moyen du parc P3 est de 55.4% pour les opérations d'Transfert."}
+{"prompt": "Montre les données de type Transfert", "response": "Pour le type « Transfert », il y a 36 lignes. Taux de recapture moyen : 85.3%. Biomasse totale : 797 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 57. BC livrées : 109. Statut principal : En cours de préparation."}
+{"prompt": "Capex vs Opex ?", "response": "Opex : 345 lignes, 177 180 DH. Capex : 120 lignes, 303 103 DH."}
+{"prompt": "Quel est le statut du poste Matières premières ?", "response": "Poste MP (Matières premières) : Budget 264 628 DH, Réalisé 338 856 DH. Variance : -19.6%. Tendance vs N-1 : -15.1%."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 11 DA en cours dont 13 sans commande associée. Valeur totale : 342 818 DH."}
+{"prompt": "Génère un commentaire IA sur les finances", "response": "Le résultat YTD montre une variance de -0.6% vs budget. Le principal driver est « EBITDA ». Recommandation : surveiller les postes à forte déviation."}
+{"prompt": "Bye", "response": "À bientôt ! L'assistant reste disponible."}
+{"prompt": "Quelles sont les données du parc P2 ?", "response": "Le parc P2 est situé en zone Nord. Phase : Échantillonnage. Biomasse récoltée : 1310 kg. Taux de recapture : 24.3%."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 18 lignes, taux recapture 84.0%. Hors calibre : 25 lignes, taux recapture 87.7%."}
+{"prompt": "Évolution mensuelle des achats ?", "response": "Dernier mois : 39 DA créées, 59 BC créées. Valeur : 396 059 DH. Tendance : hausse."}
+{"prompt": "Configure le module Finance", "response": "Module Finance sélectionné. Quels fichiers Excel souhaitez-vous utiliser ? Focus : anomalies, KPI, ou les deux ?"}
+{"prompt": "Valider la configuration", "response": "Configuration validée pour le module Achats. Les paramètres sont enregistrés."}
+{"prompt": "Quelles sont les données du parc P2-2 ?", "response": "Le parc P2-2 est situé en zone Sud. Phase : Échantillonnage. Biomasse récoltée : 1993 kg. Taux de recapture : 70.4%."}
+{"prompt": "Montre les données de type Retour commercial", "response": "Pour le type « Retour commercial », il y a 45 lignes. Taux de recapture moyen : 77.0%. Biomasse totale : 386 kg."}
+{"prompt": "Statut des bons de commande ?", "response": "BC en cours : 48. BC livrées : 126. Statut principal : En cours de préparation."}
+{"prompt": "Y a-t-il des anomalies sur le parc P2-3 ?", "response": "Oui, 5 anomalies détectées (Critique) via One-Class SVM. Biomasse écart : 1572 kg. Vérifiez les lignes en zone Sud."}
+{"prompt": "Quelles sont les données du parc P8 ?", "response": "Le parc P8 est situé en zone Nord. Phase : grossissement. Biomasse récoltée : 988 kg. Taux de recapture : 46.7%."}
+{"prompt": "Quel est le taux de recapture du parc P8 ?", "response": "Le taux de recapture moyen du parc P8 est de 89.8% pour les opérations d'Transfert."}
+{"prompt": "Compare Primaire et Hors calibre", "response": "Primaire : 19 lignes, taux recapture 89.5%. Hors calibre : 19 lignes, taux recapture 21.5%."}
+{"prompt": "Quel est le statut du poste Frais généraux ?", "response": "Poste FG (Frais généraux) : Budget 437 861 DH, Réalisé 78 491 DH. Variance : 2.9%. Tendance vs N-1 : 13.6%."}
+{"prompt": "Y a-t-il des anomalies sur le parc P5 ?", "response": "Oui, 3 anomalies détectées (Critique) via One-Class SVM. Biomasse écart : 435 kg. Vérifiez les lignes en zone Ouest."}
+{"prompt": "Budget vs Réalisé pour EBITDA", "response": "Budget : 22 154 DH. Réalisé : 150 901 DH. Écart : 27.3%. Favorable."}
+{"prompt": "Combien de DA sont en cours ?", "response": "Il y a 58 DA en cours dont 17 sans commande associée. Valeur totale : 42 174 DH."}
+{"prompt": "Que fais-tu ?", "response": "Je suis l'assistant IA d'AZURA AQUA. J'analyse les données Estran, Finance et Achats."}

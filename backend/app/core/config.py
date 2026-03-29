@@ -16,6 +16,8 @@ class Settings(BaseSettings):
 
     # Database
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/azura_aqua"
+    # Chatbot read-only (optional): use chatbot_ro role with SELECT on estran_summary, finance_kpi_public, achat_status
+    chatbot_database_url: str = ""
 
     # Azure OpenAI (GPT-4, GPT-4.1 / o1, gpt-4-turbo)
     azure_openai_endpoint: str = ""
@@ -45,9 +47,26 @@ class Settings(BaseSettings):
     # Copilot (M365 Copilot / Copilot Studio - optional)
     copilot_studio_web_app_url: str = ""
 
+    # LLM Tools: when True and Azure OpenAI configured, use function calling instead of keyword matching
+    # See docs/LLM_INTEGRATION_GUIDE.md
+    use_llm_tools: bool = False
+
+    # Ollama (local LLM - see docs/LLM_INTEGRATION_GUIDE.md Option C)
+    ollama_enabled: bool = True
+    ollama_url: str = "http://localhost:11434"
+    ollama_base_url: str = "http://localhost:11434"  # alias for ollama_url
+    ollama_model: str = "mistral:7b"
+
+    # Auth: False = JWT required; True = dev mode (X-User-Id header, no privilege enforcement for anonymous)
+    auth_disabled: bool = False
+    jwt_secret: str = "change-me-set-JWT_SECRET-in-production"  # env: JWT_SECRET
+    jwt_algorithm: str = "HS256"
+    access_token_expire_minutes: int = 60 * 24 * 7  # 7 days
+
     # App
     app_name: str = "AZURA AQUA"
     debug: bool = False
+    frontend_url: str = "http://localhost:5173"
 
 
 @lru_cache

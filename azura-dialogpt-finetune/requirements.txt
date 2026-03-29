@@ -1,0 +1,7 @@
+# DialoGPT fine-tuning for AZURA AQUA
+transformers>=4.36.0
+datasets>=2.16.0
+torch>=2.1.0
+accelerate>=0.25.0
+tokenizers>=0.15.0
+tqdm>=4.66.0

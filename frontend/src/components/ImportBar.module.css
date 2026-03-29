@@ -9,15 +9,15 @@
 .badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem 0.75rem;
-  font-size: 0.75rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-accent-light);
-  background: rgba(0, 180, 216, 0.12);
+  color: rgba(0, 210, 240, 0.9);
+  background: rgba(0, 180, 216, 0.1);
   border: 1px solid rgba(0, 180, 216, 0.25);
-  border-radius: var(--radius);
+  border-radius: 100px;
   flex-shrink: 0;
 }
 
@@ -27,15 +27,16 @@
   min-width: 220px;
   max-width: 440px;
   padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-lg);
-  border: 1px dashed var(--color-border);
+  border-radius: 16px;
+  border: 1px dashed rgba(0, 180, 216, 0.15);
   background: linear-gradient(
     135deg,
     rgba(17, 25, 32, 0.6) 0%,
     rgba(23, 31, 40, 0.5) 100%
   );
-  backdrop-filter: blur(8px);
-  transition: all var(--transition);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
@@ -47,20 +48,23 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
-  background: var(--gradient-accent);
+  border-radius: 16px 0 0 16px;
+  background: linear-gradient(180deg, rgba(0, 180, 216, 0.8), rgba(0, 120, 180, 0.4));
   opacity: 0;
-  transition: opacity var(--transition);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .zone:hover {
-  border-color: var(--color-accent);
+  border-color: rgba(0, 180, 216, 0.5);
+  border-style: solid;
   background: linear-gradient(
     135deg,
     rgba(0, 180, 216, 0.08) 0%,
     rgba(0, 180, 216, 0.04) 100%
   );
-  box-shadow: 0 0 24px rgba(0, 180, 216, 0.08);
+  box-shadow:
+    0 0 24px rgba(0, 180, 216, 0.08),
+    0 0 0 1px rgba(0, 180, 216, 0.1);
 }
 
 .zone:hover::before {
@@ -68,14 +72,16 @@
 }
 
 .zone.dragging {
-  border-color: var(--color-accent);
+  border-color: rgba(0, 200, 230, 0.6);
   border-style: solid;
   background: linear-gradient(
     135deg,
     rgba(0, 180, 216, 0.15) 0%,
     rgba(0, 180, 216, 0.06) 100%
   );
-  box-shadow: 0 0 28px rgba(0, 180, 216, 0.12);
+  box-shadow:
+    0 0 32px rgba(0, 180, 216, 0.15),
+    0 0 0 1px rgba(0, 180, 216, 0.2);
 }
 
 .zone.dragging::before {
@@ -86,11 +92,17 @@
   pointer-events: none;
   opacity: 0.95;
   border-style: solid;
-  border-color: var(--color-accent);
+  border-color: rgba(0, 180, 216, 0.4);
+  animation: uploadPulse 1.8s ease-in-out infinite;
 }
 
 .zone.uploading::before {
   opacity: 0.6;
+}
+
+@keyframes uploadPulse {
+  0%, 100% { border-color: rgba(0, 180, 216, 0.25); }
+  50% { border-color: rgba(0, 180, 216, 0.55); }
 }
 
 .input {
@@ -102,17 +114,38 @@
   cursor: pointer;
 }
 
+.progressWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.progressBar {
+  height: 6px;
+  background: rgba(0, 180, 216, 0.12);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #00b4d8, #48cae4);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
 .label {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: var(--color-text-muted);
-  transition: color var(--transition);
+  color: rgba(160, 180, 200, 0.7);
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .zone:hover .label {
-  color: var(--color-text);
+  color: rgba(220, 235, 245, 0.95);
 }
 
 .icon {
@@ -128,11 +161,11 @@
   gap: 0.5rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-success);
+  color: #22d3a8;
 }
 
 .success .icon {
-  color: var(--color-success);
+  color: #22d3a8;
   flex-shrink: 0;
 }
 
@@ -141,7 +174,7 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 0.82rem;
-  color: var(--color-danger);
+  color: #ef4444;
 }
 
 @media (max-width: 600px) {

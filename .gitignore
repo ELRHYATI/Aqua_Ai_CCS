@@ -1,5 +1,8 @@
 # AZURA AQUA - Git ignore
 
+# Local documentation (not published to GitHub)
+docs/
+
 # Environment & secrets
 .env
 .env.local
@@ -40,6 +43,7 @@ yarn-debug.log*
 yarn-error.log*
 .npm
 .yarn-integrity
+*.tsbuildinfo
 
 # Build outputs
 *.log
@@ -54,6 +58,17 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Backend
+backend/.venv/
+backend/reports/
+backend/.pytest_cache/
+
+# ML / model artifacts (weights exceed GitHub 100MB limit; keep local only)
+azura-dialogpt-finetune/checkpoints/
+azura-dialogpt-finetune/models/
+azura-dialogpt-finetune/azura-dialogpt-finetuned/
+azura-dialogpt-finetune/__pycache__/
 
 # Excel / data (optional - uncomment to ignore local Excel files)
 # *.xlsx

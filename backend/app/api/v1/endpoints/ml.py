@@ -1,11 +1,18 @@
 """ML analysis API - clustering, trends, automated insights."""
 
+from typing import Optional
+
 import pandas as pd
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, BackgroundTasks, Depends, Request
+from fastapi.responses import JSONResponse
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.database import get_db
+from app.core.auth import get_current_user, require_can_run_ml
+from app.core.database import AsyncSessionLocal, get_db
+from app.models.user import User
+from app.services.audit_service import log
+from app.core.limiter import limiter
 from app.models.estran import EstranRecord
 from app.models.finance import FinanceLine
 from app.models.purchase import PurchaseDA, PurchaseBC
@@ -21,12 +28,57 @@ from app.services.ml_analysis_service import (
     detect_finance_trends,
     generate_insights,
 )
+from app.services.task_service import create_task, set_task_done, set_task_error, set_task_running
 
 router = APIRouter(prefix="/ml", tags=["ml"])
 
 
-@router.get("/analysis", response_model=MLAnalysisResponse)
-async def get_ml_analysis(db: AsyncSession = Depends(get_db)):
+async def _run_ml_analysis(task_id: str) -> None:
+    async with AsyncSessionLocal() as session:
+        try:
+            await set_task_running(session, task_id)
+            await session.commit()
+        except Exception:
+            pass
+    async with AsyncSessionLocal() as db:
+        try:
+            result = await _do_ml_analysis(db)
+            result_dict = result.model_dump()
+            async with AsyncSessionLocal() as session:
+                await set_task_done(session, task_id, result_dict)
+        except Exception as e:
+            async with AsyncSessionLocal() as err_session:
+                await set_task_error(err_session, task_id, str(e))
+
+
+@router.get("/analysis")
+@limiter.limit("10/minute")
+async def get_ml_analysis(
+    request: Request,
+    background_tasks: BackgroundTasks,
+    db: AsyncSession = Depends(get_db),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    """
+    Run full ML analysis: clustering, trends, anomaly counts, automated insights.
+    Returns HTTP 202 with task_id. Poll GET /tasks/{task_id}/status for result.
+    """
+    require_can_run_ml(current_user)
+    task_id = await create_task(db, "ml_analysis")
+    background_tasks.add_task(
+        log,
+        str(current_user.id) if current_user else None,
+        "ml_analysis_run",
+        "ml",
+        {"task_id": task_id},
+        request,
+        "success",
+    )
+    background_tasks.add_task(_run_ml_analysis, task_id)
+    return JSONResponse(status_code=202, content={"task_id": task_id})
+
+
+async def _do_ml_analysis(db: AsyncSession) -> MLAnalysisResponse:
     """
     Run full ML analysis: clustering, trends, anomaly counts, automated insights.
     """

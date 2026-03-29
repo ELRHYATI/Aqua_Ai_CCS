@@ -1,12 +1,20 @@
 """
-Finance commentary generator using Azure OpenAI GPT-4.
-For now: stub returning dummy text. Structure ready for openai.ChatCompletion.create.
+Finance commentary generator. Uses Azure OpenAI when configured, falls back to Ollama otherwise.
 """
 
 from decimal import Decimal
 from typing import List, Optional
 
 from app.schemas.finance import Commentary, VarianceInput
+
+FINANCE_COMMENTARY_INSTRUCTION = (
+    "Génère un commentaire financier structuré à partir des données fournies. "
+    "Réponds en français avec :\n"
+    "1. Un résumé (3-4 phrases) expliquant la situation (YTD, Budget, N-1, écarts)\n"
+    "2. Les facteurs clés (liste à puces des principaux drivers)\n"
+    "3. Des recommandations (2-3 actions concrètes)\n"
+    "Utilise la terminologie entreprise : Estran, DA, BC, YTD, Budget, N-1."
+)
 
 
 def _format_numbers(v: VarianceInput) -> str:
@@ -48,14 +56,30 @@ Respond with:
 Use French and company terminology (Estran, DA, BC, YTD, Budget, N-1)."""
 
 
+async def _call_ollama_for_commentary(context: str) -> str:
+    """Fallback to Ollama when Azure OpenAI is not configured."""
+    from app.services.ollama_service import get_ollama_service
+
+    ollama = get_ollama_service()
+    return await ollama.chat("Génère un commentaire financier structuré à partir des données ci-dessus.", context, instruction_override=FINANCE_COMMENTARY_INSTRUCTION)
+
+
 async def call_azure_openai(prompt: str, system_prompt: str) -> str:
-    """Call Azure OpenAI (GPT-4 / GPT-4.1). Returns stub message if not configured."""
+    """Call Azure OpenAI (GPT-4). Falls back to Ollama if not configured."""
     from app.services.azure_openai_service import chat_completion
 
     result = await chat_completion(system=system_prompt, user=prompt)
-    if not result:
-        return "[STUB] Configurez AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY et AZURE_OPENAI_DEPLOYMENT_NAME dans .env"
-    return result
+    if result:
+        return result
+    # Fallback to Ollama
+    if "Data:" in prompt:
+        context = prompt.split("Data:")[-1].split("Respond with:")[0].strip()
+    else:
+        context = prompt
+    ollama_result = await _call_ollama_for_commentary(context)
+    if ollama_result and "hors ligne" not in ollama_result.lower():
+        return ollama_result
+    return "[STUB] Configurez Azure OpenAI ou lancez Ollama (ollama serve) pour les commentaires IA."
 
 
 def _parse_commentary_response(raw: str, v: VarianceInput) -> Commentary:
@@ -65,8 +89,8 @@ def _parse_commentary_response(raw: str, v: VarianceInput) -> Commentary:
     """
     if "[STUB]" in raw or "non configuré" in raw.lower():
         return Commentary(
-            summary="Commentaire IA en attente de configuration Azure OpenAI. "
-            "Veuillez configurer AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_API_KEY et AZURE_OPENAI_DEPLOYMENT_NAME.",
+            summary="Commentaire IA : lancez Ollama (ollama serve) ou configurez Azure OpenAI. "
+            "Pour Ollama : exécutez 'ollama serve' puis 'ollama pull mistral' (ou autre modèle).",
             key_drivers=[
                 "Analyse des écarts Budget vs Réalisé",
                 "Comparaison N-1",
@@ -114,6 +138,7 @@ def _parse_commentary_response(raw: str, v: VarianceInput) -> Commentary:
 async def generate_finance_commentary(variance_input: VarianceInput) -> Commentary:
     """
     Generate structured commentary from variance data.
+    Uses Azure OpenAI when configured, otherwise Ollama (ollama serve).
     """
     system_prompt = "You are an expert financial analyst for AZURA AQUA."
     user_prompt = _build_prompt(variance_input)
