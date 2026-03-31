@@ -64,6 +64,8 @@ export interface EstranFiltersResponse {
   months: number[]
   residences: string[]
   origines: string[]
+  n_parc_an?: string[]
+  generations_semi?: string[]
 }
 
 export interface EstranKpiQueryParams {
@@ -71,6 +73,8 @@ export interface EstranKpiQueryParams {
   year?: number
   month?: number
   parc?: string
+  parc_an?: string
+  generation_semi?: string
   residence?: string
   origine?: string
 }
@@ -102,9 +106,11 @@ export async function getEstranKpis(params: EstranKpiQueryParams): Promise<Estra
   if (params.year != null) sp.set('year', String(params.year))
   if (params.month != null) sp.set('month', String(params.month))
   if (params.parc) sp.set('parc', params.parc)
+  if (params.parc_an) sp.set('parc_an', params.parc_an)
+  if (params.generation_semi) sp.set('generation_semi', params.generation_semi)
   if (params.residence) sp.set('residence', params.residence)
   if (params.origine) sp.set('origine', params.origine)
-  return fetchEstranApi<EstranKpiResponse>(`/estran/kpi?${sp.toString()}`)
+  return fetchEstranApi<EstranKpiResponse>(`/estran/kpi/production?${sp.toString()}`)
 }
 
 export async function getEstranFilters(): Promise<EstranFiltersResponse> {

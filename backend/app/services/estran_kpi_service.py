@@ -1,6 +1,6 @@
 from datetime import date
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, and_, or_
+from sqlalchemy import select, or_, not_
 import pandas as pd
 from typing import Optional, List
 
@@ -13,10 +13,34 @@ from app.schemas.estran_kpi import (
     EstranFiltersResponse,
 )
 
-def _get_base_query(parc: Optional[str] = None, annee: Optional[int] = None, base: Optional[str] = None):
+def _norm(val: Optional[str]) -> Optional[str]:
+    if val is None:
+        return None
+    s = str(val).strip()
+    return s or None
+
+
+def _get_base_query(
+    parc: Optional[str] = None,
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
+    annee: Optional[int] = None,
+    base: Optional[str] = None,
+):
     q = select(EstranRecord)
     if parc and parc != "Tous les parcs":
         q = q.where(EstranRecord.parc_semi == parc)
+    wan = _norm(parc_an)
+    if wan:
+        q = q.where(EstranRecord.parc_an == wan)
+    wgen = _norm(generation_semi)
+    if wgen:
+        # Filtre génération: s'applique aux lignes « layout Primaire » (feuille Primaire ou BD ESTRA sans sheet).
+        is_prim_layout = or_(
+            EstranRecord.sheet_name == "Primaire",
+            EstranRecord.sheet_name.is_(None),
+        )
+        q = q.where(or_(not_(is_prim_layout), EstranRecord.generation_semi == wgen))
     if annee and annee != "Toutes les années":
         q = q.where(EstranRecord.year == int(annee))
     if base == "Primaire":
@@ -34,9 +58,16 @@ def _calculate_trend(current: float, previous: float) -> tuple[float, str]:
     return round(trend, 1), direction
 
 
-async def get_estran_kpis(db: AsyncSession, parc: Optional[str], annee: Optional[int], base: Optional[str]) -> EstranDashboardKpiResponse:
+async def get_estran_kpis(
+    db: AsyncSession,
+    parc: Optional[str],
+    annee: Optional[int],
+    base: Optional[str],
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
+) -> EstranDashboardKpiResponse:
     # Fetch data for current year and previous year (if annee specified, else all or last 2)
-    q = _get_base_query(parc, None, None) # We fetch all years to calculate trends if annee is specified
+    q = _get_base_query(parc, parc_an, generation_semi, None, None)
     
     result = await db.execute(q)
     rows = result.scalars().all()
@@ -106,8 +137,15 @@ async def get_estran_kpis(db: AsyncSession, parc: Optional[str], annee: Optional
     )
 
 
-async def get_chart_rendement(db: AsyncSession, parc: Optional[str], annee: Optional[int], base: Optional[str]) -> List[ChartDataPoint]:
-    q = _get_base_query(parc, annee, base)
+async def get_chart_rendement(
+    db: AsyncSession,
+    parc: Optional[str],
+    annee: Optional[int],
+    base: Optional[str],
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
+) -> List[ChartDataPoint]:
+    q = _get_base_query(parc, parc_an, generation_semi, annee, base)
     result = await db.execute(q)
     rows = result.scalars().all()
     
@@ -127,8 +165,15 @@ async def get_chart_rendement(db: AsyncSession, parc: Optional[str], annee: Opti
     return [ChartDataPoint(parc=r["parc"], annee=r["annee"], valeur=round(r["val"], 1)) for _, r in grouped.iterrows()]
 
 
-async def get_chart_age_recolte(db: AsyncSession, parc: Optional[str], annee: Optional[int], base: Optional[str]) -> List[ChartDataPoint]:
-    q = _get_base_query(parc, annee, base)
+async def get_chart_age_recolte(
+    db: AsyncSession,
+    parc: Optional[str],
+    annee: Optional[int],
+    base: Optional[str],
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
+) -> List[ChartDataPoint]:
+    q = _get_base_query(parc, parc_an, generation_semi, annee, base)
     result = await db.execute(q)
     rows = result.scalars().all()
     
@@ -150,8 +195,15 @@ async def get_chart_age_recolte(db: AsyncSession, parc: Optional[str], annee: Op
     return [ChartDataPoint(parc=r["parc"], annee=r["annee"], valeur=round(r["val"], 1)) for _, r in grouped.iterrows()]
 
 
-async def get_chart_stock_lignes(db: AsyncSession, parc: Optional[str], annee: Optional[int], base: Optional[str]) -> List[ChartDataPoint]:
-    q = _get_base_query(parc, annee, base)
+async def get_chart_stock_lignes(
+    db: AsyncSession,
+    parc: Optional[str],
+    annee: Optional[int],
+    base: Optional[str],
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
+) -> List[ChartDataPoint]:
+    q = _get_base_query(parc, parc_an, generation_semi, annee, base)
     q = q.where(EstranRecord.date_recolte.is_(None))
     result = await db.execute(q)
     rows = result.scalars().all()
@@ -167,8 +219,14 @@ async def get_chart_stock_lignes(db: AsyncSession, parc: Optional[str], annee: O
     return [ChartDataPoint(parc=r["parc"], annee=r["annee"], valeur=r["id"]) for _, r in grouped.iterrows()]
 
 
-async def get_chart_stock_age_sejour(db: AsyncSession, parc: Optional[str], base: Optional[str]) -> List[StockAgeDataPoint]:
-    q = _get_base_query(parc, None, base).where(EstranRecord.date_recolte.is_(None))
+async def get_chart_stock_age_sejour(
+    db: AsyncSession,
+    parc: Optional[str],
+    base: Optional[str],
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
+) -> List[StockAgeDataPoint]:
+    q = _get_base_query(parc, parc_an, generation_semi, None, base).where(EstranRecord.date_recolte.is_(None))
     result = await db.execute(q)
     rows = result.scalars().all()
     
@@ -201,4 +259,12 @@ async def get_estran_filters(db: AsyncSession) -> EstranFiltersResponse:
     parcs = sorted([p for p in p_res.scalars().all() if p])
     annees = sorted([int(a) for a in a_res.scalars().all() if a], reverse=True)
     
-    return EstranFiltersResponse(parcs=parcs, annees=annees)
+    return EstranFiltersResponse(
+        parcs=parcs,
+        annees=annees,
+        months=[],
+        residences=[],
+        origines=[],
+        n_parc_an=[],
+        generations_semi=[],
+    )

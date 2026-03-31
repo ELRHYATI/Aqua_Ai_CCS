@@ -57,7 +57,8 @@ def _sheet_from_base(base: Optional[str]) -> Optional[str]:
 
 
 def _record_base(record: EstranRecord) -> Optional[str]:
-    if record.sheet_name == "Primaire":
+    # Align with estran_db_service primaire filter: feuille « Primaire » ou BD ESTRA (sheet_name vide).
+    if record.sheet_name == "Primaire" or record.sheet_name is None:
         return "Primaire"
     if record.sheet_name == "Hors calibre":
         return "HC"
@@ -89,6 +90,18 @@ def _record_hc_resseme_kg(record: EstranRecord) -> Optional[float]:
     # 1) quantite_semee_kg when available
     # 2) fallback effectif_seme as temporary proxy
     return _to_float(record.quantite_semee_kg) or _to_float(record.effectif_seme)
+
+
+def compute_vendable_kg_per_200m(record: EstranRecord) -> Optional[float]:
+    """
+    Kg vendables / 200 m : V(kg) × 200 / longueur_ligne (mètres).
+    Si V ou longueur manquent (anciens imports), repli sur la colonne importée kg/200m.
+    """
+    v = _to_float(record.v_kg)
+    length_m = _to_float(record.longueur_ligne)
+    if v is not None and length_m is not None and length_m > 0:
+        return v * (200.0 / length_m)
+    return _to_float(record.biomasse_vendable_kg)
 
 
 @dataclass
@@ -133,10 +146,19 @@ def _calc_biomasse_recuperee(records: list[EstranRecord]) -> KpiCalc:
     return KpiCalc(value=value, div_zero=div_zero)
 
 
+def _record_vendable_kg_200m(record: EstranRecord) -> Optional[float]:
+    return compute_vendable_kg_per_200m(record)
+
+
 def _calc_vendable_ligne(records: list[EstranRecord]) -> KpiCalc:
     # Excel: Vendable / ligne = somme(V (Kg)/200m) / somme(Nombre de ligne récolté (200m))
-    numerator = _sum(records, lambda r: _to_float(r.biomasse_vendable_kg))
+    numerator = _sum(records, _record_vendable_kg_200m)
     denominator = _sum(records, lambda r: _to_float(r.nb_ligne_semee_200m))
+    if denominator == 0 and numerator > 0:
+        cnt = sum(1 for r in records if _record_vendable_kg_200m(r) is not None)
+        if cnt > 0:
+            value, div_zero = _safe_div(numerator, float(cnt))
+            return KpiCalc(value=value, div_zero=div_zero)
     value, div_zero = _safe_div(numerator, denominator)
     return KpiCalc(value=value, div_zero=div_zero)
 
@@ -273,12 +295,31 @@ async def get_estran_filters(db: AsyncSession) -> EstranFiltersResponse:
         EstranRecord.month,
         EstranRecord.zone,
         EstranRecord.parc_an,
+        EstranRecord.generation_semi,
         EstranRecord.origine,
+        EstranRecord.sheet_name,
     )
     result = await db.execute(q)
     rows = result.all()
 
     parcs = sorted({_norm_str(r.parc_semi) for r in rows if _norm_str(r.parc_semi)})
+    def _is_primaire_layout(sheet: Optional[str]) -> bool:
+        return sheet == "Primaire" or sheet is None
+
+    n_parc_an = sorted(
+        {
+            _norm_str(r.parc_an)
+            for r in rows
+            if _is_primaire_layout(r.sheet_name) and _norm_str(r.parc_an)
+        }
+    )
+    generations_semi = sorted(
+        {
+            _norm_str(r.generation_semi)
+            for r in rows
+            if _is_primaire_layout(r.sheet_name) and _norm_str(r.generation_semi)
+        }
+    )
     years = sorted({int(r.year) for r in rows if r.year is not None}, reverse=True)
     months = sorted({int(r.month) for r in rows if r.month is not None})
     residences = sorted(
@@ -295,6 +336,8 @@ async def get_estran_filters(db: AsyncSession) -> EstranFiltersResponse:
         months=months,
         residences=[x for x in residences if x],
         origines=[x for x in origines if x],
+        n_parc_an=[x for x in n_parc_an if x],
+        generations_semi=[x for x in generations_semi if x],
     )
 
 
@@ -338,7 +381,8 @@ async def get_estran_kpis(
     vend_hc = _calc_vendable_ligne(hc_rows)
     pm_prim = _calc_poids_moyen(prim_rows)
     pm_hc = _calc_poids_moyen(hc_rows)
-    nb_prim = _calc_nb_lignes(prim_empty)
+    # Primaire: somme sur toutes les lignes feuille Primaire (comme la carte / la formule affichée).
+    nb_prim = _calc_nb_lignes(prim_rows)
     nb_hc = _calc_nb_lignes(hc_empty)
 
     items = [
@@ -382,7 +426,7 @@ async def get_estran_kpis(
             value=_round(vend_prim.value, "kg/ligne"),
             unit="kg/ligne",
             comment="Biomasse vendable moyenne par ligne primaire.",
-            formula='somme("V (Kg)/200m") / somme("Nombre de ligne récolté (200m)")',
+            formula='somme(V(kg)×200/longueur(m)) ; repli: somme(kg/200m importé)',
             division_by_zero=vend_prim.div_zero,
             breakdown=EstranKpiBreakdown(year=year, month=month, parc=parc, residence=residence),
         ),
@@ -393,7 +437,7 @@ async def get_estran_kpis(
             value=_round(vend_hc.value, "kg/ligne"),
             unit="kg/ligne",
             comment="Biomasse vendable moyenne par ligne HC.",
-            formula='somme("V (Kg)/200m") / somme("Nombre de ligne récolté (200m)")',
+            formula='somme(V(kg)×200/longueur(m)) ; repli: somme(kg/200m importé)',
             division_by_zero=vend_hc.div_zero,
             breakdown=EstranKpiBreakdown(year=year, month=month, parc=parc, residence=residence, origine=origine),
         ),
@@ -423,7 +467,7 @@ async def get_estran_kpis(
             base="Primaire",
             value=_round(nb_prim.value, "ligne"),
             unit="ligne",
-            comment="Lignes primaires non récoltées / en état incomplet.",
+            comment='Somme de « Nombre de ligne semé (200m) » sur toutes les lignes Primaire.',
             formula='somme("Nombre de ligne semé (200m)")',
             breakdown=EstranKpiBreakdown(year=year, month=month, parc=parc, residence=residence),
         ),
@@ -462,7 +506,7 @@ async def get_estran_kpis(
         effectif_seme="EstranRecord.effectif_seme",
         total_recolte_kg="EstranRecord.quantite_brute_recoltee_kg",
         hc_resseme_kg="EstranRecord.quantite_semee_kg fallback EstranRecord.effectif_seme",
-        vendable_kg_200m="EstranRecord.biomasse_vendable_kg",
+        vendable_kg_200m="compute: v_kg * 200 / longueur_ligne (m), fallback biomasse_vendable_kg",
         nb_ligne_recolte_200m="EstranRecord.nb_ligne_semee_200m (temporary proxy)",
         poids_moyen_prim_g="EstranRecord.biomasse_gr (temporary proxy for PM TOT)",
         poids_moyen_hc_g="EstranRecord.biomasse_gr (temporary proxy for PM Total)",

@@ -1,8 +1,10 @@
 """Estran API endpoints."""
 
+from datetime import date as date_type
 from typing import Optional
 
 from fastapi import APIRouter, BackgroundTasks, Depends, Query, Request
+from fastapi.responses import StreamingResponse
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -23,10 +25,16 @@ from app.schemas.estran_kpi import (
     ChartDataPoint,
     StockAgeDataPoint,
     EstranFiltersResponse,
+    KpiChartResponse,
+    KpiNewFiltersResponse,
+    EstranDbPage,
+    EstranDbCounts,
 )
 from app.services.anomaly_service import run_anomaly_detection
 from app.services import estran_kpi_service
 from app.services import estran_service
+from app.services import estran_chart_service
+from app.services import estran_db_service
 
 import pandas as pd
 
@@ -260,13 +268,17 @@ async def get_estran_anomalies(
 async def get_estran_kpis_endpoint(
     db: AsyncSession = Depends(get_db),
     parc: Optional[str] = None,
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
     annee: Optional[int] = None,
     base: Optional[str] = None,
     current_user: Optional[User] = Depends(get_current_user),
 ):
     """6 KPI indicators (rendement, age, stock) for Primaire + HC with trend vs previous year."""
     require_can_view_estran(current_user)
-    return await estran_kpi_service.get_estran_kpis(db, parc, annee, base)
+    return await estran_kpi_service.get_estran_kpis(
+        db, parc, annee, base, parc_an=parc_an, generation_semi=generation_semi
+    )
 
 
 @router.get("/kpi/production", response_model=EstranKpiResponse)
@@ -292,47 +304,63 @@ async def get_estran_kpis_production_endpoint(
 async def get_estran_charts_rendement(
     db: AsyncSession = Depends(get_db),
     parc: Optional[str] = None,
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
     annee: Optional[int] = None,
     base: Optional[str] = None,
     current_user: Optional[User] = Depends(get_current_user),
 ):
     require_can_view_estran(current_user)
-    return await estran_kpi_service.get_chart_rendement(db, parc, annee, base)
+    return await estran_kpi_service.get_chart_rendement(
+        db, parc, annee, base, parc_an=parc_an, generation_semi=generation_semi
+    )
 
 
 @router.get("/charts/age-recolte", response_model=list[ChartDataPoint])
 async def get_estran_charts_age_recolte(
     db: AsyncSession = Depends(get_db),
     parc: Optional[str] = None,
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
     annee: Optional[int] = None,
     base: Optional[str] = None,
     current_user: Optional[User] = Depends(get_current_user),
 ):
     require_can_view_estran(current_user)
-    return await estran_kpi_service.get_chart_age_recolte(db, parc, annee, base)
+    return await estran_kpi_service.get_chart_age_recolte(
+        db, parc, annee, base, parc_an=parc_an, generation_semi=generation_semi
+    )
 
 
 @router.get("/charts/stock-lignes", response_model=list[ChartDataPoint])
 async def get_estran_charts_stock_lignes(
     db: AsyncSession = Depends(get_db),
     parc: Optional[str] = None,
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
     annee: Optional[int] = None,
     base: Optional[str] = None,
     current_user: Optional[User] = Depends(get_current_user),
 ):
     require_can_view_estran(current_user)
-    return await estran_kpi_service.get_chart_stock_lignes(db, parc, annee, base)
+    return await estran_kpi_service.get_chart_stock_lignes(
+        db, parc, annee, base, parc_an=parc_an, generation_semi=generation_semi
+    )
 
 
 @router.get("/charts/stock-age-sejour", response_model=list[StockAgeDataPoint])
 async def get_estran_charts_stock_age_sejour(
     db: AsyncSession = Depends(get_db),
     parc: Optional[str] = None,
+    parc_an: Optional[str] = None,
+    generation_semi: Optional[str] = None,
     base: Optional[str] = None,
     current_user: Optional[User] = Depends(get_current_user),
 ):
     require_can_view_estran(current_user)
-    return await estran_kpi_service.get_chart_stock_age_sejour(db, parc, base)
+    return await estran_kpi_service.get_chart_stock_age_sejour(
+        db, parc, base, parc_an=parc_an, generation_semi=generation_semi
+    )
 
 
 @router.get("/filters", response_model=EstranFiltersResponse)
@@ -342,3 +370,234 @@ async def get_estran_filters_endpoint(
 ):
     require_can_view_estran(current_user)
     return await estran_service.get_estran_filters(db)
+
+
+# ── New KPI chart endpoints ───────────────────────────
+
+@router.get("/kpi/filters", response_model=KpiNewFiltersResponse)
+async def get_kpi_filters_endpoint(
+    db: AsyncSession = Depends(get_db),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.get_kpi_filters(db)
+
+
+@router.get("/kpi/recapture-primaire", response_model=KpiChartResponse)
+async def kpi_recapture_primaire(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_recapture_primaire(
+        db, x_axis, group_by, periode, date_from, date_to,
+    )
+
+
+@router.get("/kpi/recapture-hc", response_model=KpiChartResponse)
+async def kpi_recapture_hc(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    filtre2: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_recapture_hc(
+        db, x_axis, group_by, periode, date_from, date_to, filtre2,
+    )
+
+
+@router.get("/kpi/biomasse-recuperee", response_model=KpiChartResponse)
+async def kpi_biomasse_recuperee(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_biomasse_recuperee(
+        db, x_axis, group_by, periode, date_from, date_to,
+    )
+
+
+@router.get("/kpi/vendable-ligne-primaire", response_model=KpiChartResponse)
+async def kpi_vendable_ligne_primaire(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_vendable_ligne_primaire(
+        db, x_axis, group_by, periode, date_from, date_to,
+    )
+
+
+@router.get("/kpi/vendable-ligne-hc", response_model=KpiChartResponse)
+async def kpi_vendable_ligne_hc(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    filtre2: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_vendable_ligne_hc(
+        db, x_axis, group_by, periode, date_from, date_to, filtre2,
+    )
+
+
+@router.get("/kpi/poids-moyen-primaire", response_model=KpiChartResponse)
+async def kpi_poids_moyen_primaire(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_poids_moyen_primaire(
+        db, x_axis, group_by, periode, date_from, date_to,
+    )
+
+
+@router.get("/kpi/poids-moyen-hc", response_model=KpiChartResponse)
+async def kpi_poids_moyen_hc(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    filtre2: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_poids_moyen_hc(
+        db, x_axis, group_by, periode, date_from, date_to, filtre2,
+    )
+
+
+@router.get("/kpi/stock-lignes-primaire", response_model=KpiChartResponse)
+async def kpi_stock_lignes_primaire(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_stock_lignes_primaire(
+        db, x_axis, group_by, periode, date_from, date_to,
+    )
+
+
+@router.get("/kpi/stock-lignes-hc", response_model=KpiChartResponse)
+async def kpi_stock_lignes_hc(
+    db: AsyncSession = Depends(get_db),
+    x_axis: str = Query("annee_mois"),
+    group_by: str = Query("parc"),
+    periode: str = Query("cette_annee"),
+    date_from: Optional[date_type] = None,
+    date_to: Optional[date_type] = None,
+    filtre2: Optional[str] = None,
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_chart_service.kpi_stock_lignes_hc(
+        db, x_axis, group_by, periode, date_from, date_to, filtre2,
+    )
+
+
+# ── DB viewer endpoints ───────────────────────────────
+
+@router.get("/db/counts", response_model=EstranDbCounts)
+async def get_estran_db_counts(
+    db: AsyncSession = Depends(get_db),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_db_service.get_estran_db_counts(db)
+
+
+@router.get("/db/primaire", response_model=EstranDbPage)
+async def get_estran_db_primaire(
+    db: AsyncSession = Depends(get_db),
+    page: int = Query(1, ge=1),
+    page_size: int = Query(25, ge=1, le=100),
+    search: Optional[str] = None,
+    sort_by: str = Query("date_recolte"),
+    sort_order: str = Query("desc"),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_db_service.get_estran_db_page(
+        db, base="primaire", page=page, page_size=page_size,
+        search=search, sort_by=sort_by, sort_order=sort_order,
+    )
+
+
+@router.get("/db/hc", response_model=EstranDbPage)
+async def get_estran_db_hc(
+    db: AsyncSession = Depends(get_db),
+    page: int = Query(1, ge=1),
+    page_size: int = Query(25, ge=1, le=100),
+    search: Optional[str] = None,
+    sort_by: str = Query("date_recolte"),
+    sort_order: str = Query("desc"),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    return await estran_db_service.get_estran_db_page(
+        db, base="hc", page=page, page_size=page_size,
+        search=search, sort_by=sort_by, sort_order=sort_order,
+    )
+
+
+@router.get("/db/export")
+async def export_estran_db(
+    db: AsyncSession = Depends(get_db),
+    base: str = Query("primaire"),
+    search: Optional[str] = None,
+    full: bool = Query(True),
+    page: int = Query(1, ge=1),
+    page_size: int = Query(25, ge=1, le=100),
+    current_user: Optional[User] = Depends(get_current_user),
+):
+    require_can_view_estran(current_user)
+    today = date_type.today().strftime("%Y%m%d")
+    filename = f"estran_{base}_{today}.csv"
+
+    async def generate():
+        async for chunk in estran_db_service.export_estran_csv(
+            db, base=base, search=search, full=full, page=page, page_size=page_size,
+        ):
+            yield chunk
+
+    return StreamingResponse(
+        generate(),
+        media_type="text/csv",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )

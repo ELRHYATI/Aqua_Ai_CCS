@@ -39,6 +39,14 @@ async def set_task_running(db: AsyncSession, task_id: str) -> None:
         await db.commit()
 
 
+async def set_task_progress(db: AsyncSession, task_id: str, progress: dict) -> None:
+    """Store intermediate progress in the result JSONB field (status stays 'running')."""
+    task = await db.get(BackgroundTask, task_id)
+    if task:
+        task.result = progress
+        await db.commit()
+
+
 async def set_task_done(db: AsyncSession, task_id: str, result: dict) -> None:
     task = await db.get(BackgroundTask, task_id)
     if task:

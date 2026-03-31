@@ -21,9 +21,30 @@ function onUnauthorized(path: string) {
   window.location.assign('/login')
 }
 
+export interface SyncSheetDetected {
+  name: string
+  detected: boolean
+}
+
+export interface SyncSheetProgress {
+  sheet_name: string
+  target_page: string
+  rows_loaded: number
+  rows_total: number
+  percent: number
+  status?: 'pending' | 'loading' | 'done' | 'not_found' | 'error'
+}
+
 export interface TaskStatusResponse {
   status: 'pending' | 'running' | 'done' | 'error'
-  result?: { estran: number; finance: number; purchases: number } | MLAnalysisResponse
+  result?: {
+    estran?: number
+    finance?: number
+    purchases?: number
+    current_stage?: string
+    sheets_detected?: SyncSheetDetected[]
+    sheets_progress?: SyncSheetProgress[]
+  }
   error_message?: string
 }
 
@@ -79,41 +100,134 @@ export const api = {
     if (params?.method) sp.set('method', params.method)
     return fetchApi<EstranAnomalyRecord[]>(`/estran/anomalies?${sp}`)
   },
-  getEstranKpis: (params?: { parc?: string; annee?: number; base?: string }) => {
+  getEstranKpis: (params?: {
+    parc?: string
+    parc_an?: string
+    generation_semi?: string
+    annee?: number
+    base?: string
+  }) => {
     const sp = new URLSearchParams()
     if (params?.parc) sp.set('parc', params.parc)
+    if (params?.parc_an) sp.set('parc_an', params.parc_an)
+    if (params?.generation_semi) sp.set('generation_semi', params.generation_semi)
     if (params?.annee) sp.set('annee', String(params.annee))
     if (params?.base) sp.set('base', params.base)
     return fetchApi<EstranKpiResponse>(`/estran/kpi?${sp}`)
   },
+  getEstranProductionKpis: (params?: {
+    base?: 'primaire' | 'hc'
+    year?: number
+    month?: number
+    parc?: string
+    residence?: string
+    origine?: string
+  }) => {
+    const sp = new URLSearchParams()
+    if (params?.base) sp.set('base', params.base)
+    if (params?.year != null) sp.set('year', String(params.year))
+    if (params?.month != null) sp.set('month', String(params.month))
+    if (params?.parc) sp.set('parc', params.parc)
+    if (params?.residence) sp.set('residence', params.residence)
+    if (params?.origine) sp.set('origine', params.origine)
+    const q = sp.toString()
+    return fetchApi<EstranProductionKpiResponse>(`/estran/kpi/production${q ? `?${q}` : ''}`)
+  },
   getEstranFilters: () => fetchApi<EstranFiltersResponse>(`/estran/filters`),
-  getEstranChartRendement: (params?: { parc?: string; annee?: number; base?: string }) => {
+  getEstranChartRendement: (params?: {
+    parc?: string
+    parc_an?: string
+    generation_semi?: string
+    annee?: number
+    base?: string
+  }) => {
     const sp = new URLSearchParams()
     if (params?.parc) sp.set('parc', params.parc)
+    if (params?.parc_an) sp.set('parc_an', params.parc_an)
+    if (params?.generation_semi) sp.set('generation_semi', params.generation_semi)
     if (params?.annee) sp.set('annee', String(params.annee))
     if (params?.base) sp.set('base', params.base)
     return fetchApi<ChartDataPoint[]>(`/estran/charts/rendement?${sp}`)
   },
-  getEstranChartAge: (params?: { parc?: string; annee?: number; base?: string }) => {
+  getEstranChartAge: (params?: {
+    parc?: string
+    parc_an?: string
+    generation_semi?: string
+    annee?: number
+    base?: string
+  }) => {
     const sp = new URLSearchParams()
     if (params?.parc) sp.set('parc', params.parc)
+    if (params?.parc_an) sp.set('parc_an', params.parc_an)
+    if (params?.generation_semi) sp.set('generation_semi', params.generation_semi)
     if (params?.annee) sp.set('annee', String(params.annee))
     if (params?.base) sp.set('base', params.base)
     return fetchApi<ChartDataPoint[]>(`/estran/charts/age-recolte?${sp}`)
   },
-  getEstranChartStockLignes: (params?: { parc?: string; annee?: number; base?: string }) => {
+  getEstranChartStockLignes: (params?: {
+    parc?: string
+    parc_an?: string
+    generation_semi?: string
+    annee?: number
+    base?: string
+  }) => {
     const sp = new URLSearchParams()
     if (params?.parc) sp.set('parc', params.parc)
+    if (params?.parc_an) sp.set('parc_an', params.parc_an)
+    if (params?.generation_semi) sp.set('generation_semi', params.generation_semi)
     if (params?.annee) sp.set('annee', String(params.annee))
     if (params?.base) sp.set('base', params.base)
     return fetchApi<ChartDataPoint[]>(`/estran/charts/stock-lignes?${sp}`)
   },
-  getEstranChartStockAge: (params?: { parc?: string; base?: string }) => {
+  getEstranChartStockAge: (params?: {
+    parc?: string
+    parc_an?: string
+    generation_semi?: string
+    base?: string
+  }) => {
     const sp = new URLSearchParams()
     if (params?.parc) sp.set('parc', params.parc)
+    if (params?.parc_an) sp.set('parc_an', params.parc_an)
+    if (params?.generation_semi) sp.set('generation_semi', params.generation_semi)
     if (params?.base) sp.set('base', params.base)
     return fetchApi<StockAgeDataPoint[]>(`/estran/charts/stock-age-sejour?${sp}`)
   },
+
+  // ── New KPI chart endpoints ─────────────────────────
+  getKpiFilters: () => fetchApi<KpiNewFiltersResponse>(`/estran/kpi/filters`),
+  getKpiChart: (slug: string, params?: EstranChartParams) => {
+    const sp = new URLSearchParams()
+    if (params?.x_axis) sp.set('x_axis', params.x_axis)
+    if (params?.group_by) sp.set('group_by', params.group_by)
+    if (params?.periode) sp.set('periode', params.periode)
+    if (params?.date_from) sp.set('date_from', params.date_from)
+    if (params?.date_to) sp.set('date_to', params.date_to)
+    if (params?.filtre2) sp.set('filtre2', params.filtre2)
+    return fetchApi<KpiChartResponse>(`/estran/kpi/${slug}?${sp}`)
+  },
+
+  // ── DB viewer endpoints ─────────────────────────────
+  getEstranDbCounts: () => fetchApi<EstranDbCounts>(`/estran/db/counts`),
+  getEstranDbPage: (params: EstranDbParams) => {
+    const sp = new URLSearchParams()
+    sp.set('page', String(params.page ?? 1))
+    sp.set('page_size', String(params.page_size ?? 25))
+    if (params.search) sp.set('search', params.search)
+    if (params.sort_by) sp.set('sort_by', params.sort_by)
+    if (params.sort_order) sp.set('sort_order', params.sort_order)
+    const base = params.base === 'hc' ? 'hc' : 'primaire'
+    return fetchApi<EstranDbPageResponse>(`/estran/db/${base}?${sp}`)
+  },
+  getEstranDbExportUrl: (params: { base: string; search?: string; full: boolean; page?: number; page_size?: number }) => {
+    const sp = new URLSearchParams()
+    sp.set('base', params.base)
+    sp.set('full', String(params.full))
+    if (params.search) sp.set('search', params.search)
+    if (params.page) sp.set('page', String(params.page))
+    if (params.page_size) sp.set('page_size', String(params.page_size))
+    return `${API_BASE}/estran/db/export?${sp}`
+  },
+
   getFinanceAnomalies: (params?: { limit?: number; year?: number; method?: string }) => {
     const sp = new URLSearchParams()
     if (params?.limit) sp.set('limit', String(params.limit))
@@ -287,6 +401,31 @@ export const api = {
     }
     return res.json() as Promise<{ estran: number; finance: number; purchases: number }>
   },
+
+  uploadExcelRaw: async (file: File | File[]): Promise<string> => {
+    const formData = new FormData()
+    const files = Array.isArray(file) ? file : [file]
+    files.forEach((f) => formData.append('file', f))
+    const res = await fetch(`${API_BASE}/sync/upload`, {
+      method: 'POST',
+      headers: authHeaders(false),
+      body: formData,
+    })
+    if (res.status === 401) onUnauthorized('/sync/upload')
+    if (res.status === 202) {
+      const { task_id } = await res.json()
+      return task_id as string
+    }
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ detail: res.statusText }))
+      throw new Error(typeof err.detail === 'string' ? err.detail : JSON.stringify(err))
+    }
+    const data = await res.json()
+    return data.task_id as string
+  },
+
+  getTaskStatus: (taskId: string) =>
+    fetchApi<TaskStatusResponse>(`/tasks/${taskId}/status`),
 }
 
 export interface EstranSheetInfo {
@@ -316,6 +455,47 @@ export interface EstranKpiResponse {
   stock_lignes_hc: KpiIndicator
 }
 
+/** Réponse de `/estran/kpi/production` — indicateurs recapture, vendable/ligne, poids, stock. */
+export interface EstranProductionKpiBreakdown {
+  parc?: string | null
+  residence?: string | null
+  year?: number | null
+  month?: number | null
+  origine?: string | null
+}
+
+export interface EstranProductionKpiItem {
+  kpiKey: string
+  label: string
+  base: 'Primaire' | 'HC'
+  value: number | null
+  unit: string
+  comment: string
+  formula: string
+  division_by_zero: boolean
+  breakdown: EstranProductionKpiBreakdown
+}
+
+export interface EstranProductionKpiResponse {
+  items: EstranProductionKpiItem[]
+  chart_series: EstranKpiSeriesPointProduction[]
+  field_mapping: Record<string, string>
+  notes: string[]
+}
+
+export interface EstranKpiSeriesPointProduction {
+  kpiKey: string
+  label: string
+  base: 'Primaire' | 'HC'
+  unit: string
+  value: number | null
+  year?: number | null
+  month?: number | null
+  parc?: string | null
+  residence?: string | null
+  origine?: string | null
+}
+
 export interface ChartDataPoint {
   annee: number
   parc: string
@@ -331,6 +511,118 @@ export interface StockAgeDataPoint {
 export interface EstranFiltersResponse {
   parcs: string[]
   annees: number[]
+  /** Feuille Primaire — Excel col. B (N PARC AN) */
+  n_parc_an?: string[]
+  /** Feuille Primaire — Excel col. C (génération de semi) */
+  generations_semi?: string[]
+}
+
+// ── New KPI chart types ─────────────────────────────
+
+export interface KpiChartGroup {
+  name: string
+  value: number | null
+}
+
+export interface KpiChartPeriod {
+  period: string
+  groups: KpiChartGroup[]
+}
+
+export interface KpiChartResponse {
+  kpi_name: string
+  unit: string
+  formula: string
+  data: KpiChartPeriod[]
+  groups_available: string[]
+}
+
+export interface KpiNewFiltersResponse {
+  parcs: string[]
+  residences_estran: string[]
+  origines_recolte: string[]
+  annees: number[]
+}
+
+export interface EstranChartParams {
+  x_axis?: 'annee' | 'mois' | 'annee_mois'
+  group_by?: 'parc' | 'residence_estran' | 'origine_recolte' | 'none'
+  periode?: 'cette_annee' | '12_mois' | '2_ans' | 'tout' | 'custom'
+  date_from?: string
+  date_to?: string
+  filtre2?: string
+}
+
+// ── DB viewer types ─────────────────────────────────
+
+export interface EstranDbRow {
+  id: number
+  parc_semi?: string | null
+  parc_an?: string | null
+  generation_semi?: string | null
+  ligne_num?: number | null
+  ett?: string | null
+  phase?: string | null
+  origine?: string | null
+  type_semi?: string | null
+  longueur_ligne?: number | null
+  nb_ligne_semee_200m?: number | null
+  zone?: string | null
+  date_semis?: string | null
+  date_recolte?: string | null
+  effectif_seme?: number | null
+  quantite_semee_kg?: number | null
+  quantite_brute_recoltee_kg?: number | null
+  quantite_casse_kg?: number | null
+  biomasse_gr?: number | null
+  biomasse_vendable_kg?: number | null
+  statut?: string | null
+  etat_recolte?: string | null
+  pct_recolte?: number | null
+  year?: number | null
+  month?: number | null
+  sheet_name?: string | null
+  type_recolte?: string | null
+  taux_recapture?: number | null
+  objectif_recolte?: string | null
+  orientation?: string | null
+  taille_seme?: string | null
+  age_td_mois?: number | null
+  residence_estran?: number | null
+  v_kg?: number | null
+  kg_recolte_m2?: number | null
+  poids_mortalite_kg?: number | null
+  orientation_lignes?: string | null
+  taille_semi_hc?: string | null
+  hc_resseme_kg_m2?: number | null
+  pct_biomasse_recuperee?: number | null
+  mortalite_kg?: number | null
+  created_at?: string | null
+  updated_at?: string | null
+}
+
+export interface EstranDbPageResponse {
+  items: EstranDbRow[]
+  total: number
+  page: number
+  page_size: number
+  pages: number
+}
+
+export interface EstranDbCounts {
+  primaire_total: number
+  hc_total: number
+  primaire_last_import?: string | null
+  hc_last_import?: string | null
+}
+
+export interface EstranDbParams {
+  base: 'primaire' | 'hc'
+  page?: number
+  page_size?: number
+  search?: string
+  sort_by?: string
+  sort_order?: 'asc' | 'desc'
 }
 
 export interface EstranRecord {

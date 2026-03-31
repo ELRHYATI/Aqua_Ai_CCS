@@ -165,10 +165,11 @@ async def get_recent_activity(
     """Last N activity log entries for the current user (not admin-only)."""
     user_id = str(current_user.id) if current_user else None
     # Only audit_logs columns here — full_name lives on users (avoids UndefinedColumnError).
+    # Cast :uid so asyncpg/PostgreSQL can infer types (plain :uid in "IS NULL OR col = :uid" is ambiguous).
     q = text("""
         SELECT id, timestamp, user_id, action, module, status, details
         FROM audit_logs
-        WHERE (:uid IS NULL OR user_id = :uid)
+        WHERE (CAST(:uid AS VARCHAR) IS NULL OR user_id = CAST(:uid AS VARCHAR))
         ORDER BY timestamp DESC
         LIMIT :lim
     """)

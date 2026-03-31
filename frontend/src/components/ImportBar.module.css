@@ -1,111 +1,47 @@
+/* ── ImportBar — Redesigned ── */
+
 .bar {
-  display: flex;
-  align-items: center;
-  gap: 0.875rem;
   margin-bottom: 1.5rem;
-  flex-wrap: wrap;
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.4rem 0.85rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(0, 210, 240, 0.9);
-  background: rgba(0, 180, 216, 0.1);
-  border: 1px solid rgba(0, 180, 216, 0.25);
-  border-radius: 100px;
-  flex-shrink: 0;
-}
-
-.zone {
+/* ── Drop zone ── */
+.dropZone {
   position: relative;
-  flex: 1;
-  min-width: 220px;
-  max-width: 440px;
-  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
   border-radius: 16px;
-  border: 1px dashed rgba(0, 180, 216, 0.15);
-  background: linear-gradient(
-    135deg,
-    rgba(17, 25, 32, 0.6) 0%,
-    rgba(23, 31, 40, 0.5) 100%
-  );
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px dashed rgba(0, 180, 216, 0.2);
+  background: rgba(17, 25, 32, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+  min-height: 140px;
+  text-align: center;
 }
 
-.zone::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  border-radius: 16px 0 0 16px;
-  background: linear-gradient(180deg, rgba(0, 180, 216, 0.8), rgba(0, 120, 180, 0.4));
-  opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.zone:hover {
-  border-color: rgba(0, 180, 216, 0.5);
-  border-style: solid;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 180, 216, 0.08) 0%,
-    rgba(0, 180, 216, 0.04) 100%
-  );
-  box-shadow:
-    0 0 24px rgba(0, 180, 216, 0.08),
-    0 0 0 1px rgba(0, 180, 216, 0.1);
-}
-
-.zone:hover::before {
-  opacity: 1;
-}
-
-.zone.dragging {
-  border-color: rgba(0, 200, 230, 0.6);
-  border-style: solid;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 180, 216, 0.15) 0%,
-    rgba(0, 180, 216, 0.06) 100%
-  );
-  box-shadow:
-    0 0 32px rgba(0, 180, 216, 0.15),
-    0 0 0 1px rgba(0, 180, 216, 0.2);
-}
-
-.zone.dragging::before {
-  opacity: 1;
-}
-
-.zone.uploading {
-  pointer-events: none;
-  opacity: 0.95;
-  border-style: solid;
+.dropZone:hover {
   border-color: rgba(0, 180, 216, 0.4);
-  animation: uploadPulse 1.8s ease-in-out infinite;
+  background: rgba(0, 180, 216, 0.04);
 }
 
-.zone.uploading::before {
-  opacity: 0.6;
+.dropZoneDrag {
+  border-style: solid;
+  border-color: #0D9488;
+  background: rgba(13, 148, 136, 0.06);
+  box-shadow: 0 0 32px rgba(13, 148, 136, 0.12);
 }
 
-@keyframes uploadPulse {
-  0%, 100% { border-color: rgba(0, 180, 216, 0.25); }
-  50% { border-color: rgba(0, 180, 216, 0.55); }
+.dropZoneError {
+  border-style: solid;
+  border-color: rgba(239, 68, 68, 0.5);
+  background: rgba(239, 68, 68, 0.04);
 }
 
-.input {
+.hiddenInput {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -114,14 +50,40 @@
   cursor: pointer;
 }
 
-.progressWrap {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 100%;
+/* ── Browse button (inline) ── */
+.browseBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 180, 216, 0.25);
+  background: rgba(0, 180, 216, 0.08);
+  color: #00b4d8;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.progressBar {
+.browseBtn:hover {
+  background: rgba(0, 180, 216, 0.15);
+  border-color: rgba(0, 180, 216, 0.45);
+}
+
+/* ── Progress / Success / Error card ── */
+.progressCard {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(17, 25, 32, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 180, 216, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Progress bar ── */
+.progressTrack {
   height: 6px;
   background: rgba(0, 180, 216, 0.12);
   border-radius: 3px;
@@ -130,55 +92,13 @@
 
 .progressFill {
   height: 100%;
-  background: linear-gradient(90deg, #00b4d8, #48cae4);
+  background: linear-gradient(90deg, #0D9488, #14b8a6);
   border-radius: 3px;
-  transition: width 0.4s ease;
-}
-
-.label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: rgba(160, 180, 200, 0.7);
-  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.zone:hover .label {
-  color: rgba(220, 235, 245, 0.95);
-}
-
-.icon {
-  flex-shrink: 0;
-  width: 1.15rem;
-  height: 1.15rem;
-  opacity: 0.85;
-}
-
-.success {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #22d3a8;
-}
-
-.success .icon {
-  color: #22d3a8;
-  flex-shrink: 0;
-}
-
-.error {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.82rem;
-  color: #ef4444;
+  transition: width 0.3s ease;
 }
 
 @media (max-width: 600px) {
-  .zone {
-    max-width: none;
+  .dropZone {
+    padding: 1.5rem 1rem;
   }
 }

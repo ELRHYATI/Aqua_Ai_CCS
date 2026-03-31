@@ -50,6 +50,22 @@ class EstranRecord(Base, TimestampMixin):
     taux_recapture = Column(Numeric(10, 4))
     objectif_recolte = Column(String(100))
 
+    # Primaire-specific columns
+    orientation = Column(String(100))
+    taille_seme = Column(String(100))
+    age_td_mois = Column(Numeric(10, 2))
+    residence_estran = Column(Numeric(10, 2))
+    v_kg = Column(Numeric(14, 2))
+    kg_recolte_m2 = Column(Numeric(14, 4))
+    poids_mortalite_kg = Column(Numeric(14, 2))
+
+    # HC-specific columns
+    orientation_lignes = Column(String(100))
+    taille_semi_hc = Column(String(100))
+    hc_resseme_kg_m2 = Column(Numeric(14, 4))
+    pct_biomasse_recuperee = Column(Numeric(10, 4))
+    mortalite_kg = Column(Numeric(14, 2))
+
     __table_args__ = (
         Index("ix_estran_parc_year_month", "parc_semi", "year", "month"),
     )

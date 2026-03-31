@@ -16,7 +16,7 @@ from app.core.database import AsyncSessionLocal, get_db
 from app.core.limiter import limiter
 from app.services.excel_sync_service import seed_from_excel
 from app.services.onedrive_excel_service import sync_onedrive_excel_to_db
-from app.services.task_service import create_task, set_task_done, set_task_error, set_task_running
+from app.services.task_service import create_task, set_task_done, set_task_error, set_task_running, set_task_progress
 
 router = APIRouter(prefix="/sync", tags=["sync"])
 
@@ -80,12 +80,63 @@ async def _run_sync_upload(task_id: str, reflexion_path: Path | None, finance_fi
 
     counts = {"estran": 0, "finance": 0, "purchases": 0}
     try:
+        async with AsyncSessionLocal() as session:
+            await set_task_progress(session, task_id, {
+                "current_stage": "reading",
+                "sheets_detected": [],
+                "sheets_progress": [],
+            })
+
         if reflexion_path and reflexion_path.exists():
+            import openpyxl
+            wb = openpyxl.load_workbook(reflexion_path, read_only=True, data_only=True)
+            detected = [{"name": s, "detected": True} for s in wb.sheetnames]
+            wb.close()
+
+            async with AsyncSessionLocal() as session:
+                await set_task_progress(session, task_id, {
+                    "current_stage": "loading",
+                    "sheets_detected": detected,
+                    "sheets_progress": [],
+                })
+
             async with AsyncSessionLocal() as session:
                 counts = await seed_from_excel(session, reflexion_path, replace=True)
-        # Toujours exécuter sync_gl_mapping après upload (mapping BAL -> GL dans MODELE GL)
+
         gl_mapped = _run_sync_gl_mapping()
-        result = {**counts, "gl_mapping": gl_mapped}
+
+        prim_rows = counts.get("primaire_rows", 0)
+        hc_rows = counts.get("hc_rows", 0)
+
+        sheets_progress = [
+            {
+                "sheet_name": "Primaire",
+                "target_page": "Estran",
+                "rows_loaded": prim_rows,
+                "rows_total": prim_rows,
+                "percent": 100 if prim_rows > 0 else 0,
+                "status": "done" if prim_rows > 0 else "not_found",
+            },
+            {
+                "sheet_name": "Hors Calibre",
+                "target_page": "Estran",
+                "rows_loaded": hc_rows,
+                "rows_total": hc_rows,
+                "percent": 100 if hc_rows > 0 else 0,
+                "status": "done" if hc_rows > 0 else "not_found",
+            },
+        ]
+        if counts.get("finance", 0) > 0:
+            sheets_progress.append({"sheet_name": "Rapport", "target_page": "Finance", "rows_loaded": counts["finance"], "rows_total": counts["finance"], "percent": 100, "status": "done"})
+        if counts.get("purchases", 0) > 0:
+            sheets_progress.append({"sheet_name": "DA/BC", "target_page": "Achats", "rows_loaded": counts["purchases"], "rows_total": counts["purchases"], "percent": 100, "status": "done"})
+
+        result = {
+            **counts,
+            "gl_mapping": gl_mapped,
+            "current_stage": "done",
+            "sheets_progress": sheets_progress,
+        }
         async with AsyncSessionLocal() as session:
             await set_task_done(session, task_id, result)
     except Exception as e:
